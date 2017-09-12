@@ -1,0 +1,1394 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>PySlurm: Slurm Interface to python &#8212; PySlurm 15.08.0pre6 documentation</title>
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '15.08.0pre6',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+  </head>
+  <body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="nav-item nav-item-0"><a href="#">PySlurm 15.08.0pre6 documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="pyslurm-slurm-interface-to-python">
+<h1>PySlurm: Slurm Interface to python<a class="headerlink" href="#pyslurm-slurm-interface-to-python" title="Permalink to this headline">¶</a></h1>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Authors:</th><td class="field-body">Mark Roberts, Stephan Gorget</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Date:</th><td class="field-body">Sep 12, 2017</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Version:</th><td class="field-body">15.08</td>
+</tr>
+</tbody>
+</table>
+<p>This module provides a low-level Python wrapper around the Slurm C-API using Cython.</p>
+</div>
+<div class="section" id="contents">
+<h1>Contents<a class="headerlink" href="#contents" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+</div>
+<div class="section" id="block-class">
+<h2>Block Class<a class="headerlink" href="#block-class" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="pyslurm.block">
+<em class="property">class </em><code class="descclassname">pyslurm.</code><code class="descname">block</code><a class="headerlink" href="#pyslurm.block" title="Permalink to this definition">¶</a></dt>
+<dd><p>Class to access/update slurm block Information.</p>
+<dl class="method">
+<dt id="pyslurm.block.find">
+<code class="descname">find</code><span class="sig-paren">(</span><em>self</em>, <em>name=''</em>, <em>val=''</em><span class="sig-paren">)</span><a class="headerlink" href="#pyslurm.block.find" title="Permalink to this definition">¶</a></dt>
+<dd><p>Search for property and associated value in the block data.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>name</strong> (<a class="reference external" href="https://docs.python.org/2/library/functions.html#str" title="(in Python v2.7)"><em>str</em></a>) – key string to search</li>
+<li><strong>value</strong> – value to match</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">List of IDs that match</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><cite>list</cite></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyslurm.block.find_id">
+<code class="descname">find_id</code><span class="sig-paren">(</span><em>self</em>, <em>blockID=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pyslurm.block.find_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieve block ID data.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>blockID</strong> (<a class="reference external" href="https://docs.python.org/2/library/functions.html#str" title="(in Python v2.7)"><em>str</em></a>) – Block key string to search</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Dictionary of values for given block key</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><cite>dict</cite></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyslurm.block.get">
+<code class="descname">get</code><span class="sig-paren">(</span><em>self</em><span class="sig-paren">)</span><a class="headerlink" href="#pyslurm.block.get" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get slurm block information.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Dictionary whose key is the Block ID</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><cite>dict</cite></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyslurm.block.ids">
+<code class="descname">ids</code><span class="sig-paren">(</span><em>self</em><span class="sig-paren">)</span><a class="headerlink" href="#pyslurm.block.ids" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the block IDs from retrieved data.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Dictionary of block IDs</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><cite>dict</cite></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyslurm.block.lastUpdate">
+<code class="descname">lastUpdate</code><span class="sig-paren">(</span><em>self</em><span class="sig-paren">)</span><a class="headerlink" href="#pyslurm.block.lastUpdate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the time (epoch seconds) the retrieved data was updated.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">epoch seconds</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><cite>integer</cite></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyslurm.block.load">
+<code class="descname">load</code><span class="sig-paren">(</span><em>self</em><span class="sig-paren">)</span><a class="headerlink" href="#pyslurm.block.load" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load slurm block information.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyslurm.block.print_info_msg">
+<code class="descname">print_info_msg</code><span class="sig-paren">(</span><em>self</em>, <em>int oneLiner=0</em><span class="sig-paren">)</span><a class="headerlink" href="#pyslurm.block.print_info_msg" title="Permalink to this definition">¶</a></dt>
+<dd><p>Output information about all slurm blocks</p>
+<p>This is based upon data returned by the slurm_load_block.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>oneLiner</strong> (<a class="reference external" href="https://docs.python.org/2/library/functions.html#int" title="(in Python v2.7)"><em>int</em></a>) – Print information on one line - 0 (Default), 1</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyslurm.block.update">
+<code class="descname">update</code><span class="sig-paren">(</span><em>self</em>, <em>blockID</em>, <em>int blockOP=0</em><span class="sig-paren">)</span><a class="headerlink" href="#pyslurm.block.update" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyslurm.block.update_error">
+<code class="descname">update_error</code><span class="sig-paren">(</span><em>self</em>, <em>blockID</em><span class="sig-paren">)</span><a class="headerlink" href="#pyslurm.block.update_error" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set slurm block to ERROR state.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>blockID</strong> (<a class="reference external" href="https://docs.python.org/2/library/string.html#module-string" title="(in Python v2.7)"><em>string</em></a>) – The ID string of the block</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyslurm.block.update_free">
+<code class="descname">update_free</code><span class="sig-paren">(</span><em>self</em>, <em>blockID</em><span class="sig-paren">)</span><a class="headerlink" href="#pyslurm.block.update_free" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set slurm block to FREE state.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>blockID</strong> (<a class="reference external" href="https://docs.python.org/2/library/string.html#module-string" title="(in Python v2.7)"><em>string</em></a>) – The ID string of the block</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyslurm.block.update_recreate">
+<code class="descname">update_recreate</code><span class="sig-paren">(</span><em>self</em>, <em>blockID</em><span class="sig-paren">)</span><a class="headerlink" href="#pyslurm.block.update_recreate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set slurm block to RECREATE state.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>blockID</strong> (<a class="reference external" href="https://docs.python.org/2/library/string.html#module-string" title="(in Python v2.7)"><em>string</em></a>) – The ID string of the block</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyslurm.block.update_remove">
+<code class="descname">update_remove</code><span class="sig-paren">(</span><em>self</em>, <em>blockID</em><span class="sig-paren">)</span><a class="headerlink" href="#pyslurm.block.update_remove" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set slurm block to REMOVE state.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>blockID</strong> (<a class="reference external" href="https://docs.python.org/2/library/string.html#module-string" title="(in Python v2.7)"><em>string</em></a>) – The ID string of the block</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyslurm.block.update_resume">
+<code class="descname">update_resume</code><span class="sig-paren">(</span><em>self</em>, <em>blockID</em><span class="sig-paren">)</span><a class="headerlink" href="#pyslurm.block.update_resume" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set slurm block to RESUME state.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>blockID</strong> (<a class="reference external" href="https://docs.python.org/2/library/string.html#module-string" title="(in Python v2.7)"><em>string</em></a>) – The ID string of the block</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="config-class">
+<h2>Config Class<a class="headerlink" href="#config-class" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="pyslurm.config">
+<em class="property">class </em><code class="descclassname">pyslurm.</code><code class="descname">config</code><a class="headerlink" href="#pyslurm.config" title="Permalink to this definition">¶</a></dt>
+<dd><p>Class to access slurm config Information.</p>
+<dl class="method">
+<dt id="pyslurm.config.display_all">
+<code class="descname">display_all</code><span class="sig-paren">(</span><em>self</em><span class="sig-paren">)</span><a class="headerlink" href="#pyslurm.config.display_all" title="Permalink to this definition">¶</a></dt>
+<dd><p>Print slurm control configuration information.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyslurm.config.find_id">
+<code class="descname">find_id</code><span class="sig-paren">(</span><em>self</em>, <em>char *keyID=''</em><span class="sig-paren">)</span><a class="headerlink" href="#pyslurm.config.find_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieve config ID data.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>keyID</strong> (<a class="reference external" href="https://docs.python.org/2/library/functions.html#str" title="(in Python v2.7)"><em>str</em></a>) – Config key string to search</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Dictionary of values for given config key</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><cite>dict</cite></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyslurm.config.get">
+<code class="descname">get</code><span class="sig-paren">(</span><em>self</em><span class="sig-paren">)</span><a class="headerlink" href="#pyslurm.config.get" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the slurm control configuration information.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Configuration data</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><cite>dict</cite></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyslurm.config.ids">
+<code class="descname">ids</code><span class="sig-paren">(</span><em>self</em><span class="sig-paren">)</span><a class="headerlink" href="#pyslurm.config.ids" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the config IDs from retrieved data.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Dictionary of config key IDs</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><cite>dict</cite></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyslurm.config.key_pairs">
+<code class="descname">key_pairs</code><span class="sig-paren">(</span><em>self</em><span class="sig-paren">)</span><a class="headerlink" href="#pyslurm.config.key_pairs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a dict of the slurm control data as key pairs.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Dictionary of slurm key-pair values</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><cite>dict</cite></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyslurm.config.lastUpdate">
+<code class="descname">lastUpdate</code><span class="sig-paren">(</span><em>self</em><span class="sig-paren">)</span><a class="headerlink" href="#pyslurm.config.lastUpdate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the time (epoch seconds) the retrieved data was updated.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">epoch seconds</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><cite>integer</cite></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="frontend-class">
+<h2>FrontEnd Class<a class="headerlink" href="#frontend-class" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="pyslurm.front_end">
+<em class="property">class </em><code class="descclassname">pyslurm.</code><code class="descname">front_end</code><a class="headerlink" href="#pyslurm.front_end" title="Permalink to this definition">¶</a></dt>
+<dd><p>Class to access/update slurm front end node information.</p>
+<dl class="method">
+<dt id="pyslurm.front_end.get">
+<code class="descname">get</code><span class="sig-paren">(</span><em>self</em><span class="sig-paren">)</span><a class="headerlink" href="#pyslurm.front_end.get" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get front end node information.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Dictionary whose key is the Topology ID</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><cite>dict</cite></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyslurm.front_end.ids">
+<code class="descname">ids</code><span class="sig-paren">(</span><em>self</em><span class="sig-paren">)</span><a class="headerlink" href="#pyslurm.front_end.ids" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the node IDs from retrieved data.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Dictionary of node IDs</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><cite>dict</cite></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyslurm.front_end.lastUpdate">
+<code class="descname">lastUpdate</code><span class="sig-paren">(</span><em>self</em><span class="sig-paren">)</span><a class="headerlink" href="#pyslurm.front_end.lastUpdate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return last time (sepoch seconds) the node data was updated.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">epoch seconds</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><cite>integer</cite></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyslurm.front_end.load">
+<code class="descname">load</code><span class="sig-paren">(</span><em>self</em><span class="sig-paren">)</span><a class="headerlink" href="#pyslurm.front_end.load" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load slurm front end node information.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="hostlist-class">
+<h2>HostList Class<a class="headerlink" href="#hostlist-class" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="pyslurm.hostlist">
+<em class="property">class </em><code class="descclassname">pyslurm.</code><code class="descname">hostlist</code><a class="headerlink" href="#pyslurm.hostlist" title="Permalink to this definition">¶</a></dt>
+<dd><p>Wrapper class for Slurm hostlist functions.</p>
+<dl class="method">
+<dt id="pyslurm.hostlist.count">
+<code class="descname">count</code><span class="sig-paren">(</span><em>self</em><span class="sig-paren">)</span><a class="headerlink" href="#pyslurm.hostlist.count" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyslurm.hostlist.create">
+<code class="descname">create</code><span class="sig-paren">(</span><em>self</em>, <em>hostnames=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pyslurm.hostlist.create" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyslurm.hostlist.destroy">
+<code class="descname">destroy</code><span class="sig-paren">(</span><em>self</em><span class="sig-paren">)</span><a class="headerlink" href="#pyslurm.hostlist.destroy" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyslurm.hostlist.find">
+<code class="descname">find</code><span class="sig-paren">(</span><em>self</em>, <em>hostname</em><span class="sig-paren">)</span><a class="headerlink" href="#pyslurm.hostlist.find" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyslurm.hostlist.get">
+<code class="descname">get</code><span class="sig-paren">(</span><em>self</em><span class="sig-paren">)</span><a class="headerlink" href="#pyslurm.hostlist.get" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyslurm.hostlist.get_list">
+<code class="descname">get_list</code><span class="sig-paren">(</span><em>self</em><span class="sig-paren">)</span><a class="headerlink" href="#pyslurm.hostlist.get_list" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the list of hostnames composing the hostlist.</p>
+<p>For example with a hostlist created with “tux[1-3]” -&gt; [ ‘tux1’, tux2’,
+‘tux3’ ].</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the list of hostnames in case of success or None on error.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">list</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyslurm.hostlist.pop">
+<code class="descname">pop</code><span class="sig-paren">(</span><em>self</em><span class="sig-paren">)</span><a class="headerlink" href="#pyslurm.hostlist.pop" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyslurm.hostlist.push">
+<code class="descname">push</code><span class="sig-paren">(</span><em>self</em>, <em>hosts</em><span class="sig-paren">)</span><a class="headerlink" href="#pyslurm.hostlist.push" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyslurm.hostlist.push_host">
+<code class="descname">push_host</code><span class="sig-paren">(</span><em>self</em>, <em>host</em><span class="sig-paren">)</span><a class="headerlink" href="#pyslurm.hostlist.push_host" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyslurm.hostlist.ranged_string">
+<code class="descname">ranged_string</code><span class="sig-paren">(</span><em>self</em><span class="sig-paren">)</span><a class="headerlink" href="#pyslurm.hostlist.ranged_string" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyslurm.hostlist.shift">
+<code class="descname">shift</code><span class="sig-paren">(</span><em>self</em><span class="sig-paren">)</span><a class="headerlink" href="#pyslurm.hostlist.shift" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyslurm.hostlist.uniq">
+<code class="descname">uniq</code><span class="sig-paren">(</span><em>self</em><span class="sig-paren">)</span><a class="headerlink" href="#pyslurm.hostlist.uniq" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="job-class">
+<h2>Job Class<a class="headerlink" href="#job-class" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="pyslurm.job">
+<em class="property">class </em><code class="descclassname">pyslurm.</code><code class="descname">job</code><a class="headerlink" href="#pyslurm.job" title="Permalink to this definition">¶</a></dt>
+<dd><p>Class to access/modify Slurm Job Information.</p>
+<dl class="method">
+<dt id="pyslurm.job.find">
+<code class="descname">find</code><span class="sig-paren">(</span><em>self</em>, <em>name=''</em>, <em>val=''</em><span class="sig-paren">)</span><a class="headerlink" href="#pyslurm.job.find" title="Permalink to this definition">¶</a></dt>
+<dd><p>Search for a property and associated value in the retrieved job data.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>name</strong> (<a class="reference external" href="https://docs.python.org/2/library/functions.html#str" title="(in Python v2.7)"><em>str</em></a>) – key string to search</li>
+<li><strong>value</strong> (<a class="reference external" href="https://docs.python.org/2/library/functions.html#str" title="(in Python v2.7)"><em>str</em></a>) – value string to match</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">List of IDs that match</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><cite>list</cite></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyslurm.job.find_id">
+<code class="descname">find_id</code><span class="sig-paren">(</span><em>self</em>, <em>jobid</em><span class="sig-paren">)</span><a class="headerlink" href="#pyslurm.job.find_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieve job ID data.</p>
+<p>This method calls slurm_xlate_job_id() to convert a jobid string to a
+jobid int.  For example, a subjob of 123_4 would translate to 124.
+Then, slurm_load_job() gets all job_table records associated with that
+specific job. This works for single jobs and job arrays.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>jobID</strong> (<a class="reference external" href="https://docs.python.org/2/library/functions.html#str" title="(in Python v2.7)"><em>str</em></a>) – Job id key string to search</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">List of dictionary of values for given job id</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><cite>list</cite></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyslurm.job.find_user">
+<code class="descname">find_user</code><span class="sig-paren">(</span><em>self</em>, <em>user</em><span class="sig-paren">)</span><a class="headerlink" href="#pyslurm.job.find_user" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieve a user’s job data.</p>
+<p>This method calls slurm_load_job_user to get all job_table records
+associated with a specific user.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>user</strong> (<a class="reference external" href="https://docs.python.org/2/library/functions.html#str" title="(in Python v2.7)"><em>str</em></a>) – User string to search</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Dictionary of values for all user’s jobs</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><cite>dict</cite></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyslurm.job.get">
+<code class="descname">get</code><span class="sig-paren">(</span><em>self</em><span class="sig-paren">)</span><a class="headerlink" href="#pyslurm.job.get" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get all slurm jobs information.</p>
+<p>This method calls slurm_load_jobs to get job_table records for all jobs</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Data where key is the job name, each entry contains a
+dictionary of job attributes</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><cite>dict</cite></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyslurm.job.ids">
+<code class="descname">ids</code><span class="sig-paren">(</span><em>self</em><span class="sig-paren">)</span><a class="headerlink" href="#pyslurm.job.ids" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the job IDs from retrieved data.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Dictionary of job IDs</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><cite>dict</cite></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyslurm.job.lastUpdate">
+<code class="descname">lastUpdate</code><span class="sig-paren">(</span><em>self</em><span class="sig-paren">)</span><a class="headerlink" href="#pyslurm.job.lastUpdate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the time (epoch seconds) the job data was updated.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">epoch seconds</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><cite>integer</cite></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyslurm.job.print_job_info_msg">
+<code class="descname">print_job_info_msg</code><span class="sig-paren">(</span><em>self</em>, <em>int oneLiner=0</em><span class="sig-paren">)</span><a class="headerlink" href="#pyslurm.job.print_job_info_msg" title="Permalink to this definition">¶</a></dt>
+<dd><p>Print the data structure describing all job step records.</p>
+<p>The job step records are loaded by the slurm_get_job_steps function.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>Flag</strong> (<a class="reference external" href="https://docs.python.org/2/library/functions.html#int" title="(in Python v2.7)"><em>int</em></a>) – Default=0</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="jobstep-class">
+<h2>JobStep Class<a class="headerlink" href="#jobstep-class" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="pyslurm.jobstep">
+<em class="property">class </em><code class="descclassname">pyslurm.</code><code class="descname">jobstep</code><a class="headerlink" href="#pyslurm.jobstep" title="Permalink to this definition">¶</a></dt>
+<dd><p>Class to access/modify Slurm Jobstep Information.</p>
+<dl class="method">
+<dt id="pyslurm.jobstep.find">
+<code class="descname">find</code><span class="sig-paren">(</span><em>self</em>, <em>jobID=-1</em>, <em>stepID=-1</em><span class="sig-paren">)</span><a class="headerlink" href="#pyslurm.jobstep.find" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyslurm.jobstep.get">
+<code class="descname">get</code><span class="sig-paren">(</span><em>self</em><span class="sig-paren">)</span><a class="headerlink" href="#pyslurm.jobstep.get" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get slurm jobstep information.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Data whose key is the jobstep ID.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><cite>dict</cite></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyslurm.jobstep.ids">
+<code class="descname">ids</code><span class="sig-paren">(</span><em>self</em><span class="sig-paren">)</span><a class="headerlink" href="#pyslurm.jobstep.ids" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyslurm.jobstep.lastUpdate">
+<code class="descname">lastUpdate</code><span class="sig-paren">(</span><em>self</em><span class="sig-paren">)</span><a class="headerlink" href="#pyslurm.jobstep.lastUpdate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the time (epoch seconds) the jobstep data was updated.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">epoch seconds</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><cite>integer</cite></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyslurm.jobstep.layout">
+<code class="descname">layout</code><span class="sig-paren">(</span><em>self</em>, <em>uint32_t JobID=0</em>, <em>uint32_t StepID=0</em><span class="sig-paren">)</span><a class="headerlink" href="#pyslurm.jobstep.layout" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the slurm job step layout from a given job and step id.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>JobID</strong> (<a class="reference external" href="https://docs.python.org/2/library/functions.html#int" title="(in Python v2.7)"><em>int</em></a>) – slurm job id (Default=0)</li>
+<li><strong>StepID</strong> (<a class="reference external" href="https://docs.python.org/2/library/functions.html#int" title="(in Python v2.7)"><em>int</em></a>) – slurm step id (Default=0)</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">List of job step layout.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><cite>list</cite></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="node-class">
+<h2>Node Class<a class="headerlink" href="#node-class" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="pyslurm.node">
+<em class="property">class </em><code class="descclassname">pyslurm.</code><code class="descname">node</code><a class="headerlink" href="#pyslurm.node" title="Permalink to this definition">¶</a></dt>
+<dd><p>Class to access/modify/update Slurm Node Information.</p>
+<dl class="method">
+<dt id="pyslurm.node.find_id">
+<code class="descname">find_id</code><span class="sig-paren">(</span><em>self</em>, <em>nodeID</em><span class="sig-paren">)</span><a class="headerlink" href="#pyslurm.node.find_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get node information for a given node.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>nodeID</strong> (<a class="reference external" href="https://docs.python.org/2/library/functions.html#str" title="(in Python v2.7)"><em>str</em></a>) – Node key string to search</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Dictionary of values for given node</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><cite>dict</cite></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyslurm.node.get">
+<code class="descname">get</code><span class="sig-paren">(</span><em>self</em><span class="sig-paren">)</span><a class="headerlink" href="#pyslurm.node.get" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get all slurm node information.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Dictionary of dictionaries whose key is the node name.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><cite>dict</cite></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyslurm.node.get_node">
+<code class="descname">get_node</code><span class="sig-paren">(</span><em>self</em>, <em>nodeID</em><span class="sig-paren">)</span><a class="headerlink" href="#pyslurm.node.get_node" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get single slurm node information.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>nodeID</strong> (<a class="reference external" href="https://docs.python.org/2/library/functions.html#str" title="(in Python v2.7)"><em>str</em></a>) – Node key string to search. Default NULL.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Dictionary of give node info data.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><cite>dict</cite></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyslurm.node.ids">
+<code class="descname">ids</code><span class="sig-paren">(</span><em>self</em><span class="sig-paren">)</span><a class="headerlink" href="#pyslurm.node.ids" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the node IDs from retrieved data.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Dictionary of node IDs</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><cite>dict</cite></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyslurm.node.lastUpdate">
+<code class="descname">lastUpdate</code><span class="sig-paren">(</span><em>self</em><span class="sig-paren">)</span><a class="headerlink" href="#pyslurm.node.lastUpdate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return last time (epoch seconds) the node data was updated.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">epoch seconds</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><cite>integer</cite></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyslurm.node.print_node_info_msg">
+<code class="descname">print_node_info_msg</code><span class="sig-paren">(</span><em>self</em>, <em>int oneLiner=False</em><span class="sig-paren">)</span><a class="headerlink" href="#pyslurm.node.print_node_info_msg" title="Permalink to this definition">¶</a></dt>
+<dd><p>Output information about all slurm nodes.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>oneLiner</strong> (<a class="reference external" href="https://docs.python.org/2/library/functions.html#int" title="(in Python v2.7)"><em>int</em></a>) – Print on one line - False (Default) or True</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyslurm.node.update">
+<code class="descname">update</code><span class="sig-paren">(</span><em>self</em>, <em>dict node_dict</em><span class="sig-paren">)</span><a class="headerlink" href="#pyslurm.node.update" title="Permalink to this definition">¶</a></dt>
+<dd><p>Update slurm node information.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>node_dict</strong> (<a class="reference external" href="https://docs.python.org/2/library/stdtypes.html#dict" title="(in Python v2.7)"><em>dict</em></a>) – A populated node dictionary, an empty one is
+created by create_node_dict</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">0 for success or -1 for error, and the slurm error code
+is set appropriately.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><cite>integer</cite></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="partition-class">
+<h2>Partition Class<a class="headerlink" href="#partition-class" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="pyslurm.partition">
+<em class="property">class </em><code class="descclassname">pyslurm.</code><code class="descname">partition</code><a class="headerlink" href="#pyslurm.partition" title="Permalink to this definition">¶</a></dt>
+<dd><p>Class to access/modify Slurm Partition Information.</p>
+<dl class="method">
+<dt id="pyslurm.partition.create">
+<code class="descname">create</code><span class="sig-paren">(</span><em>self</em>, <em>dict Partition_dict</em><span class="sig-paren">)</span><a class="headerlink" href="#pyslurm.partition.create" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a slurm partition.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>partition_dict</strong> (<a class="reference external" href="https://docs.python.org/2/library/stdtypes.html#dict" title="(in Python v2.7)"><em>dict</em></a>) – A populated partition dictionary,
+an empty one can be created by create_partition_dict</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">0 for success or -1 for error, and the slurm error
+code is set appropriately.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><cite>integer</cite></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyslurm.partition.delete">
+<code class="descname">delete</code><span class="sig-paren">(</span><em>self</em>, <em>PartID</em><span class="sig-paren">)</span><a class="headerlink" href="#pyslurm.partition.delete" title="Permalink to this definition">¶</a></dt>
+<dd><p>Delete a give slurm partition.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>PartID</strong> (<a class="reference external" href="https://docs.python.org/2/library/string.html#module-string" title="(in Python v2.7)"><em>string</em></a>) – Name of slurm partition</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">0 for success else set the slurm error code as appropriately.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><cite>integer</cite></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyslurm.partition.find">
+<code class="descname">find</code><span class="sig-paren">(</span><em>self</em>, <em>name=''</em>, <em>val=''</em><span class="sig-paren">)</span><a class="headerlink" href="#pyslurm.partition.find" title="Permalink to this definition">¶</a></dt>
+<dd><p>Search for a property and associated value in the retrieved partition data.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>name</strong> (<a class="reference external" href="https://docs.python.org/2/library/functions.html#str" title="(in Python v2.7)"><em>str</em></a>) – key string to search</li>
+<li><strong>value</strong> (<a class="reference external" href="https://docs.python.org/2/library/functions.html#str" title="(in Python v2.7)"><em>str</em></a>) – value string to match</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">List of IDs that match</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><cite>list</cite></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyslurm.partition.find_id">
+<code class="descname">find_id</code><span class="sig-paren">(</span><em>self</em>, <em>partID</em><span class="sig-paren">)</span><a class="headerlink" href="#pyslurm.partition.find_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get partition information for a given partition.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>partID</strong> (<a class="reference external" href="https://docs.python.org/2/library/functions.html#str" title="(in Python v2.7)"><em>str</em></a>) – Partition key string to search</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Dictionary of values for given partition</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><cite>dict</cite></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyslurm.partition.get">
+<code class="descname">get</code><span class="sig-paren">(</span><em>self</em><span class="sig-paren">)</span><a class="headerlink" href="#pyslurm.partition.get" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get all slurm partition information</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Dictionary of dictionaries whose key is the partition name.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><cite>dict</cite></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyslurm.partition.ids">
+<code class="descname">ids</code><span class="sig-paren">(</span><em>self</em><span class="sig-paren">)</span><a class="headerlink" href="#pyslurm.partition.ids" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the partition IDs from retrieved data.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Dictionary of partition IDs</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><cite>dict</cite></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyslurm.partition.lastUpdate">
+<code class="descname">lastUpdate</code><span class="sig-paren">(</span><em>self</em><span class="sig-paren">)</span><a class="headerlink" href="#pyslurm.partition.lastUpdate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return time (epoch seconds) the partition data was updated.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">epoch seconds</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><cite>integer</cite></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyslurm.partition.print_info_msg">
+<code class="descname">print_info_msg</code><span class="sig-paren">(</span><em>self</em>, <em>int oneLiner=0</em><span class="sig-paren">)</span><a class="headerlink" href="#pyslurm.partition.print_info_msg" title="Permalink to this definition">¶</a></dt>
+<dd><p>Display the partition information from previous load partition method.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>oneLiner</strong> (<a class="reference external" href="https://docs.python.org/2/library/functions.html#int" title="(in Python v2.7)"><em>int</em></a>) – Display on one line (default=0)</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyslurm.partition.update">
+<code class="descname">update</code><span class="sig-paren">(</span><em>self</em>, <em>dict Partition_dict</em><span class="sig-paren">)</span><a class="headerlink" href="#pyslurm.partition.update" title="Permalink to this definition">¶</a></dt>
+<dd><p>Update a slurm partition.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>partition_dict</strong> (<a class="reference external" href="https://docs.python.org/2/library/stdtypes.html#dict" title="(in Python v2.7)"><em>dict</em></a>) – A populated partition dictionary,
+an empty one is created by create_partition_dict</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">0 for success, -1 for error, and the slurm error code
+is set appropriately.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><cite>integer</cite></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="reservation-class">
+<h2>Reservation Class<a class="headerlink" href="#reservation-class" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="pyslurm.reservation">
+<em class="property">class </em><code class="descclassname">pyslurm.</code><code class="descname">reservation</code><a class="headerlink" href="#pyslurm.reservation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Class to access/update/delete slurm reservation Information.</p>
+<dl class="method">
+<dt id="pyslurm.reservation.create">
+<code class="descname">create</code><span class="sig-paren">(</span><em>self</em>, <em>dict reservation_dict={}</em><span class="sig-paren">)</span><a class="headerlink" href="#pyslurm.reservation.create" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create slurm reservation.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyslurm.reservation.delete">
+<code class="descname">delete</code><span class="sig-paren">(</span><em>self</em>, <em>ResID</em><span class="sig-paren">)</span><a class="headerlink" href="#pyslurm.reservation.delete" title="Permalink to this definition">¶</a></dt>
+<dd><p>Delete slurm reservation.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">0 for success or a slurm error code</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><cite>integer</cite></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyslurm.reservation.find">
+<code class="descname">find</code><span class="sig-paren">(</span><em>self</em>, <em>name=''</em>, <em>val=''</em><span class="sig-paren">)</span><a class="headerlink" href="#pyslurm.reservation.find" title="Permalink to this definition">¶</a></dt>
+<dd><p>Search for property and associated value in reservation data.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>name</strong> (<a class="reference external" href="https://docs.python.org/2/library/functions.html#str" title="(in Python v2.7)"><em>str</em></a>) – key string to search</li>
+<li><strong>value</strong> (<a class="reference external" href="https://docs.python.org/2/library/functions.html#str" title="(in Python v2.7)"><em>str</em></a>) – value string to match</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">List of IDs that match</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><cite>list</cite></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyslurm.reservation.find_id">
+<code class="descname">find_id</code><span class="sig-paren">(</span><em>self</em>, <em>resID</em><span class="sig-paren">)</span><a class="headerlink" href="#pyslurm.reservation.find_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieve reservation ID data.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>resID</strong> (<a class="reference external" href="https://docs.python.org/2/library/functions.html#str" title="(in Python v2.7)"><em>str</em></a>) – Reservation key string to search</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Dictionary of values for given reservation key</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><cite>dict</cite></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyslurm.reservation.get">
+<code class="descname">get</code><span class="sig-paren">(</span><em>self</em><span class="sig-paren">)</span><a class="headerlink" href="#pyslurm.reservation.get" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get slurm reservation information.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Data whose key is the Reservation ID</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><cite>dict</cite></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyslurm.reservation.ids">
+<code class="descname">ids</code><span class="sig-paren">(</span><em>self</em><span class="sig-paren">)</span><a class="headerlink" href="#pyslurm.reservation.ids" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a list of reservation IDs from retrieved data.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Dictionary of reservation IDs</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><cite>dict</cite></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyslurm.reservation.lastUpdate">
+<code class="descname">lastUpdate</code><span class="sig-paren">(</span><em>self</em><span class="sig-paren">)</span><a class="headerlink" href="#pyslurm.reservation.lastUpdate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the time (epoch seconds) the reservation data was updated.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">epoch seconds</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><cite>integer</cite></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyslurm.reservation.load">
+<code class="descname">load</code><span class="sig-paren">(</span><em>self</em><span class="sig-paren">)</span><a class="headerlink" href="#pyslurm.reservation.load" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyslurm.reservation.print_reservation_info_msg">
+<code class="descname">print_reservation_info_msg</code><span class="sig-paren">(</span><em>self</em>, <em>int oneLiner=0</em><span class="sig-paren">)</span><a class="headerlink" href="#pyslurm.reservation.print_reservation_info_msg" title="Permalink to this definition">¶</a></dt>
+<dd><p>Output information about all slurm reservations.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>Flags</strong> (<a class="reference external" href="https://docs.python.org/2/library/functions.html#int" title="(in Python v2.7)"><em>int</em></a>) – Print on one line - 0 (Default) or 1</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyslurm.reservation.update">
+<code class="descname">update</code><span class="sig-paren">(</span><em>self</em>, <em>dict reservation_dict={}</em><span class="sig-paren">)</span><a class="headerlink" href="#pyslurm.reservation.update" title="Permalink to this definition">¶</a></dt>
+<dd><p>Update a slurm reservation attributes.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">0 for success or -1 for error, and the slurm error code is set appropriately.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><cite>integer</cite></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="statistics-class">
+<h2>Statistics Class<a class="headerlink" href="#statistics-class" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="pyslurm.statistics">
+<em class="property">class </em><code class="descclassname">pyslurm.</code><code class="descname">statistics</code><a class="headerlink" href="#pyslurm.statistics" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="pyslurm.statistics.get">
+<code class="descname">get</code><span class="sig-paren">(</span><em>self</em><span class="sig-paren">)</span> &#x2192; dict<a class="headerlink" href="#pyslurm.statistics.get" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get slurm statistics information.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><cite>dict</cite></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyslurm.statistics.reset">
+<code class="descname">reset</code><span class="sig-paren">(</span><em>self</em><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#pyslurm.statistics.reset" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reset scheduling statistics</p>
+<p>This method required root privileges.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="topology-class">
+<h2>Topology Class<a class="headerlink" href="#topology-class" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="pyslurm.topology">
+<em class="property">class </em><code class="descclassname">pyslurm.</code><code class="descname">topology</code><a class="headerlink" href="#pyslurm.topology" title="Permalink to this definition">¶</a></dt>
+<dd><p>Class to access/update slurm topology information.</p>
+<dl class="method">
+<dt id="pyslurm.topology.display">
+<code class="descname">display</code><span class="sig-paren">(</span><em>self</em><span class="sig-paren">)</span><a class="headerlink" href="#pyslurm.topology.display" title="Permalink to this definition">¶</a></dt>
+<dd><p>Display topology information to standard output.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyslurm.topology.get">
+<code class="descname">get</code><span class="sig-paren">(</span><em>self</em><span class="sig-paren">)</span><a class="headerlink" href="#pyslurm.topology.get" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get slurm topology information.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Dictionary whose key is the Topology ID</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><cite>dict</cite></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyslurm.topology.lastUpdate">
+<code class="descname">lastUpdate</code><span class="sig-paren">(</span><em>self</em><span class="sig-paren">)</span><a class="headerlink" href="#pyslurm.topology.lastUpdate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the time (epoch seconds) the retrieved data was updated.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">epoch seconds</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><cite>integer</cite></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyslurm.topology.load">
+<code class="descname">load</code><span class="sig-paren">(</span><em>self</em><span class="sig-paren">)</span><a class="headerlink" href="#pyslurm.topology.load" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load slurm topology information.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="trigger-class">
+<h2>Trigger Class<a class="headerlink" href="#trigger-class" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="pyslurm.trigger">
+<em class="property">class </em><code class="descclassname">pyslurm.</code><code class="descname">trigger</code><a class="headerlink" href="#pyslurm.trigger" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="pyslurm.trigger.clear">
+<code class="descname">clear</code><span class="sig-paren">(</span><em>self</em>, <em>TriggerID=0</em>, <em>UserID=slurm.NO_VAL</em>, <em>ID=0</em><span class="sig-paren">)</span><a class="headerlink" href="#pyslurm.trigger.clear" title="Permalink to this definition">¶</a></dt>
+<dd><p>Clear or remove a slurm trigger.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>TriggerID</strong> (<a class="reference external" href="https://docs.python.org/2/library/string.html#module-string" title="(in Python v2.7)"><em>string</em></a>) – Trigger Identifier</li>
+<li><strong>UserID</strong> (<a class="reference external" href="https://docs.python.org/2/library/string.html#module-string" title="(in Python v2.7)"><em>string</em></a>) – User Identifier</li>
+<li><strong>ID</strong> (<a class="reference external" href="https://docs.python.org/2/library/string.html#module-string" title="(in Python v2.7)"><em>string</em></a>) – Job Identifier</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">0 for success or a slurm error code</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><cite>integer</cite></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyslurm.trigger.get">
+<code class="descname">get</code><span class="sig-paren">(</span><em>self</em><span class="sig-paren">)</span><a class="headerlink" href="#pyslurm.trigger.get" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the information on slurm triggers.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Where key is the trigger ID</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><cite>dict</cite></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyslurm.trigger.set">
+<code class="descname">set</code><span class="sig-paren">(</span><em>self</em>, <em>dict trigger_dict</em><span class="sig-paren">)</span><a class="headerlink" href="#pyslurm.trigger.set" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set or create a slurm trigger.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>trigger_dict</strong> (<a class="reference external" href="https://docs.python.org/2/library/stdtypes.html#dict" title="(in Python v2.7)"><em>dict</em></a>) – A populated dictionary of trigger information</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">0 for success or -1 for error, and the slurm error code is set appropriately.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><cite>integer</cite></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+<div class="section" id="indices-and-tables">
+<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></li>
+<li><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></li>
+<li><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></li>
+</ul>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="#">
+              <img class="logo" src="_static/pyslurm-docs.png" alt="Logo"/>
+            </a></p>
+  <h3><a href="#">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">PySlurm: Slurm Interface to python</a></li>
+<li><a class="reference internal" href="#contents">Contents</a><ul>
+<li><a class="reference internal" href="#block-class">Block Class</a></li>
+<li><a class="reference internal" href="#config-class">Config Class</a></li>
+<li><a class="reference internal" href="#frontend-class">FrontEnd Class</a></li>
+<li><a class="reference internal" href="#hostlist-class">HostList Class</a></li>
+<li><a class="reference internal" href="#job-class">Job Class</a></li>
+<li><a class="reference internal" href="#jobstep-class">JobStep Class</a></li>
+<li><a class="reference internal" href="#node-class">Node Class</a></li>
+<li><a class="reference internal" href="#partition-class">Partition Class</a></li>
+<li><a class="reference internal" href="#reservation-class">Reservation Class</a></li>
+<li><a class="reference internal" href="#statistics-class">Statistics Class</a></li>
+<li><a class="reference internal" href="#topology-class">Topology Class</a></li>
+<li><a class="reference internal" href="#trigger-class">Trigger Class</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#indices-and-tables">Indices and tables</a></li>
+</ul>
+
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/index.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="nav-item nav-item-0"><a href="#">PySlurm 15.08.0pre6 documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2015, PySlurm Developers.
+      Last updated on Sep 12, 2017.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.3.
+    </div>
+  </body>
+</html>
