@@ -1086,27 +1086,23 @@ Same as -D/--chdir from sbatch.</p></td>
                 <code><a class="autorefs autorefs-external" title="typing.Union" href="https://docs.python.org/3/library/typing.html#typing.Union">Union</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#dict">dict</a>, <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>]</code>
           </td>
           <td><p>CPU Frequency for the Job, same as --cpu-freq from sbatch.</p>
-<p>Examples:
-    Specifying it as a dict:</p>
+<p>For example, specifying it as a dict:</p>
 <div class="language-text highlight"><pre><span></span><code>cpu_frequency = {
     &quot;min&quot;: &quot;Low&quot;,
     &quot;max&quot;: &quot;High&quot;,
     &quot;governor&quot;: &quot;UserSpace&quot;
 }
-
-or like in sbatch with a string. For more info on that, check
-out the sbatch documentation for --cpu-freq.
-
-If you only want to set a Governor without any min or max, you
-can simply specify it as a standalone string:
-
-cpu_frequency = &quot;Performance&quot;
+</code></pre></div>
+<p>or like in sbatch with a string. For more info on that, check
+out the sbatch documentation for --cpu-freq.</p>
+<p>If you only want to set a Governor without any min or max, you
+can simply specify it as a standalone string:</p>
+<div class="language-text highlight"><pre><span></span><code>cpu_frequency = &quot;Performance&quot;
 or
 cpu_frequency = {&quot;governor&quot;: &quot;Performance&quot;}
-
-If you want to set a specific, fixed frequency, you can do:
-
-cpu_frequency = &lt;frequency in kilohertz&gt;
+</code></pre></div>
+<p>If you want to set a specific, fixed frequency, you can do:</p>
+<div class="language-text highlight"><pre><span></span><code>cpu_frequency = &lt;frequency in kilohertz&gt;
 or either
 cpu_frequency = {&quot;max&quot;: &lt;freq&gt;} or cpu_freq = {&quot;min&quot;: &lt;freq&gt;}
 </code></pre></div></td>
@@ -1118,22 +1114,18 @@ cpu_frequency = {&quot;max&quot;: &lt;freq&gt;} or cpu_freq = {&quot;min&quot;: 
           </td>
           <td><p>Amount of nodes needed for the job.
 This is the same as -N/--nodes from sbatch.</p>
-<p>Examples:
-    Providing min/max nodes as a dict:</p>
+<p>For example, providing min/max nodes as a dict:</p>
 <div class="language-text highlight"><pre><span></span><code>nodes = {
     &quot;min&quot;: 3,
     &quot;max&quot;: 6
 }
-
-When no range is needed, you can also simply specify it as
-int:
-
-nodes = 3
-
-Other than that, a range can also be specified in a str like
-with sbatch:
-
-nodes = &quot;1-5&quot;
+</code></pre></div>
+<p>When no range is needed, you can also simply specify it as int:</p>
+<div class="language-text highlight"><pre><span></span><code>nodes = 3
+</code></pre></div>
+<p>Other than that, a range can also be specified in a str like with
+sbatch:</p>
+<div class="language-text highlight"><pre><span></span><code>nodes = &quot;1-5&quot;
 </code></pre></div></td>
         </tr>
         <tr>
@@ -1233,10 +1225,11 @@ This is the same as --mcs-label from sbatch.</p></td>
 unit suffixes like K|M|G|T.
 This is the same as --mem-per-cpu from sbatch. This is mutually
 exclusive with memory_per_node and memory_per_gpu.</p>
-<p>Examples:
-    # 1 MiB
-    memory_per_cpu = 1024</p>
-<div class="language-text highlight"><pre><span></span><code># 3 GiB
+<p>Examples:</p>
+<div class="language-text highlight"><pre><span></span><code># 1 MiB
+memory_per_cpu = 1024
+
+# 3 GiB
 memory_per_cpu = &quot;3G&quot;
 </code></pre></div></td>
         </tr>
@@ -1250,10 +1243,11 @@ memory_per_cpu = &quot;3G&quot;
 unit suffixes like K|M|G|T.
 This is the same as --mem from sbatch. This is mutually exclusive
 with memory_per_cpu and memory_per_gpu.</p>
-<p>Examples:
-    # 1 MiB
-    memory_per_node = 1024</p>
-<div class="language-text highlight"><pre><span></span><code># 3 GiB
+<p>Examples:</p>
+<div class="language-text highlight"><pre><span></span><code># 1 MiB
+memory_per_node = 1024
+
+# 3 GiB
 memory_per_node = &quot;3G&quot;
 </code></pre></div></td>
         </tr>
@@ -1267,10 +1261,11 @@ memory_per_node = &quot;3G&quot;
 unit suffixes like K|M|G|T.
 This is the same as --mem-per-gpu from sbatch. This is mutually
 exclusive with memory_per_node and memory_per_cpu.</p>
-<p>Examples:
-    # 1 MiB
-    memory_per_gpu = 1024</p>
-<div class="language-text highlight"><pre><span></span><code># 3 GiB
+<p>Examples:</p>
+<div class="language-text highlight"><pre><span></span><code># 1 MiB
+memory_per_gpu = 1024
+
+# 3 GiB
 memory_per_gpu = &quot;3G&quot;
 </code></pre></div></td>
         </tr>
@@ -1295,11 +1290,13 @@ This is the same as --nice from sbatch.</p></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>Mode in which standard_output and standard_error log files should be opened. </p>
-<p>Valid options are:
-    * append
-    * truncate</p>
-<p>This is the same as --open-mode from sbatch.</p></td>
+          <td><p>Mode in which standard_output and standard_error log files should be opened. 
+This is the same as --open-mode from sbatch.</p>
+<p>Valid options are:</p>
+<ul>
+<li><code>append</code></li>
+<li><code>truncate</code></li>
+</ul></td>
         </tr>
         <tr>
           <td><code>overcommit</code></td>
@@ -1332,16 +1329,14 @@ This is the same as --power from sbatch.</p></td>
           </td>
           <td><p>Interval for accounting info to be gathered.
 This is the same as --acctg-freq from sbatch.</p>
-<p>Examples:
-    Specifying it as a dict:</p>
+<p>For example, specifying it as a dict:</p>
 <div class="language-text highlight"><pre><span></span><code>accounting_gather_frequency = {
-    energy=60,
-    network=20,
+    &quot;energy&quot;=60,
+    &quot;network&quot;=20,
 }
-
-or as a single string:
-
-accounting_gather_frequency = &quot;energy=60,network=20&quot;
+</code></pre></div>
+<p>or as a single string:</p>
+<div class="language-text highlight"><pre><span></span><code>accounting_gather_frequency = &quot;energy=60,network=20&quot;
 </code></pre></div></td>
         </tr>
         <tr>
@@ -1385,7 +1380,7 @@ This is the same as --reservation from sbatch.</p></td>
 <p>You can specify either a path to a script which will be loaded, or
 you can pass the script as a string.
 If the script is passed as a string, providing arguments to it
-(see "script_args") is not supported.</p></td>
+(see <code>script_args</code>) is not supported.</p></td>
         </tr>
         <tr>
           <td><code>script_args</code></td>
@@ -1394,7 +1389,7 @@ If the script is passed as a string, providing arguments to it
           </td>
           <td><p>Arguments passed to the batch script.
 You can only set arguments if a file path was specified for
-"script".</p></td>
+<code>script</code>.</p></td>
         </tr>
         <tr>
           <td><code>environment</code></td>
@@ -1409,28 +1404,28 @@ This is the same as --export from sbatch.</p></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>Controls the resource sharing with other Jobs.</p>
-<p>This property combines functionality of --oversubscribe and
+          <td><p>Controls the resource sharing with other Jobs.
+This property combines functionality of --oversubscribe and
 --exclusive from sbatch.</p>
 <p>Allowed values are are:</p>
 <ul>
 <li>
-<p>"oversubscribe" or "yes":
-    The Job allows resources to be shared with other running Jobs.</p>
+<p><code>oversubscribe</code> or <code>yes</code>:</p>
+<p>The Job allows resources to be shared with other running Jobs.</p>
 </li>
 <li>
-<p>"user" 
-    Only sharing resources with other Jobs that have the "user"
-    option set is allowed</p>
+<p><code>user</code>:</p>
+<p>Only sharing resources with other Jobs that have the "user"
+option set is allowed</p>
 </li>
 <li>
-<p>"mcs" 
-    Only sharing resources with other Jobs that have the "mcs"
-    option set is allowed.</p>
+<p><code>mcs</code>:</p>
+<p>Only sharing resources with other Jobs that have the "mcs"
+option set is allowed.</p>
 </li>
 <li>
-<p>"no" or "exclusive"
-    No sharing of resources is allowed. (--exclusive from sbatch)</p>
+<p><code>no</code> or <code>exclusive</code>:</p>
+<p>No sharing of resources is allowed. (--exclusive from sbatch)</p>
 </li>
 </ul></td>
         </tr>
@@ -1472,7 +1467,7 @@ This is the same as --container from sbatch.</p></td>
           </td>
           <td><p>The amount of cpus required for each task.</p>
 <p>This is the same as -c/--cpus-per-task from sbatch.
-This is mutually exclusive with cpus_per_gpu.</p></td>
+This is mutually exclusive with <code>cpus_per_gpu</code>.</p></td>
         </tr>
         <tr>
           <td><code>cpus_per_gpu</code></td>
@@ -1481,7 +1476,7 @@ This is mutually exclusive with cpus_per_gpu.</p></td>
           </td>
           <td><p>The amount of cpus required for each allocated GPU.</p>
 <p>This is the same as --cpus-per-gpu from sbatch.
-This is mutually exclusive with cpus_per_task.</p></td>
+This is mutually exclusive with <code>cpus_per_task</code>.</p></td>
         </tr>
         <tr>
           <td><code>sockets_per_node</code></td>
@@ -1512,23 +1507,20 @@ This is the same as --threads-per-core from sbatch.</p></td>
           <td>
                 <code><a class="autorefs autorefs-external" title="typing.Union" href="https://docs.python.org/3/library/typing.html#typing.Union">Union</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#dict">dict</a>, <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>, <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a>]</code>
           </td>
-          <td><p>GPUs for the Job to be allocated in total.</p>
-<p>This is the same as -G/--gpus from sbatch.
+          <td><p>GPUs for the Job to be allocated in total.
+This is the same as -G/--gpus from sbatch.
 Specifying the type of the GPU is optional. </p>
-<p>Examples:
-    Specifying the GPU counts as a dict:</p>
+<p>For example, specifying the GPU counts as a dict:</p>
 <div class="language-text highlight"><pre><span></span><code>gpus = {
     &quot;tesla&quot;: 1,
     &quot;volta&quot;: 5,
 }
-
-Or, for example, in string format:
-
-gpus = &quot;tesla:1,volta:5&quot;
-
-Or, if you don&#39;t care about the type of the GPU:
-
-gpus = 6
+</code></pre></div>
+<p>Or, for example, in string format:</p>
+<div class="language-text highlight"><pre><span></span><code>gpus = &quot;tesla:1,volta:5&quot;
+</code></pre></div>
+<p>Or, if you don't care about the type of the GPU:</p>
+<div class="language-text highlight"><pre><span></span><code>gpus = 6
 </code></pre></div></td>
         </tr>
         <tr>
@@ -1539,21 +1531,18 @@ gpus = 6
           <td><p>GPUs for the Job to be allocated per socket.</p>
 <p>This is the same as --gpus-per-socket from sbatch.</p>
 <p>Specifying the type of the GPU is optional. Note that setting
-gpus_per_socket requires to also specify sockets_per_node.</p>
-<p>Examples:
-    Specifying it as a dict:</p>
+<code>gpus_per_socket</code> requires to also specify sockets_per_node.</p>
+<p>For example, specifying it as a dict:</p>
 <div class="language-text highlight"><pre><span></span><code>gpus_per_socket = {
     &quot;tesla&quot;: 1,
     &quot;volta&quot;: 5,
 }
-
-Or, for example, in string format:
-
-gpus_per_socket = &quot;tesla:1,volta:5&quot;
-
-Or, if you don&#39;t care about the type of the GPU:
-
-gpus_per_socket = 6
+</code></pre></div>
+<p>Or, for example, in string format:</p>
+<div class="language-text highlight"><pre><span></span><code>gpus_per_socket = &quot;tesla:1,volta:5&quot;
+</code></pre></div>
+<p>Or, if you don't care about the type of the GPU:</p>
+<div class="language-text highlight"><pre><span></span><code>gpus_per_socket = 6
 </code></pre></div></td>
         </tr>
         <tr>
@@ -1564,22 +1553,19 @@ gpus_per_socket = 6
           <td><p>GPUs for the Job to be allocated per task.</p>
 <p>This is the same as --gpus-per-task from sbatch.</p>
 <p>Specifying the type of the GPU is optional. Note that setting
-"gpus_per_task" requires to also specify either one of "ntasks" or
-"gpus".</p>
-<p>Examples:
-    Specifying it as a dict:</p>
+<code>gpus_per_task</code> requires to also specify either one of <code>ntasks</code> or
+<code>gpus</code>.</p>
+<p>For example, specifying it as a dict:</p>
 <div class="language-text highlight"><pre><span></span><code>gpus_per_task = {
     &quot;tesla&quot;: 1,
     &quot;volta&quot;: 5,
 }
-
-Or, for example, in string format:
-
-gpus_per_task = &quot;tesla:1,volta:5&quot;
-
-Or, if you don&#39;t care about the type of the GPU:
-
-gpus_per_task = 6
+</code></pre></div>
+<p>Or, for example, in string format:</p>
+<div class="language-text highlight"><pre><span></span><code>gpus_per_task = &quot;tesla:1,volta:5&quot;
+</code></pre></div>
+<p>Or, if you don't care about the type of the GPU:</p>
+<div class="language-text highlight"><pre><span></span><code>gpus_per_task = 6
 </code></pre></div></td>
         </tr>
         <tr>
@@ -1592,20 +1578,17 @@ gpus_per_task = 6
 option if you want to specify GPUs per node (--gpus-per-node).
 Specifying the type (by seperating GRES name and type with a
 semicolon) is optional. </p>
-<p>Examples:
-    Specifying it as a dict:</p>
+<p>For example, specifying it as a dict:</p>
 <div class="language-text highlight"><pre><span></span><code>gres_per_node = {
     &quot;gpu:tesla&quot;: 1,
     &quot;gpu:volta&quot;: 5,
 }
-
-Or, for example, in string format:
-
-gres_per_node = &quot;gpu:tesla:1,gpu:volta:5&quot;
-
-GPU Gres without a specific type:
-
-gres_per_node = &quot;gpu:6&quot;
+</code></pre></div>
+<p>Or, for example, in string format:</p>
+<div class="language-text highlight"><pre><span></span><code>gres_per_node = &quot;gpu:tesla:1,gpu:volta:5&quot;
+</code></pre></div>
+<p>GPU Gres without a specific type:</p>
+<div class="language-text highlight"><pre><span></span><code>gres_per_node = &quot;gpu:6&quot;
 </code></pre></div></td>
         </tr>
         <tr>
@@ -1665,13 +1648,11 @@ This is the same as --ntasks-per-socket from sbatch.</p></td>
 <p>This can also optionally include a maximum waiting time for these
 switches.
 This is the same as --switches from sbatch.</p>
-<p>Examples: 
-    Specifying it as a dict:</p>
+<p>For example, specifying it as a dict:</p>
 <div class="language-text highlight"><pre><span></span><code>switches = { &quot;count&quot;: 5, &quot;max_wait_time&quot;: &quot;00:10:00&quot; }
-
-Or as a single string (sbatch-style):
-
-switches = &quot;5@00:10:00&quot;
+</code></pre></div>
+<p>Or as a single string (sbatch-style):</p>
+<div class="language-text highlight"><pre><span></span><code>switches = &quot;5@00:10:00&quot;
 </code></pre></div></td>
         </tr>
         <tr>
@@ -1683,19 +1664,16 @@ switches = &quot;5@00:10:00&quot;
 <p>This is the same as --signal from sbatch.
 The signal can both be specified with its name, e.g. "SIGKILL", or
 as a number, e.g. 9</p>
-<p>Examples:
-    Specifying it as a dict:</p>
+<p>For example, specifying it as a dict:</p>
 <div class="language-text highlight"><pre><span></span><code>signal = {
     &quot;signal&quot;: &quot;SIGKILL&quot;,
     &quot;time&quot;: 120
 }
-
-The above will send a &quot;SIGKILL&quot; signal 120 seconds before the
-Jobs&#39; time limit is reached.
-
-Or, specifying it as a string (sbatch-style):
-
-signal = &quot;SIGKILL@120&quot;
+</code></pre></div>
+<p>The above will send a "SIGKILL" signal 120 seconds before the
+Jobs' time limit is reached.</p>
+<p>Or, specifying it as a string (sbatch-style):</p>
+<div class="language-text highlight"><pre><span></span><code>signal = &quot;SIGKILL@120&quot;
 </code></pre></div></td>
         </tr>
         <tr>
@@ -1753,9 +1731,11 @@ This is the same as --use-min-nodes from sbatch.</p></td>
           </td>
           <td><p>Generic resource task binding options.
 This is the --gres-flags option from sbatch.</p>
-<p>Possible values are:
-    * "enforce-binding"
-    * "disable-binding"</p></td>
+<p>Possible values are:</p>
+<ul>
+<li><code>enforce-binding</code></li>
+<li><code>disable-binding</code></li>
+</ul></td>
         </tr>
         <tr>
           <td><code>temporary_disk_per_node</code></td>
@@ -1766,10 +1746,11 @@ This is the --gres-flags option from sbatch.</p>
 <p>This is the same as --tmp from sbatch. You can specify units like
 K|M|G|T (multiples of 1024).
 If no unit is specified, the value will be assumed as Mebibytes.</p>
-<p>Examples:
-    # 2048 MiB
-    tmp_disk_per_node = "2G"</p>
-<div class="language-text highlight"><pre><span></span><code># 1024 MiB
+<p>Examples:</p>
+<div class="language-text highlight"><pre><span></span><code># 2048 MiB
+tmp_disk_per_node = &quot;2G&quot;
+
+# 1024 MiB
 tmp_disk_per_node = 1024
 </code></pre></div></td>
         </tr>
@@ -1835,9 +1816,9 @@ ready. (i.e booted)</p></td>
       <p>Load values of attributes provided through the environment.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Instead of <code>SBATCH_</code>, pyslurm uses <code>PYSLURM_JOBDESC_</code> as a prefix to
-identify environment variables which should be used to set
-attributes. </p>
+<p>Instead of <code>SBATCH_</code>, pyslurm uses <code>PYSLURM_JOBDESC_</code> as a prefix
+to identify environment variables which should be used to set
+attributes.</p>
 </div>
 
   <p><strong>Parameters:</strong></p>
@@ -1867,18 +1848,22 @@ in this instance. Default is False</p></td>
   </table>
 
 <p><strong>Examples:</strong></p>
-    <p>Lets consider you want to set the name of the Job and its
-Account name. Therefore, you will need to have set these two
-environment variables:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">export</span><span class="w"> </span><span class="nv">PYSLURM_JOBDESC_ACCOUNT</span><span class="o">=</span><span class="s2">&quot;myaccount&quot;</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nb">export</span><span class="w"> </span><span class="nv">PYSLURM_JOBDESC_NAME</span><span class="o">=</span><span class="s2">&quot;myjobname&quot;</span>
+    <p>Lets consider you want to set the name of the Job, its Account
+name and that the Job cannot be requeued.
+Therefore, you will need to have set these environment variables:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1"># Format is: PYSLURM_JOBDESC_{ATTRIBUTE_NAME}</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nb">export</span><span class="w"> </span><span class="nv">PYSLURM_JOBDESC_ACCOUNT</span><span class="o">=</span><span class="s2">&quot;myaccount&quot;</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="nb">export</span><span class="w"> </span><span class="nv">PYSLURM_JOBDESC_NAME</span><span class="o">=</span><span class="s2">&quot;myjobname&quot;</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="nb">export</span><span class="w"> </span><span class="nv">PYSLURM_JOBDESC_IS_REQUEUEABLE</span><span class="o">=</span><span class="s2">&quot;False&quot;</span>
 </span></code></pre></div>
-<p>In python, you can do this now:</p>
+<p>As you can see above, boolean values should be the literal strings
+"False" or "True".
+In python, you can do this now:</p>
     <div class="highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">pyslurm</span>
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="gp">&gt;&gt;&gt; </span><span class="n">desc</span> <span class="o">=</span> <span class="n">pyslurm</span><span class="o">.</span><span class="n">JobSubmitDescription</span><span class="p">(</span><span class="o">...</span><span class="n">other</span> <span class="n">args</span><span class="o">...</span><span class="p">)</span>
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="gp">&gt;&gt;&gt; </span><span class="n">desc</span><span class="o">.</span><span class="n">load_environment</span><span class="p">()</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">desc</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="n">desc</span><span class="o">.</span><span class="n">account</span><span class="p">)</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="go">myjobname, myaccount</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">desc</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="n">desc</span><span class="o">.</span><span class="n">account</span><span class="p">,</span> <span class="n">desc</span><span class="o">.</span><span class="n">is_requeueable</span><span class="p">)</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="go">myjobname, myaccount, False</span>
 </span></code></pre></div>
 
   </div>
@@ -2040,7 +2025,7 @@ in this instance. Default is False</p></td>
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      Copyright &copy; 2023 The PySlurm Authors
+      Copyright &copy; 2023 PySlurm Developers
     </div>
   
   
