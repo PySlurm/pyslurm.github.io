@@ -11,11 +11,11 @@
         <link rel="canonical" href="https://pyslurm.github.io/23.2/reference/old/db/job/">
       
       
-        <link rel="prev" href="../../node/">
+        <link rel="prev" href="../../partition/">
       
       
       <link rel="icon" href="../../../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.15">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.0.15">
     
     
       
@@ -391,6 +391,10 @@
         
           
         
+          
+        
+          
+        
       
       
         
@@ -421,6 +425,20 @@
     <li class="md-nav__item">
       <a href="../../../config/" class="md-nav__link">
         Config
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../constants/" class="md-nav__link">
+        constants
       </a>
     </li>
   
@@ -602,7 +620,21 @@
   
     <li class="md-nav__item">
       <a href="../../../utilities/" class="md-nav__link">
-        Utilities
+        utils
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../xcollections/" class="md-nav__link">
+        xcollections
       </a>
     </li>
   
@@ -622,7 +654,7 @@
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_16" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_18" >
       
       
         
@@ -653,14 +685,14 @@
         <div class="md-nav__link md-nav__link--index ">
           <a href="../../../db/">Database</a>
           
-            <label for="__nav_2_16">
+            <label for="__nav_2_18">
               <span class="md-nav__icon md-icon"></span>
             </label>
           
         </div>
       
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_16_label" aria-expanded="false">
-        <label class="md-nav__title" for="__nav_2_16">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_18_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2_18">
           <span class="md-nav__icon md-icon"></span>
           Database
         </label>
@@ -730,8 +762,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../db/jobsearchfilter/" class="md-nav__link">
-        JobSearchFilter
+      <a href="../../../db/jobfilter/" class="md-nav__link">
+        JobFilter
       </a>
     </li>
   
@@ -912,7 +944,7 @@ be removed in a future release</p>
   
       <p>Get Slurmdb information about some jobs.</p>
 
-<details class="input-formats-for-start-and-end-times">
+<details class="input-formats-for-start-and-end-times" open>
   <summary>Input formats for start and end times</summary>
   <ul>
 <li>today or tomorrow</li>
@@ -942,7 +974,11 @@ zero.</p>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#list">list</a></code>
           </td>
-          <td><p>Ids of the jobs to search. Defaults to all jobs.</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Ids of the jobs to search. Defaults to all jobs.</p>
+            </div>
+          </td>
           <td>
                 <code>[]</code>
           </td>
@@ -952,8 +988,12 @@ zero.</p>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
           </td>
-          <td><p>Select jobs eligible after this
-timestamp</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Select jobs eligible after this
+timestamp</p>
+            </div>
+          </td>
           <td>
                 <code>0</code>
           </td>
@@ -963,8 +1003,12 @@ timestamp</p></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
           </td>
-          <td><p>Select jobs eligible before this
-timestamp</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Select jobs eligible before this
+timestamp</p>
+            </div>
+          </td>
           <td>
                 <code>0</code>
           </td>
@@ -974,7 +1018,11 @@ timestamp</p></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#list">list</a></code>
           </td>
-          <td><p>List of userids</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>List of userids</p>
+            </div>
+          </td>
           <td>
                 <code>[]</code>
           </td>
@@ -984,7 +1032,11 @@ timestamp</p></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
           </td>
-          <td><p>Flags</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Flags</p>
+            </div>
+          </td>
           <td>
                 <code>None</code>
           </td>
@@ -994,7 +1046,11 @@ timestamp</p></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
           </td>
-          <td><p>DB Flags</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>DB Flags</p>
+            </div>
+          </td>
           <td>
                 <code>None</code>
           </td>
@@ -1004,7 +1060,11 @@ timestamp</p></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#list">list</a></code>
           </td>
-          <td><p>List of clusters</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>List of clusters</p>
+            </div>
+          </td>
           <td>
                 <code>[]</code>
           </td>
@@ -1025,7 +1085,11 @@ timestamp</p></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#dict">dict</a></code>
           </td>
-          <td><p>Dictionary whose key is the JOBS ID</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Dictionary whose key is the JOBS ID</p>
+            </div>
+          </td>
         </tr>
     </tbody>
   </table>

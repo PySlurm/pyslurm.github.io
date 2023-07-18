@@ -17,7 +17,7 @@
         <link rel="next" href="../reservation/">
       
       <link rel="icon" href="../../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.15">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.0.15">
     
     
       
@@ -397,6 +397,10 @@
         
           
         
+          
+        
+          
+        
       
       
         
@@ -427,6 +431,20 @@
     <li class="md-nav__item">
       <a href="../../config/" class="md-nav__link">
         Config
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../constants/" class="md-nav__link">
+        constants
       </a>
     </li>
   
@@ -608,7 +626,21 @@
   
     <li class="md-nav__item">
       <a href="../../utilities/" class="md-nav__link">
-        Utilities
+        utils
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../xcollections/" class="md-nav__link">
+        xcollections
       </a>
     </li>
   
@@ -630,7 +662,7 @@
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_16" checked>
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_18" checked>
       
       
         
@@ -661,14 +693,14 @@
         <div class="md-nav__link md-nav__link--index ">
           <a href="../">Database</a>
           
-            <label for="__nav_2_16">
+            <label for="__nav_2_18">
               <span class="md-nav__icon md-icon"></span>
             </label>
           
         </div>
       
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_16_label" aria-expanded="true">
-        <label class="md-nav__title" for="__nav_2_16">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_18_label" aria-expanded="true">
+        <label class="md-nav__title" for="__nav_2_18">
           <span class="md-nav__icon md-icon"></span>
           Database
         </label>
@@ -738,8 +770,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../jobsearchfilter/" class="md-nav__link">
-        JobSearchFilter
+      <a href="../jobfilter/" class="md-nav__link">
+        JobFilter
       </a>
     </li>
   
@@ -799,6 +831,19 @@
   <a href="#pyslurm.db.JobStep" class="md-nav__link">
     JobStep
   </a>
+  
+    <nav class="md-nav" aria-label="JobStep">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pyslurm.db.step.JobStep.to_dict" class="md-nav__link">
+    to_dict()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -874,6 +919,19 @@
     JobStep
   </a>
   
+    <nav class="md-nav" aria-label="JobStep">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pyslurm.db.step.JobStep.to_dict" class="md-nav__link">
+    to_dict()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -934,147 +992,231 @@
           <td>
                 <code><a class="autorefs autorefs-internal" title="pyslurm.pyslurm.pyslurm" href="../../#pyslurm">pyslurm</a>.<span title="pyslurm.pyslurm.pyslurm.db">db</span>.<a class="autorefs autorefs-internal" title="pyslurm.db.JobStatistics" href="../jobstats/#pyslurm.db.JobStatistics">JobStatistics</a></code>
           </td>
-          <td><p>Utilization statistics for this Step</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Utilization statistics for this Step</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>num_nodes</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
           </td>
-          <td><p>Amount of nodes this Step has allocated</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Amount of nodes this Step has allocated</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>cpus</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
           </td>
-          <td><p>Amount of CPUs the Step has/had allocated</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Amount of CPUs the Step has/had allocated</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>memory</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
           </td>
-          <td><p>Amount of memory the Step requested</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Amount of memory the Step requested</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>container</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>Path to OCI Container bundle</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Path to OCI Container bundle</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>elapsed_time</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
           </td>
-          <td><p>Amount of seconds elapsed for the Step</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Amount of seconds elapsed for the Step</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>end_time</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
           </td>
-          <td><p>When the Step ended, as a unix timestamp</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>When the Step ended, as a unix timestamp</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>eligible_time</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
           </td>
-          <td><p>When the Step became eligible to run, as a unix timestamp</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>When the Step became eligible to run, as a unix timestamp</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>start_time</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
           </td>
-          <td><p>Time when the Step started, as a unix timestamp</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Time when the Step started, as a unix timestamp</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>exit_code</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
           </td>
-          <td><p>Exit code of the step</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Exit code of the step</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>ntasks</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
           </td>
-          <td><p>Number of tasks the Step uses</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Number of tasks the Step uses</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>cpu_frequency_min</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>Minimum CPU-Frequency requested for the Step</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Minimum CPU-Frequency requested for the Step</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>cpu_frequency_max</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>Maximum CPU-Frequency requested for the Step</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Maximum CPU-Frequency requested for the Step</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>cpu_frequency_governor</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>CPU-Frequency Governor requested for the Step</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>CPU-Frequency Governor requested for the Step</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>nodelist</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>Nodes this Step is using</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Nodes this Step is using</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>id</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" title="typing.Union" href="https://docs.python.org/3/library/typing.html#typing.Union">Union</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>, <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a>]</code>
           </td>
-          <td><p>ID of the Step</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>ID of the Step</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>job_id</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
           </td>
-          <td><p>ID of the Job this Step is a part of</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>ID of the Job this Step is a part of</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>state</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>State of the Step</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>State of the Step</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>cancelled_by</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>Name of the User who cancelled this Step</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Name of the User who cancelled this Step</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>submit_command</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>Full command issued to start the Step</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Full command issued to start the Step</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>suspended_time</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
           </td>
-          <td><p>Amount of seconds the Step was suspended</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Amount of seconds the Step was suspended</p>
+            </div>
+          </td>
         </tr>
     </tbody>
   </table>
@@ -1092,6 +1234,50 @@
 
 
 
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="pyslurm.db.step.JobStep.to_dict" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">to_dict</span><span class="p">()</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-method descriptor"><code>method descriptor</code></small>
+  </span>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Convert Database JobStep information to a dictionary.</p>
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#dict">dict</a></code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Database JobStep information as dict</p>
+            </div>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  </div>
+
+</div>
 
 
 
@@ -1117,7 +1303,7 @@
         Bases: <code>dict</code></p>
 
   
-      <p>A collection of <a class="autorefs autorefs-internal" href="#pyslurm.db.JobStep">pyslurm.db.JobStep</a> objects</p>
+      <p>A <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#dict">dict</a> of <a class="autorefs autorefs-internal" href="#pyslurm.db.JobStep">pyslurm.db.JobStep</a> objects</p>
 
 
 

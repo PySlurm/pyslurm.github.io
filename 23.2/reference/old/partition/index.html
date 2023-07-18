@@ -8,27 +8,27 @@
       
       
       
-        <link rel="canonical" href="https://pyslurm.github.io/23.2/reference/statistics/">
+        <link rel="canonical" href="https://pyslurm.github.io/23.2/reference/old/partition/">
       
       
-        <link rel="prev" href="../reservation/">
+        <link rel="prev" href="../node/">
       
       
-        <link rel="next" href="../topology/">
+        <link rel="next" href="../db/job/">
       
-      <link rel="icon" href="../../assets/images/favicon.png">
+      <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.0.15">
     
     
       
-        <title>Statistics - pyslurm</title>
+        <title>Partition - pyslurm</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.113286f1.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.113286f1.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.a0c5b2b5.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.a0c5b2b5.min.css">
       
       
 
@@ -44,11 +44,11 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/_mkdocstrings.css">
+      <link rel="stylesheet" href="../../../assets/_mkdocstrings.css">
     
-      <link rel="stylesheet" href="../../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -77,7 +77,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#pyslurm.statistics" class="md-skip">
+        <a href="#pyslurm.partition" class="md-skip">
           Skip to content
         </a>
       
@@ -95,9 +95,9 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="pyslurm" class="md-header__button md-logo" aria-label="pyslurm" data-md-component="logo">
+    <a href="../../.." title="pyslurm" class="md-header__button md-logo" aria-label="pyslurm" data-md-component="logo">
       
-  <img src="../../logo.png" alt="logo">
+  <img src="../../../logo.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -113,7 +113,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Statistics
+              Partition
             
           </span>
         </div>
@@ -211,7 +211,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../.." class="md-tabs__link">
+      <a href="../../.." class="md-tabs__link">
         Home
       </a>
     </li>
@@ -221,15 +221,13 @@
         
   
   
-    
-  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../" class="md-tabs__link md-tabs__link--active">
+      <a href="../../" class="md-tabs__link">
         API Reference
       </a>
     </li>
@@ -257,9 +255,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="pyslurm" class="md-nav__button md-logo" aria-label="pyslurm" data-md-component="logo">
+    <a href="../../.." title="pyslurm" class="md-nav__button md-logo" aria-label="pyslurm" data-md-component="logo">
       
-  <img src="../../logo.png" alt="logo">
+  <img src="../../../logo.png" alt="logo">
 
     </a>
     pyslurm
@@ -307,7 +305,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../..">Home</a>
+          <a href="../../..">Home</a>
           
             <label for="__nav_1">
               <span class="md-nav__icon md-icon"></span>
@@ -330,7 +328,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../changelog/" class="md-nav__link">
+      <a href="../../../changelog/" class="md-nav__link">
         Changelog
       </a>
     </li>
@@ -350,16 +348,14 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
       
       
         
@@ -406,7 +402,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../">API Reference</a>
+          <a href="../../">API Reference</a>
           
             <label for="__nav_2">
               <span class="md-nav__icon md-icon"></span>
@@ -414,7 +410,7 @@
           
         </div>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_2">
           <span class="md-nav__icon md-icon"></span>
           API Reference
@@ -429,7 +425,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../config/" class="md-nav__link">
+      <a href="../../config/" class="md-nav__link">
         Config
       </a>
     </li>
@@ -443,7 +439,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../constants/" class="md-nav__link">
+      <a href="../../constants/" class="md-nav__link">
         constants
       </a>
     </li>
@@ -457,7 +453,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../exceptions/" class="md-nav__link">
+      <a href="../../exceptions/" class="md-nav__link">
         Exceptions
       </a>
     </li>
@@ -471,7 +467,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../frontend/" class="md-nav__link">
+      <a href="../../frontend/" class="md-nav__link">
         Frontend
       </a>
     </li>
@@ -485,7 +481,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../hostlist/" class="md-nav__link">
+      <a href="../../hostlist/" class="md-nav__link">
         Hostlist
       </a>
     </li>
@@ -499,7 +495,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../job/" class="md-nav__link">
+      <a href="../../job/" class="md-nav__link">
         Job
       </a>
     </li>
@@ -513,7 +509,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../jobstep/" class="md-nav__link">
+      <a href="../../jobstep/" class="md-nav__link">
         JobStep
       </a>
     </li>
@@ -527,7 +523,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../jobsubmitdescription/" class="md-nav__link">
+      <a href="../../jobsubmitdescription/" class="md-nav__link">
         JobSubmitDescription
       </a>
     </li>
@@ -541,7 +537,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../node/" class="md-nav__link">
+      <a href="../../node/" class="md-nav__link">
         Node
       </a>
     </li>
@@ -555,7 +551,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../partition/" class="md-nav__link">
+      <a href="../../partition/" class="md-nav__link">
         Partition
       </a>
     </li>
@@ -569,7 +565,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../reservation/" class="md-nav__link">
+      <a href="../../reservation/" class="md-nav__link">
         Reservation
       </a>
     </li>
@@ -581,68 +577,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Statistics
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../statistics/" class="md-nav__link">
         Statistics
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#pyslurm.statistics" class="md-nav__link">
-    statistics
-  </a>
-  
-    <nav class="md-nav" aria-label="statistics">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#pyslurm.pyslurm.statistics.get" class="md-nav__link">
-    get()
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pyslurm.pyslurm.statistics.reset" class="md-nav__link">
-    reset()
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -654,7 +593,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../topology/" class="md-nav__link">
+      <a href="../../topology/" class="md-nav__link">
         Topology
       </a>
     </li>
@@ -668,7 +607,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../trigger/" class="md-nav__link">
+      <a href="../../trigger/" class="md-nav__link">
         Trigger
       </a>
     </li>
@@ -682,7 +621,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../utilities/" class="md-nav__link">
+      <a href="../../utilities/" class="md-nav__link">
         utils
       </a>
     </li>
@@ -696,7 +635,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../xcollections/" class="md-nav__link">
+      <a href="../../xcollections/" class="md-nav__link">
         xcollections
       </a>
     </li>
@@ -746,7 +685,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../db/">Database</a>
+          <a href="../../db/">Database</a>
           
             <label for="__nav_2_18">
               <span class="md-nav__icon md-icon"></span>
@@ -769,7 +708,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../db/cluster/" class="md-nav__link">
+      <a href="../../db/cluster/" class="md-nav__link">
         Cluster
       </a>
     </li>
@@ -783,7 +722,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../db/connection/" class="md-nav__link">
+      <a href="../../db/connection/" class="md-nav__link">
         Connection
       </a>
     </li>
@@ -797,7 +736,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../db/event/" class="md-nav__link">
+      <a href="../../db/event/" class="md-nav__link">
         Event
       </a>
     </li>
@@ -811,7 +750,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../db/job/" class="md-nav__link">
+      <a href="../../db/job/" class="md-nav__link">
         Job
       </a>
     </li>
@@ -825,7 +764,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../db/jobfilter/" class="md-nav__link">
+      <a href="../../db/jobfilter/" class="md-nav__link">
         JobFilter
       </a>
     </li>
@@ -839,7 +778,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../db/jobstats/" class="md-nav__link">
+      <a href="../../db/jobstats/" class="md-nav__link">
         JobStatistics
       </a>
     </li>
@@ -853,7 +792,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../db/jobstep/" class="md-nav__link">
+      <a href="../../db/jobstep/" class="md-nav__link">
         JobStep
       </a>
     </li>
@@ -867,7 +806,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../db/reservation/" class="md-nav__link">
+      <a href="../../db/reservation/" class="md-nav__link">
         Reservation
       </a>
     </li>
@@ -913,23 +852,72 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#pyslurm.statistics" class="md-nav__link">
-    statistics
+  <a href="#pyslurm.partition" class="md-nav__link">
+    partition
   </a>
   
-    <nav class="md-nav" aria-label="statistics">
+    <nav class="md-nav" aria-label="partition">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#pyslurm.pyslurm.statistics.get" class="md-nav__link">
+  <a href="#pyslurm.pyslurm.partition.create" class="md-nav__link">
+    create()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyslurm.pyslurm.partition.delete" class="md-nav__link">
+    delete()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyslurm.pyslurm.partition.find" class="md-nav__link">
+    find()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyslurm.pyslurm.partition.find_id" class="md-nav__link">
+    find_id()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyslurm.pyslurm.partition.get" class="md-nav__link">
     get()
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#pyslurm.pyslurm.statistics.reset" class="md-nav__link">
-    reset()
+  <a href="#pyslurm.pyslurm.partition.ids" class="md-nav__link">
+    ids()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyslurm.pyslurm.partition.lastUpdate" class="md-nav__link">
+    lastUpdate()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyslurm.pyslurm.partition.print_info_msg" class="md-nav__link">
+    print_info_msg()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyslurm.pyslurm.partition.update" class="md-nav__link">
+    update()
   </a>
   
 </li>
@@ -957,12 +945,12 @@
   
 
 
-  <h1>Statistics</h1>
+  <h1>Partition</h1>
 
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>This API is currently being completely reworked, and is subject to be
-removed in the future when a replacement is introduced</p>
+<p>This class is superseded by <a href="../../partition/">pyslurm.Partition</a> and will
+be removed in a future release.</p>
 </div>
 
 
@@ -970,8 +958,8 @@ removed in the future when a replacement is introduced</p>
 
 
 
-<h2 id="pyslurm.statistics" class="doc doc-heading">
-        <code>pyslurm.statistics</code>
+<h2 id="pyslurm.partition" class="doc doc-heading">
+        <code>pyslurm.partition</code>
 
 
 </h2>
@@ -980,7 +968,7 @@ removed in the future when a replacement is introduced</p>
   <div class="doc doc-contents first">
 
   
-      <p>Slurm Controller statistics.</p>
+      <p>Slurm Partition Information.</p>
 
 
 
@@ -1000,8 +988,8 @@ removed in the future when a replacement is introduced</p>
 
 
 
-<h3 id="pyslurm.pyslurm.statistics.get" class="doc doc-heading">
-<code class="highlight language-python"><span class="n">get</span><span class="p">()</span></code>
+<h3 id="pyslurm.pyslurm.partition.create" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">create</span><span class="p">(</span><span class="n">Partition_dict</span><span class="p">)</span></code>
   
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-method descriptor"><code>method descriptor</code></small>
@@ -1012,7 +1000,268 @@ removed in the future when a replacement is introduced</p>
 
   <div class="doc doc-contents ">
   
-      <p>Get slurm statistics information.</p>
+      <p>Create a slurm partition.</p>
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>Partition_dict</code></td>
+          <td>
+                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#dict">dict</a></code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>A populated partition dictionary, an empty
+one can be created by create_partition_dict</p>
+            </div>
+          </td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>0 for success or -1 for error, and the slurm error code is
+set appropriately.</p>
+            </div>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="pyslurm.pyslurm.partition.delete" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">delete</span><span class="p">(</span><span class="n">PartID</span><span class="p">)</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-method descriptor"><code>method descriptor</code></small>
+  </span>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Delete a give slurm partition.</p>
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>PartID</code></td>
+          <td>
+                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Name of slurm partition</p>
+            </div>
+          </td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>0 for success else set the slurm error code as
+appropriately.</p>
+            </div>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="pyslurm.pyslurm.partition.find" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">find</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">val</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-method descriptor"><code>method descriptor</code></small>
+  </span>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Search for a property and associated value in the retrieved partition data.</p>
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>name</code></td>
+          <td>
+                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>key string to search</p>
+            </div>
+          </td>
+          <td>
+                <code>&#39;&#39;</code>
+          </td>
+        </tr>
+        <tr>
+          <td><code>val</code></td>
+          <td>
+                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>value string to match</p>
+            </div>
+          </td>
+          <td>
+                <code>&#39;&#39;</code>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#list">list</a></code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>List of IDs that match</p>
+            </div>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="pyslurm.pyslurm.partition.find_id" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">find_id</span><span class="p">(</span><span class="n">partID</span><span class="p">)</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-method descriptor"><code>method descriptor</code></small>
+  </span>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Get partition information for a given partition.</p>
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>partID</code></td>
+          <td>
+                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Partition key string to search</p>
+            </div>
+          </td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
 
   <p><strong>Returns:</strong></p>
   <table>
@@ -1029,7 +1278,7 @@ removed in the future when a replacement is introduced</p>
           </td>
           <td>
             <div class="doc-md-description">
-              <p>Slurm Controller statistics</p>
+              <p>Dictionary of values for given partition</p>
             </div>
           </td>
         </tr>
@@ -1044,8 +1293,8 @@ removed in the future when a replacement is introduced</p>
 
 
 
-<h3 id="pyslurm.pyslurm.statistics.reset" class="doc doc-heading">
-<code class="highlight language-python"><span class="n">reset</span><span class="p">()</span></code>
+<h3 id="pyslurm.pyslurm.partition.get" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">get</span><span class="p">()</span></code>
   
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-method descriptor"><code>method descriptor</code></small>
@@ -1056,8 +1305,241 @@ removed in the future when a replacement is introduced</p>
 
   <div class="doc doc-contents ">
   
-      <p>Reset scheduling statistics</p>
-<p>This method requires root privileges.</p>
+      <p>Get all slurm partition information</p>
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#dict">dict</a></code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Dictionary of dictionaries whose key is the partition name.</p>
+            </div>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="pyslurm.pyslurm.partition.ids" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">ids</span><span class="p">()</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-method descriptor"><code>method descriptor</code></small>
+  </span>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Return the partition IDs from retrieved data.</p>
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#dict">dict</a></code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Dictionary of partition IDs</p>
+            </div>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="pyslurm.pyslurm.partition.lastUpdate" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">lastUpdate</span><span class="p">()</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-method descriptor"><code>method descriptor</code></small>
+  </span>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Return time (epoch seconds) the partition data was updated.</p>
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Epoch seconds</p>
+            </div>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="pyslurm.pyslurm.partition.print_info_msg" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">print_info_msg</span><span class="p">(</span><span class="n">oneLiner</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-method descriptor"><code>method descriptor</code></small>
+  </span>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Display partition information from previous load partition method.</p>
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>oneLiner</code></td>
+          <td>
+                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Display on one line.</p>
+            </div>
+          </td>
+          <td>
+                <code>0</code>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="pyslurm.pyslurm.partition.update" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">update</span><span class="p">(</span><span class="n">Partition_dict</span><span class="p">)</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-method descriptor"><code>method descriptor</code></small>
+  </span>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Update a slurm partition.</p>
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>Partition_dict</code></td>
+          <td>
+                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#dict">dict</a></code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>A populated partition dictionary, an empty
+one is created by create_partition_dict</p>
+            </div>
+          </td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>0 for success, -1 for error, and the slurm error code is set
+  appropriately.</p>
+            </div>
+          </td>
+        </tr>
+    </tbody>
+  </table>
 
   </div>
 
@@ -1116,10 +1598,10 @@ removed in the future when a replacement is introduced</p>
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.sections", "navigation.indexes", "navigation.tabs", "navigation.top", "content.code.copy", "toc.follow"], "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.sections", "navigation.indexes", "navigation.tabs", "navigation.top", "content.code.copy", "toc.follow"], "search": "../../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.2a6f1dda.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.2a6f1dda.min.js"></script>
       
     
   </body>
