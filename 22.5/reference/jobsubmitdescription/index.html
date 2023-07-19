@@ -17,7 +17,7 @@
         <link rel="next" href="../node/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.15">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.0.15">
     
     
       
@@ -207,11 +207,15 @@
   
 
 
-  <li class="md-tabs__item">
-    <a href="../.." class="md-tabs__link">
-      Home
-    </a>
-  </li>
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        Home
+      </a>
+    </li>
+  
 
       
         
@@ -282,10 +286,60 @@
   
   
   
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../..">Home</a>
+          
+            <label for="__nav_1">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_1">
+          <span class="md-nav__icon md-icon"></span>
+          Home
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
-        Home
+      <a href="../../changelog/" class="md-nav__link">
+        Changelog
       </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -311,6 +365,10 @@
         
           
             
+          
+        
+          
+        
           
         
           
@@ -373,6 +431,20 @@
     <li class="md-nav__item">
       <a href="../config/" class="md-nav__link">
         Config
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../constants/" class="md-nav__link">
+        constants
       </a>
     </li>
   
@@ -618,7 +690,21 @@
   
     <li class="md-nav__item">
       <a href="../utilities/" class="md-nav__link">
-        Utilities
+        utils
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../xcollections/" class="md-nav__link">
+        xcollections
       </a>
     </li>
   
@@ -638,7 +724,7 @@
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_16" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_18" >
       
       
         
@@ -669,14 +755,14 @@
         <div class="md-nav__link md-nav__link--index ">
           <a href="../db/">Database</a>
           
-            <label for="__nav_2_16">
+            <label for="__nav_2_18">
               <span class="md-nav__icon md-icon"></span>
             </label>
           
         </div>
       
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_16_label" aria-expanded="false">
-        <label class="md-nav__title" for="__nav_2_16">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_18_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2_18">
           <span class="md-nav__icon md-icon"></span>
           Database
         </label>
@@ -746,8 +832,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../db/jobsearchfilter/" class="md-nav__link">
-        JobSearchFilter
+      <a href="../db/jobfilter/" class="md-nav__link">
+        JobFilter
       </a>
     </li>
   
@@ -919,7 +1005,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" title="typing.Any" href="https://docs.python.org/3/library/typing.html#typing.Any">Any</a></code>
           </td>
-          <td><p>Any valid Attribute this object has</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Any valid Attribute this object has</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -942,150 +1032,224 @@
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>Name of the Job, same as -J/--job-name from sbatch.</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Name of the Job, same as -J/--job-name from sbatch.</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>account</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>Account of the job, same as -A/--account from sbatch. </p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Account of the job, same as -A/--account from sbatch. </p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>user_id</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" title="typing.Union" href="https://docs.python.org/3/library/typing.html#typing.Union">Union</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>, <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a>]</code>
           </td>
-          <td><p>Run the job as a different User, same as --uid from sbatch.
+          <td>
+            <div class="doc-md-description">
+              <p>Run the job as a different User, same as --uid from sbatch.
 This requires root privileges.
-You can both specify the name or numeric uid of the User. </p></td>
+You can both specify the name or numeric uid of the User. </p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>group_id</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" title="typing.Union" href="https://docs.python.org/3/library/typing.html#typing.Union">Union</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>, <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a>]</code>
           </td>
-          <td><p>Run the job as a different Group, same as --gid from sbatch.
+          <td>
+            <div class="doc-md-description">
+              <p>Run the job as a different Group, same as --gid from sbatch.
 This requires root privileges.
-You can both specify the name or numeric gid of the User. </p></td>
+You can both specify the name or numeric gid of the User. </p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>priority</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
           </td>
-          <td><p>Specific priority the Job will receive. 
+          <td>
+            <div class="doc-md-description">
+              <p>Specific priority the Job will receive. 
 Same as --priority from sbatch.
 You can achieve the behaviour of sbatch's --hold option by
-specifying a priority of 0.</p></td>
+specifying a priority of 0.</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>site_factor</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
           </td>
-          <td><p>Site Factor of the Job. Only used when updating an existing Job.</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Site Factor of the Job. Only used when updating an existing Job.</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>wckey</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>WCKey to use with the Job, same as --wckey from sbatch.</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>WCKey to use with the Job, same as --wckey from sbatch.</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>array</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>Job Array specification, same as -a/--array from sbatch.</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Job Array specification, same as -a/--array from sbatch.</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>batch_constraints</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>Batch Features of a Job, same as --batch from sbatch.</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Batch Features of a Job, same as --batch from sbatch.</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>begin_time</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>Defer allocation until the specified time, same as --begin from
-sbatch.</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Defer allocation until the specified time, same as --begin from
+sbatch.</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>clusters</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" title="typing.Union" href="https://docs.python.org/3/library/typing.html#typing.Union">Union</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#list">list</a>, <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>]</code>
           </td>
-          <td><p>Clusters the job may run on, same as -M/--clusters from sbatch.</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Clusters the job may run on, same as -M/--clusters from sbatch.</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>cluster_constraints</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>Comma-separated str with cluster constraints for the job.
-This is the same as --cluster-constraint from sbatch.</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Comma-separated str with cluster constraints for the job.
+This is the same as --cluster-constraint from sbatch.</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>comment</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>Arbitrary job comment, same as --comment from sbatch.</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Arbitrary job comment, same as --comment from sbatch.</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>admin_comment</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>Arbitrary job admin comment.
-Only used when updating an existing job.</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Arbitrary job admin comment.
+Only used when updating an existing job.</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>requires_contiguous_nodes</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#bool">bool</a></code>
           </td>
-          <td><p>Whether allocated Nodes are required to form a contiguous set.
-Same as --contiguous from sbatch.</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Whether allocated Nodes are required to form a contiguous set.
+Same as --contiguous from sbatch.</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>cores_reserved_for_system</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
           </td>
-          <td><p>Count of cores reserved for system not usable by the Job.
+          <td>
+            <div class="doc-md-description">
+              <p>Count of cores reserved for system not usable by the Job.
 Same as -S/--core-spec from sbatch.
-Mutually exclusive with <code>threads_reserved_for_system</code>.</p></td>
+Mutually exclusive with <code>threads_reserved_for_system</code>.</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>threads_reserved_for_system</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
           </td>
-          <td><p>Count of threads reserved for system not usable by the Job.
+          <td>
+            <div class="doc-md-description">
+              <p>Count of threads reserved for system not usable by the Job.
 Same as --thread-spec from sbatch.
-Mutually exclusive with <code>cores_reserved_for_system</code>.</p></td>
+Mutually exclusive with <code>cores_reserved_for_system</code>.</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>working_directory</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>Work directory for the Job. Default is current work-dir from where
+          <td>
+            <div class="doc-md-description">
+              <p>Work directory for the Job. Default is current work-dir from where
 the job was submitted.
-Same as -D/--chdir from sbatch.</p></td>
+Same as -D/--chdir from sbatch.</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>cpu_frequency</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" title="typing.Union" href="https://docs.python.org/3/library/typing.html#typing.Union">Union</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#dict">dict</a>, <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>]</code>
           </td>
-          <td><p>CPU Frequency for the Job, same as --cpu-freq from sbatch.</p>
+          <td>
+            <div class="doc-md-description">
+              <p>CPU Frequency for the Job, same as --cpu-freq from sbatch.</p>
 <p>For example, specifying it as a dict:</p>
 <div class="language-text highlight"><pre><span></span><code>cpu_frequency = {
     &quot;min&quot;: &quot;Low&quot;,
@@ -1105,14 +1269,18 @@ cpu_frequency = {&quot;governor&quot;: &quot;Performance&quot;}
 <div class="language-text highlight"><pre><span></span><code>cpu_frequency = &lt;frequency in kilohertz&gt;
 or either
 cpu_frequency = {&quot;max&quot;: &lt;freq&gt;} or cpu_freq = {&quot;min&quot;: &lt;freq&gt;}
-</code></pre></div></td>
+</code></pre></div>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>nodes</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" title="typing.Union" href="https://docs.python.org/3/library/typing.html#typing.Union">Union</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#dict">dict</a>, <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>, <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a>]</code>
           </td>
-          <td><p>Amount of nodes needed for the job.
+          <td>
+            <div class="doc-md-description">
+              <p>Amount of nodes needed for the job.
 This is the same as -N/--nodes from sbatch.</p>
 <p>For example, providing min/max nodes as a dict:</p>
 <div class="language-text highlight"><pre><span></span><code>nodes = {
@@ -1126,101 +1294,149 @@ This is the same as -N/--nodes from sbatch.</p>
 <p>Other than that, a range can also be specified in a str like with
 sbatch:</p>
 <div class="language-text highlight"><pre><span></span><code>nodes = &quot;1-5&quot;
-</code></pre></div></td>
+</code></pre></div>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>deadline</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>Deadline specification for the Job, same as --deadline from
-sbatch.</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Deadline specification for the Job, same as --deadline from
+sbatch.</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>delay_boot_time</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" title="typing.Union" href="https://docs.python.org/3/library/typing.html#typing.Union">Union</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>, <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a>]</code>
           </td>
-          <td><p>Delay boot specification for the Job, same as --delay-boot from
-sbatch.</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Delay boot specification for the Job, same as --delay-boot from
+sbatch.</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>dependencies</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" title="typing.Union" href="https://docs.python.org/3/library/typing.html#typing.Union">Union</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#dict">dict</a>, <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>]</code>
           </td>
-          <td><p>Dependencies for the Job, same as -d/--dependency from sbatch.</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Dependencies for the Job, same as -d/--dependency from sbatch.</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>excluded_nodes</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" title="typing.Union" href="https://docs.python.org/3/library/typing.html#typing.Union">Union</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#list">list</a>, <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>]</code>
           </td>
-          <td><p>Exclude specific nodes for this Job.
-This is the same as -x/--exclude from sbatch.</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Exclude specific nodes for this Job.
+This is the same as -x/--exclude from sbatch.</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>required_nodes</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" title="typing.Union" href="https://docs.python.org/3/library/typing.html#typing.Union">Union</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#list">list</a>, <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>]</code>
           </td>
-          <td><p>Specific list of nodes required for the Job.
-This is the same as -w/--nodelist from sbatch.</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Specific list of nodes required for the Job.
+This is the same as -w/--nodelist from sbatch.</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>constraints</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>Required node features for the Job.
-This is the same as -C/--constraint from sbatch.</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Required node features for the Job.
+This is the same as -C/--constraint from sbatch.</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>kill_on_node_fail</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#bool">bool</a></code>
           </td>
-          <td><p>Should the job get killed if one of the Nodes fails?
-This is the same as -k/--no-kill from sbatch.</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Should the job get killed if one of the Nodes fails?
+This is the same as -k/--no-kill from sbatch.</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>licenses</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" title="typing.Union" href="https://docs.python.org/3/library/typing.html#typing.Union">Union</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#list">list</a>, <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>]</code>
           </td>
-          <td><p>A list of licenses for the Job.
-This is the same as -L/--licenses from sbatch.</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>A list of licenses for the Job.
+This is the same as -L/--licenses from sbatch.</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>mail_user</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" title="typing.Union" href="https://docs.python.org/3/library/typing.html#typing.Union">Union</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#list">list</a>, <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>]</code>
           </td>
-          <td><p>List of email addresses for notifications.
-This is the same as --mail-user from sbatch.</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>List of email addresses for notifications.
+This is the same as --mail-user from sbatch.</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>mail_types</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" title="typing.Union" href="https://docs.python.org/3/library/typing.html#typing.Union">Union</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#list">list</a>, <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>]</code>
           </td>
-          <td><p>List of mail flags.
-This is the same as --mail-type from sbatch.</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>List of mail flags.
+This is the same as --mail-type from sbatch.</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>mcs_label</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>An MCS Label for the Job.
-This is the same as --mcs-label from sbatch.</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>An MCS Label for the Job.
+This is the same as --mcs-label from sbatch.</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>memory_per_cpu</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" title="typing.Union" href="https://docs.python.org/3/library/typing.html#typing.Union">Union</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>, <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a>]</code>
           </td>
-          <td><p>Memory required per allocated CPU. </p>
+          <td>
+            <div class="doc-md-description">
+              <p>Memory required per allocated CPU. </p>
 <p>The default unit is in Mebibytes. You are also able to specify
 unit suffixes like K|M|G|T.
 This is the same as --mem-per-cpu from sbatch. This is mutually
@@ -1231,14 +1447,18 @@ memory_per_cpu = 1024
 
 # 3 GiB
 memory_per_cpu = &quot;3G&quot;
-</code></pre></div></td>
+</code></pre></div>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>memory_per_node</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" title="typing.Union" href="https://docs.python.org/3/library/typing.html#typing.Union">Union</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>, <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a>]</code>
           </td>
-          <td><p>Memory required per whole node.</p>
+          <td>
+            <div class="doc-md-description">
+              <p>Memory required per whole node.</p>
 <p>The default unit is in Mebibytes. You are also able to specify
 unit suffixes like K|M|G|T.
 This is the same as --mem from sbatch. This is mutually exclusive
@@ -1249,14 +1469,18 @@ memory_per_node = 1024
 
 # 3 GiB
 memory_per_node = &quot;3G&quot;
-</code></pre></div></td>
+</code></pre></div>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>memory_per_gpu</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" title="typing.Union" href="https://docs.python.org/3/library/typing.html#typing.Union">Union</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>, <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a>]</code>
           </td>
-          <td><p>Memory required per GPU.</p>
+          <td>
+            <div class="doc-md-description">
+              <p>Memory required per GPU.</p>
 <p>The default unit is in Mebibytes. You are also able to specify
 unit suffixes like K|M|G|T.
 This is the same as --mem-per-gpu from sbatch. This is mutually
@@ -1267,67 +1491,95 @@ memory_per_gpu = 1024
 
 # 3 GiB
 memory_per_gpu = &quot;3G&quot;
-</code></pre></div></td>
+</code></pre></div>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>network</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>Network types for the Job.
-This is the same as --network from sbatch.</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Network types for the Job.
+This is the same as --network from sbatch.</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>nice</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
           </td>
-          <td><p>Adjusted scheduling priority for the Job.
-This is the same as --nice from sbatch.</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Adjusted scheduling priority for the Job.
+This is the same as --nice from sbatch.</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>log_files_open_mode</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>Mode in which standard_output and standard_error log files should be opened. 
+          <td>
+            <div class="doc-md-description">
+              <p>Mode in which standard_output and standard_error log files should be opened. 
 This is the same as --open-mode from sbatch.</p>
 <p>Valid options are:</p>
 <ul>
 <li><code>append</code></li>
 <li><code>truncate</code></li>
-</ul></td>
+</ul>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>overcommit</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#bool">bool</a></code>
           </td>
-          <td><p>If the resources should be overcommitted.
-This is the same as -O/--overcommit from sbatch.</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>If the resources should be overcommitted.
+This is the same as -O/--overcommit from sbatch.</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>partitions</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" title="typing.Union" href="https://docs.python.org/3/library/typing.html#typing.Union">Union</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#list">list</a>, <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>]</code>
           </td>
-          <td><p>A list of partitions the Job may use.
-This is the same as -p/--partition from sbatch.</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>A list of partitions the Job may use.
+This is the same as -p/--partition from sbatch.</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>power_options</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#list">list</a></code>
           </td>
-          <td><p>A list of power management plugin options for the Job.
-This is the same as --power from sbatch.</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>A list of power management plugin options for the Job.
+This is the same as --power from sbatch.</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>accounting_gather_frequency</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" title="typing.Union" href="https://docs.python.org/3/library/typing.html#typing.Union">Union</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#dict">dict</a>, <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>]</code>
           </td>
-          <td><p>Interval for accounting info to be gathered.
+          <td>
+            <div class="doc-md-description">
+              <p>Interval for accounting info to be gathered.
 This is the same as --acctg-freq from sbatch.</p>
 <p>For example, specifying it as a dict:</p>
 <div class="language-text highlight"><pre><span></span><code>accounting_gather_frequency = {
@@ -1337,74 +1589,106 @@ This is the same as --acctg-freq from sbatch.</p>
 </code></pre></div>
 <p>or as a single string:</p>
 <div class="language-text highlight"><pre><span></span><code>accounting_gather_frequency = &quot;energy=60,network=20&quot;
-</code></pre></div></td>
+</code></pre></div>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>qos</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>Quality of Service for the Job.
-This is the same as -q/--qos from sbatch.</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Quality of Service for the Job.
+This is the same as -q/--qos from sbatch.</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>requires_node_reboot</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#bool">bool</a></code>
           </td>
-          <td><p>Force the allocated nodes to reboot before the job starts.
-This is the same --reboot from sbatch.</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Force the allocated nodes to reboot before the job starts.
+This is the same --reboot from sbatch.</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>is_requeueable</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#bool">bool</a></code>
           </td>
-          <td><p>If the Job is eligible for requeuing.
-This is the same as --requeue from sbatch.</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>If the Job is eligible for requeuing.
+This is the same as --requeue from sbatch.</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>reservations</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" title="typing.Union" href="https://docs.python.org/3/library/typing.html#typing.Union">Union</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#list">list</a>, <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>]</code>
           </td>
-          <td><p>A list of possible reservations the Job can use.
-This is the same as --reservation from sbatch.</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>A list of possible reservations the Job can use.
+This is the same as --reservation from sbatch.</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>script</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>Absolute Path or content of the batch script.</p>
+          <td>
+            <div class="doc-md-description">
+              <p>Absolute Path or content of the batch script.</p>
 <p>You can specify either a path to a script which will be loaded, or
 you can pass the script as a string.
 If the script is passed as a string, providing arguments to it
-(see <code>script_args</code>) is not supported.</p></td>
+(see <code>script_args</code>) is not supported.</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>script_args</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>Arguments passed to the batch script.
+          <td>
+            <div class="doc-md-description">
+              <p>Arguments passed to the batch script.
 You can only set arguments if a file path was specified for
-<code>script</code>.</p></td>
+<code>script</code>.</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>environment</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" title="typing.Union" href="https://docs.python.org/3/library/typing.html#typing.Union">Union</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#dict">dict</a>, <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>]</code>
           </td>
-          <td><p>Environment variables to be set for the Job.
-This is the same as --export from sbatch.</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Environment variables to be set for the Job.
+This is the same as --export from sbatch.</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>resource_sharing</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>Controls the resource sharing with other Jobs.
+          <td>
+            <div class="doc-md-description">
+              <p>Controls the resource sharing with other Jobs.
 This property combines functionality of --oversubscribe and
 --exclusive from sbatch.</p>
 <p>Allowed values are are:</p>
@@ -1427,87 +1711,127 @@ option set is allowed.</p>
 <p><code>no</code> or <code>exclusive</code>:</p>
 <p>No sharing of resources is allowed. (--exclusive from sbatch)</p>
 </li>
-</ul></td>
+</ul>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>distribution</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>Task distribution for the Job, same as --distribution from sbatch</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Task distribution for the Job, same as --distribution from sbatch</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>time_limit</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>The time limit for the job.
-This is the same as -t/--time from sbatch.</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>The time limit for the job.
+This is the same as -t/--time from sbatch.</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>time_limit_min</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>A minimum time limit for the Job.
-This is the same as --time-min from sbatch.</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>A minimum time limit for the Job.
+This is the same as --time-min from sbatch.</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>container</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>Path to an OCI container bundle.
-This is the same as --container from sbatch.</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Path to an OCI container bundle.
+This is the same as --container from sbatch.</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>cpus_per_task</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
           </td>
-          <td><p>The amount of cpus required for each task.</p>
+          <td>
+            <div class="doc-md-description">
+              <p>The amount of cpus required for each task.</p>
 <p>This is the same as -c/--cpus-per-task from sbatch.
-This is mutually exclusive with <code>cpus_per_gpu</code>.</p></td>
+This is mutually exclusive with <code>cpus_per_gpu</code>.</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>cpus_per_gpu</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
           </td>
-          <td><p>The amount of cpus required for each allocated GPU.</p>
+          <td>
+            <div class="doc-md-description">
+              <p>The amount of cpus required for each allocated GPU.</p>
 <p>This is the same as --cpus-per-gpu from sbatch.
-This is mutually exclusive with <code>cpus_per_task</code>.</p></td>
+This is mutually exclusive with <code>cpus_per_task</code>.</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>sockets_per_node</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
           </td>
-          <td><p>Restrict Job to nodes with atleast this many sockets.
-This is the same as --sockets-per-node from sbatch.</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Restrict Job to nodes with atleast this many sockets.
+This is the same as --sockets-per-node from sbatch.</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>cores_per_socket</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
           </td>
-          <td><p>Restrict Job to nodes with atleast this many cores per socket
-This is the same as --cores-per-socket from sbatch.</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Restrict Job to nodes with atleast this many cores per socket
+This is the same as --cores-per-socket from sbatch.</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>threads_per_core</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
           </td>
-          <td><p>Restrict Job to nodes with atleast this many threads per socket
-This is the same as --threads-per-core from sbatch.</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Restrict Job to nodes with atleast this many threads per socket
+This is the same as --threads-per-core from sbatch.</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>gpus</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" title="typing.Union" href="https://docs.python.org/3/library/typing.html#typing.Union">Union</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#dict">dict</a>, <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>, <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a>]</code>
           </td>
-          <td><p>GPUs for the Job to be allocated in total.
+          <td>
+            <div class="doc-md-description">
+              <p>GPUs for the Job to be allocated in total.
 This is the same as -G/--gpus from sbatch.
 Specifying the type of the GPU is optional. </p>
 <p>For example, specifying the GPU counts as a dict:</p>
@@ -1521,14 +1845,18 @@ Specifying the type of the GPU is optional. </p>
 </code></pre></div>
 <p>Or, if you don't care about the type of the GPU:</p>
 <div class="language-text highlight"><pre><span></span><code>gpus = 6
-</code></pre></div></td>
+</code></pre></div>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>gpus_per_socket</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" title="typing.Union" href="https://docs.python.org/3/library/typing.html#typing.Union">Union</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#dict">dict</a>, <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>, <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a>]</code>
           </td>
-          <td><p>GPUs for the Job to be allocated per socket.</p>
+          <td>
+            <div class="doc-md-description">
+              <p>GPUs for the Job to be allocated per socket.</p>
 <p>This is the same as --gpus-per-socket from sbatch.</p>
 <p>Specifying the type of the GPU is optional. Note that setting
 <code>gpus_per_socket</code> requires to also specify sockets_per_node.</p>
@@ -1543,14 +1871,18 @@ Specifying the type of the GPU is optional. </p>
 </code></pre></div>
 <p>Or, if you don't care about the type of the GPU:</p>
 <div class="language-text highlight"><pre><span></span><code>gpus_per_socket = 6
-</code></pre></div></td>
+</code></pre></div>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>gpus_per_task</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" title="typing.Union" href="https://docs.python.org/3/library/typing.html#typing.Union">Union</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#dict">dict</a>, <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>, <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a>]</code>
           </td>
-          <td><p>GPUs for the Job to be allocated per task.</p>
+          <td>
+            <div class="doc-md-description">
+              <p>GPUs for the Job to be allocated per task.</p>
 <p>This is the same as --gpus-per-task from sbatch.</p>
 <p>Specifying the type of the GPU is optional. Note that setting
 <code>gpus_per_task</code> requires to also specify either one of <code>ntasks</code> or
@@ -1566,14 +1898,18 @@ Specifying the type of the GPU is optional. </p>
 </code></pre></div>
 <p>Or, if you don't care about the type of the GPU:</p>
 <div class="language-text highlight"><pre><span></span><code>gpus_per_task = 6
-</code></pre></div></td>
+</code></pre></div>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>gres_per_node</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" title="typing.Union" href="https://docs.python.org/3/library/typing.html#typing.Union">Union</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#dict">dict</a>, <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>]</code>
           </td>
-          <td><p>Generic resources to be allocated per node.</p>
+          <td>
+            <div class="doc-md-description">
+              <p>Generic resources to be allocated per node.</p>
 <p>This is the same as --gres from sbatch. You should also use this
 option if you want to specify GPUs per node (--gpus-per-node).
 Specifying the type (by seperating GRES name and type with a
@@ -1589,62 +1925,90 @@ semicolon) is optional. </p>
 </code></pre></div>
 <p>GPU Gres without a specific type:</p>
 <div class="language-text highlight"><pre><span></span><code>gres_per_node = &quot;gpu:6&quot;
-</code></pre></div></td>
+</code></pre></div>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>gpu_binding</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>Specify GPU binding for the Job.
-This is the same as --gpu-bind from sbatch.</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Specify GPU binding for the Job.
+This is the same as --gpu-bind from sbatch.</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>ntasks</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
           </td>
-          <td><p>Maximum amount of tasks for the Job.
-This is the same as -n/--ntasks from sbatch.</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Maximum amount of tasks for the Job.
+This is the same as -n/--ntasks from sbatch.</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>ntasks_per_node</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
           </td>
-          <td><p>Amount of tasks to be invoked on each node.
-This is the same as --ntasks-per-node from sbatch.</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Amount of tasks to be invoked on each node.
+This is the same as --ntasks-per-node from sbatch.</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>ntasks_per_socket</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
           </td>
-          <td><p>Maximum amount of tasks to be invoked on each socket.
-This is the same as --ntasks-per-socket from sbatch.</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Maximum amount of tasks to be invoked on each socket.
+This is the same as --ntasks-per-socket from sbatch.</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>ntasks_per_core</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
           </td>
-          <td><p>Maximum amount of tasks to be invoked on each core.
-This is the same as --ntasks-per-core from sbatch.</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Maximum amount of tasks to be invoked on each core.
+This is the same as --ntasks-per-core from sbatch.</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>ntasks_per_gpu</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
           </td>
-          <td><p>Amount of tasks to be invoked per GPU.
-This is the same as --ntasks-per-socket from sbatch.</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Amount of tasks to be invoked per GPU.
+This is the same as --ntasks-per-socket from sbatch.</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>switches</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" title="typing.Union" href="https://docs.python.org/3/library/typing.html#typing.Union">Union</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#dict">dict</a>, <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>, <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a>]</code>
           </td>
-          <td><p>Maximum amount of leaf switches and wait time desired.</p>
+          <td>
+            <div class="doc-md-description">
+              <p>Maximum amount of leaf switches and wait time desired.</p>
 <p>This can also optionally include a maximum waiting time for these
 switches.
 This is the same as --switches from sbatch.</p>
@@ -1653,14 +2017,18 @@ This is the same as --switches from sbatch.</p>
 </code></pre></div>
 <p>Or as a single string (sbatch-style):</p>
 <div class="language-text highlight"><pre><span></span><code>switches = &quot;5@00:10:00&quot;
-</code></pre></div></td>
+</code></pre></div>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>signal</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" title="typing.Union" href="https://docs.python.org/3/library/typing.html#typing.Union">Union</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#dict">dict</a>, <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>]</code>
           </td>
-          <td><p>Warn signal to be sent to the Job.</p>
+          <td>
+            <div class="doc-md-description">
+              <p>Warn signal to be sent to the Job.</p>
 <p>This is the same as --signal from sbatch.
 The signal can both be specified with its name, e.g. "SIGKILL", or
 as a number, e.g. 9</p>
@@ -1674,75 +2042,107 @@ as a number, e.g. 9</p>
 Jobs' time limit is reached.</p>
 <p>Or, specifying it as a string (sbatch-style):</p>
 <div class="language-text highlight"><pre><span></span><code>signal = &quot;SIGKILL@120&quot;
-</code></pre></div></td>
+</code></pre></div>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>standard_in</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>Path to a File acting as standard_in for the batch-script.
-This is the same as -i/--input from sbatch.</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Path to a File acting as standard_in for the batch-script.
+This is the same as -i/--input from sbatch.</p>
+            </div>
+          </td>
         </tr>
         <tr>
-          <td><code>standard_in</code></td>
+          <td><code>standard_error</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>Path to a File acting as standard_in for the batch-script.
-This is the same as -i/--input from sbatch.</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Path to a File acting as standard_error for the batch-script.
+This is the same as -e/--error from sbatch.</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>standard_output</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>Path to a File to write the Jobs standard_output.
-This is the same as -o/--output from sbatch.</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Path to a File to write the Jobs standard_output.
+This is the same as -o/--output from sbatch.</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>kill_on_invalid_dependency</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#bool">bool</a></code>
           </td>
-          <td><p>Kill the job if it has an invalid dependency.
-This is the same as --kill-on-invalid-dep from sbatch.</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Kill the job if it has an invalid dependency.
+This is the same as --kill-on-invalid-dep from sbatch.</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>spreads_over_nodes</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#bool">bool</a></code>
           </td>
-          <td><p>Spread the Job over as many nodes as possible.
-This is the same as --spread-job from sbatch.</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Spread the Job over as many nodes as possible.
+This is the same as --spread-job from sbatch.</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>use_min_nodes</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#bool">bool</a></code>
           </td>
-          <td><p>Prefer the minimum amount of nodes specified.
-This is the same as --use-min-nodes from sbatch.</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Prefer the minimum amount of nodes specified.
+This is the same as --use-min-nodes from sbatch.</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>gres_binding</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>Generic resource task binding options.
+          <td>
+            <div class="doc-md-description">
+              <p>Generic resource task binding options.
 This is the --gres-flags option from sbatch.</p>
 <p>Possible values are:</p>
 <ul>
 <li><code>enforce-binding</code></li>
 <li><code>disable-binding</code></li>
-</ul></td>
+</ul>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>temporary_disk_per_node</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" title="typing.Union" href="https://docs.python.org/3/library/typing.html#typing.Union">Union</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>, <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a>]</code>
           </td>
-          <td><p>Amount of temporary disk space needed per node.</p>
+          <td>
+            <div class="doc-md-description">
+              <p>Amount of temporary disk space needed per node.</p>
 <p>This is the same as --tmp from sbatch. You can specify units like
 K|M|G|T (multiples of 1024).
 If no unit is specified, the value will be assumed as Mebibytes.</p>
@@ -1752,33 +2152,47 @@ tmp_disk_per_node = &quot;2G&quot;
 
 # 1024 MiB
 tmp_disk_per_node = 1024
-</code></pre></div></td>
+</code></pre></div>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>get_user_environment</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" title="typing.Union" href="https://docs.python.org/3/library/typing.html#typing.Union">Union</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>, <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#bool">bool</a>, <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a>]</code>
           </td>
-          <td><p>TODO</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>TODO</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>min_cpus_per_node</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>Set the minimum amount of CPUs required per Node.
-This is the same as --mincpus from sbatch.</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Set the minimum amount of CPUs required per Node.
+This is the same as --mincpus from sbatch.</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>wait_all_nodes</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#bool">bool</a></code>
           </td>
-          <td><p>Controls when the execution of the command begins.</p>
+          <td>
+            <div class="doc-md-description">
+              <p>Controls when the execution of the command begins.</p>
 <p>A value of True means that the Job should begin execution only
 after all nodes in the allocation are ready. Setting it to False,
 the default, means that it is not waited for the nodes to be
-ready. (i.e booted)</p></td>
+ready. (i.e booted)</p>
+            </div>
+          </td>
         </tr>
     </tbody>
   </table>
@@ -1837,9 +2251,13 @@ attributes.</p>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#bool">bool</a></code>
           </td>
-          <td><p>If set to True, the value from an option found in the
+          <td>
+            <div class="doc-md-description">
+              <p>If set to <code>True</code>, the value from an option found in the
 environment will override the current value of the attribute
-in this instance. Default is False</p></td>
+in this instance. Default is <code>False</code></p>
+            </div>
+          </td>
           <td>
                 <code>False</code>
           </td>
@@ -1886,7 +2304,7 @@ In python, you can do this now:</p>
 
   <div class="doc doc-contents ">
   
-      <p>Load values from #SBATCH options in the batch script.</p>
+      <p>Load values from <code>#SBATCH</code> options in the batch script.</p>
 
   <p><strong>Parameters:</strong></p>
   <table>
@@ -1904,9 +2322,13 @@ In python, you can do this now:</p>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#bool">bool</a></code>
           </td>
-          <td><p>If set to True, the value from an option found in the in the
+          <td>
+            <div class="doc-md-description">
+              <p>If set to <code>True</code>, the value from an option found in the in the
 batch script will override the current value of the attribute
-in this instance. Default is False</p></td>
+in this instance. Default is <code>False</code></p>
+            </div>
+          </td>
           <td>
                 <code>False</code>
           </td>
@@ -1949,7 +2371,11 @@ in this instance. Default is False</p></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
           </td>
-          <td><p>The ID of the submitted Job.</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>The ID of the submitted Job.</p>
+            </div>
+          </td>
         </tr>
     </tbody>
   </table>
@@ -1967,13 +2393,11 @@ in this instance. Default is False</p></td>
           <td>
                 <code><a class="autorefs autorefs-internal" title="pyslurm.core.error.RPCError" href="../exceptions/#pyslurm.RPCError">RPCError</a></code>
           </td>
-          <td><p>When the job submission was not successful.</p></td>
-        </tr>
-        <tr>
           <td>
-                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/exceptions.html#MemoryError">MemoryError</a></code>
+            <div class="doc-md-description">
+              <p>When the job submission was not successful.</p>
+            </div>
           </td>
-          <td><p>If malloc failed to allocate enough memory.</p></td>
         </tr>
     </tbody>
   </table>
@@ -1983,9 +2407,12 @@ in this instance. Default is False</p></td>
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="gp">&gt;&gt;&gt; </span><span class="n">desc</span> <span class="o">=</span> <span class="n">pyslurm</span><span class="o">.</span><span class="n">JobSubmitDescription</span><span class="p">(</span>
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="gp">... </span>    <span class="n">name</span><span class="o">=</span><span class="s2">&quot;test-job&quot;</span><span class="p">,</span>
 </span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="gp">... </span>    <span class="n">cpus_per_task</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="gp">... </span>    <span class="n">time_limit</span><span class="o">=</span><span class="s2">&quot;10-00:00:00&quot;</span><span class="p">)</span>
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="gp">&gt;&gt;&gt; </span>
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="gp">&gt;&gt;&gt; </span><span class="n">job_id</span> <span class="o">=</span> <span class="n">desc</span><span class="o">.</span><span class="n">submit</span><span class="p">()</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="gp">... </span>    <span class="n">time_limit</span><span class="o">=</span><span class="s2">&quot;10-00:00:00&quot;</span><span class="p">,</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="gp">... </span>    <span class="n">script</span><span class="o">=</span><span class="s2">&quot;/path/to/your/submit_script.sh&quot;</span><span class="p">)</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="gp">&gt;&gt;&gt; </span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="gp">&gt;&gt;&gt; </span><span class="n">job_id</span> <span class="o">=</span> <span class="n">desc</span><span class="o">.</span><span class="n">submit</span><span class="p">()</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">job_id</span><span class="p">)</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="go">99</span>
 </span></code></pre></div>
 
   </div>

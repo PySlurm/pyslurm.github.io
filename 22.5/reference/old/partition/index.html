@@ -8,20 +8,20 @@
       
       
       
-        <link rel="canonical" href="https://pyslurm.github.io/22.5/reference/old/node/">
+        <link rel="canonical" href="https://pyslurm.github.io/22.5/reference/old/partition/">
       
       
-        <link rel="prev" href="../jobstep/">
+        <link rel="prev" href="../node/">
       
       
-        <link rel="next" href="../partition/">
+        <link rel="next" href="../db/job/">
       
       <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.0.15">
     
     
       
-        <title>Node - pyslurm</title>
+        <title>Partition - pyslurm</title>
       
     
     
@@ -77,7 +77,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#pyslurm.node" class="md-skip">
+        <a href="#pyslurm.partition" class="md-skip">
           Skip to content
         </a>
       
@@ -113,7 +113,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Node
+              Partition
             
           </span>
         </div>
@@ -852,57 +852,71 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#pyslurm.node" class="md-nav__link">
-    node
+  <a href="#pyslurm.partition" class="md-nav__link">
+    partition
   </a>
   
-    <nav class="md-nav" aria-label="node">
+    <nav class="md-nav" aria-label="partition">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#pyslurm.pyslurm.node.find_id" class="md-nav__link">
+  <a href="#pyslurm.pyslurm.partition.create" class="md-nav__link">
+    create()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyslurm.pyslurm.partition.delete" class="md-nav__link">
+    delete()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyslurm.pyslurm.partition.find" class="md-nav__link">
+    find()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyslurm.pyslurm.partition.find_id" class="md-nav__link">
     find_id()
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#pyslurm.pyslurm.node.get" class="md-nav__link">
+  <a href="#pyslurm.pyslurm.partition.get" class="md-nav__link">
     get()
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#pyslurm.pyslurm.node.get_node" class="md-nav__link">
-    get_node()
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pyslurm.pyslurm.node.ids" class="md-nav__link">
+  <a href="#pyslurm.pyslurm.partition.ids" class="md-nav__link">
     ids()
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#pyslurm.pyslurm.node.lastUpdate" class="md-nav__link">
+  <a href="#pyslurm.pyslurm.partition.lastUpdate" class="md-nav__link">
     lastUpdate()
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#pyslurm.pyslurm.node.print_node_info_msg" class="md-nav__link">
-    print_node_info_msg()
+  <a href="#pyslurm.pyslurm.partition.print_info_msg" class="md-nav__link">
+    print_info_msg()
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#pyslurm.pyslurm.node.update" class="md-nav__link">
+  <a href="#pyslurm.pyslurm.partition.update" class="md-nav__link">
     update()
   </a>
   
@@ -931,12 +945,12 @@
   
 
 
-  <h1>Node</h1>
+  <h1>Partition</h1>
 
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>This class is superseded by <a href="../../node/">pyslurm.Node</a> and will be
-removed in a future release.</p>
+<p>This class is superseded by <a href="../../partition/">pyslurm.Partition</a> and will
+be removed in a future release.</p>
 </div>
 
 
@@ -944,8 +958,8 @@ removed in a future release.</p>
 
 
 
-<h2 id="pyslurm.node" class="doc doc-heading">
-        <code>pyslurm.node</code>
+<h2 id="pyslurm.partition" class="doc doc-heading">
+        <code>pyslurm.partition</code>
 
 
 </h2>
@@ -954,7 +968,7 @@ removed in a future release.</p>
   <div class="doc doc-contents first">
 
   
-      <p>Access/Modify/Update Slurm Node Information.</p>
+      <p>Slurm Partition Information.</p>
 
 
 
@@ -974,8 +988,8 @@ removed in a future release.</p>
 
 
 
-<h3 id="pyslurm.pyslurm.node.find_id" class="doc doc-heading">
-<code class="highlight language-python"><span class="n">find_id</span><span class="p">(</span><span class="n">nodeID</span><span class="p">)</span></code>
+<h3 id="pyslurm.pyslurm.partition.create" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">create</span><span class="p">(</span><span class="n">Partition_dict</span><span class="p">)</span></code>
   
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-method descriptor"><code>method descriptor</code></small>
@@ -986,7 +1000,7 @@ removed in a future release.</p>
 
   <div class="doc doc-contents ">
   
-      <p>Get node information for a given node.</p>
+      <p>Create a slurm partition.</p>
 
   <p><strong>Parameters:</strong></p>
   <table>
@@ -1000,13 +1014,246 @@ removed in a future release.</p>
     </thead>
     <tbody>
         <tr>
-          <td><code>nodeID</code></td>
+          <td><code>Partition_dict</code></td>
+          <td>
+                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#dict">dict</a></code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>A populated partition dictionary, an empty
+one can be created by create_partition_dict</p>
+            </div>
+          </td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>0 for success or -1 for error, and the slurm error code is
+set appropriately.</p>
+            </div>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="pyslurm.pyslurm.partition.delete" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">delete</span><span class="p">(</span><span class="n">PartID</span><span class="p">)</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-method descriptor"><code>method descriptor</code></small>
+  </span>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Delete a give slurm partition.</p>
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>PartID</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
           </td>
           <td>
             <div class="doc-md-description">
-              <p>Node key string to search</p>
+              <p>Name of slurm partition</p>
+            </div>
+          </td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>0 for success else set the slurm error code as
+appropriately.</p>
+            </div>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="pyslurm.pyslurm.partition.find" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">find</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">val</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-method descriptor"><code>method descriptor</code></small>
+  </span>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Search for a property and associated value in the retrieved partition data.</p>
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>name</code></td>
+          <td>
+                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>key string to search</p>
+            </div>
+          </td>
+          <td>
+                <code>&#39;&#39;</code>
+          </td>
+        </tr>
+        <tr>
+          <td><code>val</code></td>
+          <td>
+                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>value string to match</p>
+            </div>
+          </td>
+          <td>
+                <code>&#39;&#39;</code>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#list">list</a></code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>List of IDs that match</p>
+            </div>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="pyslurm.pyslurm.partition.find_id" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">find_id</span><span class="p">(</span><span class="n">partID</span><span class="p">)</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-method descriptor"><code>method descriptor</code></small>
+  </span>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Get partition information for a given partition.</p>
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>partID</code></td>
+          <td>
+                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Partition key string to search</p>
             </div>
           </td>
           <td>
@@ -1031,7 +1278,7 @@ removed in a future release.</p>
           </td>
           <td>
             <div class="doc-md-description">
-              <p>Dictionary of values for given node</p>
+              <p>Dictionary of values for given partition</p>
             </div>
           </td>
         </tr>
@@ -1046,7 +1293,7 @@ removed in a future release.</p>
 
 
 
-<h3 id="pyslurm.pyslurm.node.get" class="doc doc-heading">
+<h3 id="pyslurm.pyslurm.partition.get" class="doc doc-heading">
 <code class="highlight language-python"><span class="n">get</span><span class="p">()</span></code>
   
   <span class="doc doc-labels">
@@ -1058,7 +1305,7 @@ removed in a future release.</p>
 
   <div class="doc doc-contents ">
   
-      <p>Get all slurm node information.</p>
+      <p>Get all slurm partition information</p>
 
   <p><strong>Returns:</strong></p>
   <table>
@@ -1075,7 +1322,7 @@ removed in a future release.</p>
           </td>
           <td>
             <div class="doc-md-description">
-              <p>Dictionary of dictionaries whose key is the node name.</p>
+              <p>Dictionary of dictionaries whose key is the partition name.</p>
             </div>
           </td>
         </tr>
@@ -1090,79 +1337,7 @@ removed in a future release.</p>
 
 
 
-<h3 id="pyslurm.pyslurm.node.get_node" class="doc doc-heading">
-<code class="highlight language-python"><span class="n">get_node</span><span class="p">(</span><span class="n">nodeID</span><span class="p">)</span></code>
-  
-  <span class="doc doc-labels">
-      <small class="doc doc-label doc-label-method descriptor"><code>method descriptor</code></small>
-  </span>
-
-</h3>
-
-
-  <div class="doc doc-contents ">
-  
-      <p>Get single slurm node information.</p>
-
-  <p><strong>Parameters:</strong></p>
-  <table>
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Type</th>
-        <th>Description</th>
-        <th>Default</th>
-      </tr>
-    </thead>
-    <tbody>
-        <tr>
-          <td><code>nodeID</code></td>
-          <td>
-                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
-          </td>
-          <td>
-            <div class="doc-md-description">
-              <p>Node key string to search. Default NULL.</p>
-            </div>
-          </td>
-          <td>
-              <em>required</em>
-          </td>
-        </tr>
-    </tbody>
-  </table>
-
-  <p><strong>Returns:</strong></p>
-  <table>
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-        <tr>
-          <td>
-                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#dict">dict</a></code>
-          </td>
-          <td>
-            <div class="doc-md-description">
-              <p>Dictionary of node info data.</p>
-            </div>
-          </td>
-        </tr>
-    </tbody>
-  </table>
-
-  </div>
-
-</div>
-
-<div class="doc doc-object doc-function">
-
-
-
-<h3 id="pyslurm.pyslurm.node.ids" class="doc doc-heading">
+<h3 id="pyslurm.pyslurm.partition.ids" class="doc doc-heading">
 <code class="highlight language-python"><span class="n">ids</span><span class="p">()</span></code>
   
   <span class="doc doc-labels">
@@ -1174,7 +1349,7 @@ removed in a future release.</p>
 
   <div class="doc doc-contents ">
   
-      <p>Return the node IDs from retrieved data.</p>
+      <p>Return the partition IDs from retrieved data.</p>
 
   <p><strong>Returns:</strong></p>
   <table>
@@ -1191,7 +1366,7 @@ removed in a future release.</p>
           </td>
           <td>
             <div class="doc-md-description">
-              <p>Dictionary of node IDs</p>
+              <p>Dictionary of partition IDs</p>
             </div>
           </td>
         </tr>
@@ -1206,7 +1381,7 @@ removed in a future release.</p>
 
 
 
-<h3 id="pyslurm.pyslurm.node.lastUpdate" class="doc doc-heading">
+<h3 id="pyslurm.pyslurm.partition.lastUpdate" class="doc doc-heading">
 <code class="highlight language-python"><span class="n">lastUpdate</span><span class="p">()</span></code>
   
   <span class="doc doc-labels">
@@ -1218,7 +1393,7 @@ removed in a future release.</p>
 
   <div class="doc doc-contents ">
   
-      <p>Return last time (epoch seconds) the node data was updated.</p>
+      <p>Return time (epoch seconds) the partition data was updated.</p>
 
   <p><strong>Returns:</strong></p>
   <table>
@@ -1250,8 +1425,8 @@ removed in a future release.</p>
 
 
 
-<h3 id="pyslurm.pyslurm.node.print_node_info_msg" class="doc doc-heading">
-<code class="highlight language-python"><span class="n">print_node_info_msg</span><span class="p">(</span><span class="n">oneLiner</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></code>
+<h3 id="pyslurm.pyslurm.partition.print_info_msg" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">print_info_msg</span><span class="p">(</span><span class="n">oneLiner</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span></code>
   
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-method descriptor"><code>method descriptor</code></small>
@@ -1262,7 +1437,7 @@ removed in a future release.</p>
 
   <div class="doc doc-contents ">
   
-      <p>Output information about all slurm nodes.</p>
+      <p>Display partition information from previous load partition method.</p>
 
   <p><strong>Parameters:</strong></p>
   <table>
@@ -1282,11 +1457,11 @@ removed in a future release.</p>
           </td>
           <td>
             <div class="doc-md-description">
-              <p>Print on one line</p>
+              <p>Display on one line.</p>
             </div>
           </td>
           <td>
-                <code>False</code>
+                <code>0</code>
           </td>
         </tr>
     </tbody>
@@ -1300,8 +1475,8 @@ removed in a future release.</p>
 
 
 
-<h3 id="pyslurm.pyslurm.node.update" class="doc doc-heading">
-<code class="highlight language-python"><span class="n">update</span><span class="p">(</span><span class="n">node_dict</span><span class="p">)</span></code>
+<h3 id="pyslurm.pyslurm.partition.update" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">update</span><span class="p">(</span><span class="n">Partition_dict</span><span class="p">)</span></code>
   
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-method descriptor"><code>method descriptor</code></small>
@@ -1312,7 +1487,7 @@ removed in a future release.</p>
 
   <div class="doc doc-contents ">
   
-      <p>Update slurm node information.</p>
+      <p>Update a slurm partition.</p>
 
   <p><strong>Parameters:</strong></p>
   <table>
@@ -1326,14 +1501,14 @@ removed in a future release.</p>
     </thead>
     <tbody>
         <tr>
-          <td><code>node_dict</code></td>
+          <td><code>Partition_dict</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#dict">dict</a></code>
           </td>
           <td>
             <div class="doc-md-description">
-              <p>A populated node dictionary, an empty one is
-created by create_node_dict</p>
+              <p>A populated partition dictionary, an empty
+one is created by create_partition_dict</p>
             </div>
           </td>
           <td>
@@ -1358,8 +1533,8 @@ created by create_node_dict</p>
           </td>
           <td>
             <div class="doc-md-description">
-              <p>0 for success or -1 for error, and the slurm error code is
-set appropriately.</p>
+              <p>0 for success, -1 for error, and the slurm error code is set
+  appropriately.</p>
             </div>
           </td>
         </tr>

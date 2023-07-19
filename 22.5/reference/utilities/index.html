@@ -14,14 +14,14 @@
         <link rel="prev" href="../trigger/">
       
       
-        <link rel="next" href="../db/">
+        <link rel="next" href="../xcollections/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.15">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.0.15">
     
     
       
-        <title>Utilities - pyslurm</title>
+        <title>utils - pyslurm</title>
       
     
     
@@ -113,7 +113,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Utilities
+              utils
             
           </span>
         </div>
@@ -207,11 +207,15 @@
   
 
 
-  <li class="md-tabs__item">
-    <a href="../.." class="md-tabs__link">
-      Home
-    </a>
-  </li>
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        Home
+      </a>
+    </li>
+  
 
       
         
@@ -282,10 +286,60 @@
   
   
   
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../..">Home</a>
+          
+            <label for="__nav_1">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_1">
+          <span class="md-nav__icon md-icon"></span>
+          Home
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
-        Home
+      <a href="../../changelog/" class="md-nav__link">
+        Changelog
       </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -311,6 +365,10 @@
         
           
             
+          
+        
+          
+        
           
         
           
@@ -373,6 +431,20 @@
     <li class="md-nav__item">
       <a href="../config/" class="md-nav__link">
         Config
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../constants/" class="md-nav__link">
+        constants
       </a>
     </li>
   
@@ -561,12 +633,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Utilities
+          utils
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Utilities
+        utils
       </a>
       
         
@@ -680,6 +752,20 @@
   
   
   
+    <li class="md-nav__item">
+      <a href="../xcollections/" class="md-nav__link">
+        xcollections
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
     
       
     
@@ -688,7 +774,7 @@
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_16" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_18" >
       
       
         
@@ -719,14 +805,14 @@
         <div class="md-nav__link md-nav__link--index ">
           <a href="../db/">Database</a>
           
-            <label for="__nav_2_16">
+            <label for="__nav_2_18">
               <span class="md-nav__icon md-icon"></span>
             </label>
           
         </div>
       
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_16_label" aria-expanded="false">
-        <label class="md-nav__title" for="__nav_2_16">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_18_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2_18">
           <span class="md-nav__icon md-icon"></span>
           Database
         </label>
@@ -796,8 +882,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../db/jobsearchfilter/" class="md-nav__link">
-        JobSearchFilter
+      <a href="../db/jobfilter/" class="md-nav__link">
+        JobFilter
       </a>
     </li>
   
@@ -985,7 +1071,7 @@
   
 
 
-  <h1>Utilities</h1>
+  <h1>utils</h1>
 
 <div class="doc doc-object doc-module">
 
@@ -1055,7 +1141,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>A Timestring compatible with Slurms time functions.</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>A Timestring compatible with Slurms time functions.</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -1076,7 +1166,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
           </td>
-          <td><p>Amount of time in seconds</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Amount of time in seconds</p>
+            </div>
+          </td>
         </tr>
     </tbody>
   </table>
@@ -1119,7 +1213,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>A Timestring compatible with Slurms time functions.</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>A Timestring compatible with Slurms time functions.</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -1140,7 +1238,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
           </td>
-          <td><p>Amount of time in minutes</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Amount of time in minutes</p>
+            </div>
+          </td>
         </tr>
     </tbody>
   </table>
@@ -1183,7 +1285,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
           </td>
-          <td><p>Amount of seconds to convert </p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Amount of seconds to convert </p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -1204,7 +1310,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>A Slurm timestring</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>A Slurm timestring</p>
+            </div>
+          </td>
         </tr>
     </tbody>
   </table>
@@ -1247,7 +1357,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
           </td>
-          <td><p>Amount of minutes to convert</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Amount of minutes to convert</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -1268,7 +1382,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>A Slurm timestring</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>A Slurm timestring</p>
+            </div>
+          </td>
         </tr>
     </tbody>
   </table>
@@ -1311,7 +1429,11 @@
           <td>
                 <code>Union[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>, <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a>, <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/datetime.html#module-datetime">datetime</a>.<a class="autorefs autorefs-external" title="datetime.datetime" href="https://docs.python.org/3/library/datetime.html#datetime.datetime">datetime</a>]</code>
           </td>
-          <td><p>A date to convert to a Unix timestamp.</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>A date to convert to a Unix timestamp.</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -1332,7 +1454,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
           </td>
-          <td><p>A unix timestamp</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>A unix timestamp</p>
+            </div>
+          </td>
         </tr>
     </tbody>
   </table>
@@ -1375,7 +1501,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
           </td>
-          <td><p>A Unix timestamp that should be converted.</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>A Unix timestamp that should be converted.</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -1396,7 +1526,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>A Slurm date timestring</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>A Slurm date timestring</p>
+            </div>
+          </td>
         </tr>
     </tbody>
   </table>
@@ -1439,8 +1573,12 @@
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>A range string, which can for example look like this:
-"1,2,3-10,11,15-20"</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>A range string, which can for example look like this:
+"1,2,3-10,11,15-20"</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -1461,7 +1599,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#list">list</a></code>
           </td>
-          <td><p>List of unique values</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>List of unique values</p>
+            </div>
+          </td>
         </tr>
     </tbody>
   </table>
@@ -1506,7 +1648,11 @@ M,G,T,P,...</p>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
           </td>
-          <td><p>Number to humanize</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Number to humanize</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -1516,7 +1662,11 @@ M,G,T,P,...</p>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
           </td>
-          <td><p>Amount of decimals the humanized string should have.</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Amount of decimals the humanized string should have.</p>
+            </div>
+          </td>
           <td>
                 <code>1</code>
           </td>
@@ -1537,7 +1687,11 @@ M,G,T,P,...</p>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>Humanized number with appropriate suffix.</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Humanized number with appropriate suffix.</p>
+            </div>
+          </td>
         </tr>
     </tbody>
   </table>
@@ -1580,7 +1734,11 @@ M,G,T,P,...</p>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>A humanized str, for example "5M" or "10T"</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>A humanized str, for example "5M" or "10T"</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -1590,8 +1748,12 @@ M,G,T,P,...</p>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>Target unit. The default is "M" (Mebibytes). Allowed values are
-K,M,G,T,P,E,Z</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Target unit. The default is "M" (Mebibytes). Allowed values are
+K,M,G,T,P,E,Z</p>
+            </div>
+          </td>
           <td>
                 <code>&#39;M&#39;</code>
           </td>
@@ -1601,7 +1763,11 @@ K,M,G,T,P,E,Z</p></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
           </td>
-          <td><p>Amount of decimal places the result should have. Default is 0</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Amount of decimal places the result should have. Default is 0</p>
+            </div>
+          </td>
           <td>
                 <code>0</code>
           </td>
@@ -1622,7 +1788,11 @@ K,M,G,T,P,E,Z</p></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
           </td>
-          <td><p>Dehumanized value</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Dehumanized value</p>
+            </div>
+          </td>
         </tr>
     </tbody>
   </table>
@@ -1665,8 +1835,12 @@ K,M,G,T,P,E,Z</p></td>
           <td>
                 <code>Union[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>, <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#list">list</a>]</code>
           </td>
-          <td><p>Comma-seperated str or list with potentially bracketed hostnames
-and ranges.</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Comma-seperated str or list with potentially bracketed hostnames
+and ranges.</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -1687,7 +1861,11 @@ and ranges.</p></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#list">list</a></code>
           </td>
-          <td><p>List of all nodenames or None on failure</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>List of all nodenames or None on failure</p>
+            </div>
+          </td>
         </tr>
     </tbody>
   </table>
@@ -1730,7 +1908,11 @@ and ranges.</p></td>
           <td>
                 <code>Union[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>, <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#list">list</a>]</code>
           </td>
-          <td><p>Comma-seperated str or list with unique, unbracketed nodenames.</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Comma-seperated str or list with unique, unbracketed nodenames.</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -1751,7 +1933,11 @@ and ranges.</p></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>Bracketed, ranged nodelist or None on failure.</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Bracketed, ranged nodelist or None on failure.</p>
+            </div>
+          </td>
         </tr>
     </tbody>
   </table>

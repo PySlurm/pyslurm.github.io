@@ -17,7 +17,7 @@
         <link rel="next" href="../reservation/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.15">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.0.15">
     
     
       
@@ -77,7 +77,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#pyslurm.partition" class="md-skip">
+        <a href="#pyslurm.Partition" class="md-skip">
           Skip to content
         </a>
       
@@ -207,11 +207,15 @@
   
 
 
-  <li class="md-tabs__item">
-    <a href="../.." class="md-tabs__link">
-      Home
-    </a>
-  </li>
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        Home
+      </a>
+    </li>
+  
 
       
         
@@ -282,10 +286,60 @@
   
   
   
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../..">Home</a>
+          
+            <label for="__nav_1">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_1">
+          <span class="md-nav__icon md-icon"></span>
+          Home
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
-        Home
+      <a href="../../changelog/" class="md-nav__link">
+        Changelog
       </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -311,6 +365,10 @@
         
           
             
+          
+        
+          
+        
           
         
           
@@ -373,6 +431,20 @@
     <li class="md-nav__item">
       <a href="../config/" class="md-nav__link">
         Config
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../constants/" class="md-nav__link">
+        constants
       </a>
     </li>
   
@@ -513,72 +585,78 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#pyslurm.partition" class="md-nav__link">
-    partition
+  <a href="#pyslurm.Partition" class="md-nav__link">
+    Partition
   </a>
   
-    <nav class="md-nav" aria-label="partition">
+    <nav class="md-nav" aria-label="Partition">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#pyslurm.pyslurm.partition.create" class="md-nav__link">
+  <a href="#pyslurm.core.partition.Partition.create" class="md-nav__link">
     create()
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#pyslurm.pyslurm.partition.delete" class="md-nav__link">
+  <a href="#pyslurm.core.partition.Partition.delete" class="md-nav__link">
     delete()
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#pyslurm.pyslurm.partition.find" class="md-nav__link">
-    find()
+  <a href="#pyslurm.core.partition.Partition.load" class="md-nav__link">
+    load()
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#pyslurm.pyslurm.partition.find_id" class="md-nav__link">
-    find_id()
+  <a href="#pyslurm.core.partition.Partition.modify" class="md-nav__link">
+    modify()
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#pyslurm.pyslurm.partition.get" class="md-nav__link">
-    get()
+  <a href="#pyslurm.core.partition.Partition.to_dict" class="md-nav__link">
+    to_dict()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pyslurm.Partitions" class="md-nav__link">
+    Partitions
+  </a>
+  
+    <nav class="md-nav" aria-label="Partitions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pyslurm.core.partition.Partitions.load" class="md-nav__link">
+    load()
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#pyslurm.pyslurm.partition.ids" class="md-nav__link">
-    ids()
+  <a href="#pyslurm.core.partition.Partitions.modify" class="md-nav__link">
+    modify()
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#pyslurm.pyslurm.partition.lastUpdate" class="md-nav__link">
-    lastUpdate()
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pyslurm.pyslurm.partition.print_info_msg" class="md-nav__link">
-    print_info_msg()
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pyslurm.pyslurm.partition.update" class="md-nav__link">
-    update()
+  <a href="#pyslurm.core.partition.Partitions.reload" class="md-nav__link">
+    reload()
   </a>
   
 </li>
@@ -660,7 +738,21 @@
   
     <li class="md-nav__item">
       <a href="../utilities/" class="md-nav__link">
-        Utilities
+        utils
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../xcollections/" class="md-nav__link">
+        xcollections
       </a>
     </li>
   
@@ -680,7 +772,7 @@
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_16" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_18" >
       
       
         
@@ -711,14 +803,14 @@
         <div class="md-nav__link md-nav__link--index ">
           <a href="../db/">Database</a>
           
-            <label for="__nav_2_16">
+            <label for="__nav_2_18">
               <span class="md-nav__icon md-icon"></span>
             </label>
           
         </div>
       
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_16_label" aria-expanded="false">
-        <label class="md-nav__title" for="__nav_2_16">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_18_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2_18">
           <span class="md-nav__icon md-icon"></span>
           Database
         </label>
@@ -788,8 +880,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../db/jobsearchfilter/" class="md-nav__link">
-        JobSearchFilter
+      <a href="../db/jobfilter/" class="md-nav__link">
+        JobFilter
       </a>
     </li>
   
@@ -876,72 +968,78 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#pyslurm.partition" class="md-nav__link">
-    partition
+  <a href="#pyslurm.Partition" class="md-nav__link">
+    Partition
   </a>
   
-    <nav class="md-nav" aria-label="partition">
+    <nav class="md-nav" aria-label="Partition">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#pyslurm.pyslurm.partition.create" class="md-nav__link">
+  <a href="#pyslurm.core.partition.Partition.create" class="md-nav__link">
     create()
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#pyslurm.pyslurm.partition.delete" class="md-nav__link">
+  <a href="#pyslurm.core.partition.Partition.delete" class="md-nav__link">
     delete()
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#pyslurm.pyslurm.partition.find" class="md-nav__link">
-    find()
+  <a href="#pyslurm.core.partition.Partition.load" class="md-nav__link">
+    load()
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#pyslurm.pyslurm.partition.find_id" class="md-nav__link">
-    find_id()
+  <a href="#pyslurm.core.partition.Partition.modify" class="md-nav__link">
+    modify()
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#pyslurm.pyslurm.partition.get" class="md-nav__link">
-    get()
+  <a href="#pyslurm.core.partition.Partition.to_dict" class="md-nav__link">
+    to_dict()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pyslurm.Partitions" class="md-nav__link">
+    Partitions
+  </a>
+  
+    <nav class="md-nav" aria-label="Partitions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pyslurm.core.partition.Partitions.load" class="md-nav__link">
+    load()
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#pyslurm.pyslurm.partition.ids" class="md-nav__link">
-    ids()
+  <a href="#pyslurm.core.partition.Partitions.modify" class="md-nav__link">
+    modify()
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#pyslurm.pyslurm.partition.lastUpdate" class="md-nav__link">
-    lastUpdate()
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pyslurm.pyslurm.partition.print_info_msg" class="md-nav__link">
-    print_info_msg()
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pyslurm.pyslurm.partition.update" class="md-nav__link">
-    update()
+  <a href="#pyslurm.core.partition.Partitions.reload" class="md-nav__link">
+    reload()
   </a>
   
 </li>
@@ -971,10 +1069,10 @@
 
   <h1>Partition</h1>
 
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>This API is currently being completely reworked, and is subject to be
-removed in the future when a replacement is introduced</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This supersedes the <a href="../old/partition/">pyslurm.partition</a> class, which
+will be removed in a future release</p>
 </div>
 
 
@@ -982,8 +1080,8 @@ removed in the future when a replacement is introduced</p>
 
 
 
-<h2 id="pyslurm.partition" class="doc doc-heading">
-        <code>pyslurm.partition</code>
+<h2 id="pyslurm.Partition" class="doc doc-heading">
+        <code>pyslurm.Partition</code>
 
 
 </h2>
@@ -992,7 +1090,532 @@ removed in the future when a replacement is introduced</p>
   <div class="doc doc-contents first">
 
   
-      <p>Slurm Partition Information.</p>
+      <p>A Slurm partition.</p>
+<details class="info">
+<summary>Setting Memory related attributes</summary>
+<p>Unless otherwise noted, all attributes in this class representing a
+memory value, like <code>default_memory_per_cpu</code>, may also be set with a
+string that contains suffixes like "K", "M", "G" or "T".</p>
+<p>For example:</p>
+<div class="language-text highlight"><pre><span></span><code>default_memory_per_cpu = &quot;10G&quot;
+</code></pre></div>
+<p>This will internally be converted to 10240 (how the Slurm API expects
+it)</p>
+</details>
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>name</code></td>
+          <td>
+                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Name of a Partition</p>
+            </div>
+          </td>
+          <td>
+                <code>None</code>
+          </td>
+        </tr>
+        <tr>
+          <td><code>**kwargs</code></td>
+          <td>
+                <code><a class="autorefs autorefs-external" title="typing.Any" href="https://docs.python.org/3/library/typing.html#typing.Any">Any</a></code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Every attribute of a Partition can be set, except for:</p>
+<ul>
+<li>total_cpus</li>
+<li>total_nodes</li>
+<li>select_type_parameters</li>
+</ul>
+            </div>
+          </td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  <p><strong>Attributes:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>name</code></td>
+          <td>
+                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Name of the Partition.</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><code>allowed_submit_nodes</code></td>
+          <td>
+                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#list">list</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>]</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>List of Nodes from which Jobs can be submitted to the partition.</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><code>allowed_accounts</code></td>
+          <td>
+                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#list">list</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>]</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>List of Accounts which are allowed to execute Jobs</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><code>allowed_groups</code></td>
+          <td>
+                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#list">list</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>]</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>List of Groups which are allowed to execute Jobs</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><code>allowed_qos</code></td>
+          <td>
+                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#list">list</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>]</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>List of QoS which are allowed to execute Jobs</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><code>alternate</code></td>
+          <td>
+                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Name of the alternate Partition in case a Partition is down.</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><code>select_type_parameters</code></td>
+          <td>
+                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#list">list</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>]</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>List of Select type parameters for the select plugin.</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><code>cpu_binding</code></td>
+          <td>
+                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Default CPU-binding for Jobs that execute in a Partition.</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><code>default_memory_per_cpu</code></td>
+          <td>
+                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Default Memory per CPU for Jobs in this Partition, in Mebibytes.
+Mutually exclusive with <code>default_memory_per_node</code>.</p>
+<p>This can also return <a class="autorefs autorefs-internal" href="../constants/#pyslurm.constants.UNLIMITED">UNLIMITED</a></p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><code>default_memory_per_node</code></td>
+          <td>
+                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Default Memory per Node for Jobs in this Partition, in Mebibytes.
+Mutually exclusive with <code>default_memory_per_cpu</code>.</p>
+<p>This can also return <a class="autorefs autorefs-internal" href="../constants/#pyslurm.constants.UNLIMITED">UNLIMITED</a></p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><code>max_memory_per_cpu</code></td>
+          <td>
+                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Max Memory per CPU allowed for Jobs in this Partition, in
+Mebibytes. Mutually exclusive with <code>max_memory_per_node</code>.</p>
+<p>This can also return <a class="autorefs autorefs-internal" href="../constants/#pyslurm.constants.UNLIMITED">UNLIMITED</a></p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><code>max_memory_per_node</code></td>
+          <td>
+                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Max Memory per Node allowed for Jobs in this Partition, in
+Mebibytes. Mutually exclusive with <code>max_memory_per_cpu</code></p>
+<p>This can also return <a class="autorefs autorefs-internal" href="../constants/#pyslurm.constants.UNLIMITED">UNLIMITED</a></p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><code>default_time</code></td>
+          <td>
+                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Default run time-limit in minutes for Jobs that don't specify one.</p>
+<p>This can also return <a class="autorefs autorefs-internal" href="../constants/#pyslurm.constants.UNLIMITED">UNLIMITED</a></p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><code>denied_qos</code></td>
+          <td>
+                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#list">list</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>]</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>List of QoS that cannot be used in a Partition</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><code>denied_accounts</code></td>
+          <td>
+                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#list">list</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>]</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>List of Accounts that cannot use a Partition</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><code>preemption_grace_time</code></td>
+          <td>
+                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Grace Time in seconds when a Job is selected for Preemption.</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><code>default_cpus_per_gpu</code></td>
+          <td>
+                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Default CPUs per GPU for Jobs in this Partition</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><code>default_memory_per_gpu</code></td>
+          <td>
+                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Default Memory per GPU, in Mebibytes, for Jobs in this Partition</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><code>max_cpus_per_node</code></td>
+          <td>
+                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Max CPUs per Node allowed for Jobs in this Partition</p>
+<p>This can also return <a class="autorefs autorefs-internal" href="../constants/#pyslurm.constants.UNLIMITED">UNLIMITED</a></p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><code>max_nodes</code></td>
+          <td>
+                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Max number of Nodes allowed for Jobs</p>
+<p>This can also return <a class="autorefs autorefs-internal" href="../constants/#pyslurm.constants.UNLIMITED">UNLIMITED</a></p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><code>min_nodes</code></td>
+          <td>
+                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Minimum number of Nodes that must be requested by Jobs </p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><code>max_time</code></td>
+          <td>
+                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Max Time-Limit in minutes that Jobs can request</p>
+<p>This can also return <a class="autorefs autorefs-internal" href="../constants/#pyslurm.constants.UNLIMITED">UNLIMITED</a></p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><code>oversubscribe</code></td>
+          <td>
+                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>The oversubscribe mode for this Partition</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><code>nodes</code></td>
+          <td>
+                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Nodes that are in a Partition</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><code>nodesets</code></td>
+          <td>
+                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#list">list</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>]</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>List of Nodesets that a Partition has configured</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><code>over_time_limit</code></td>
+          <td>
+                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Limit in minutes that Jobs can exceed their time-limit</p>
+<p>This can also return <a class="autorefs autorefs-internal" href="../constants/#pyslurm.constants.UNLIMITED">UNLIMITED</a></p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><code>preempt_mode</code></td>
+          <td>
+                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Preemption Mode in a Partition</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><code>priority_job_factor</code></td>
+          <td>
+                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>The Priority Job Factor for a partition</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><code>priority_tier</code></td>
+          <td>
+                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>The priority tier for a Partition</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><code>qos</code></td>
+          <td>
+                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>A QoS associated with a Partition, used to extend possible limits</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><code>total_cpus</code></td>
+          <td>
+                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Total number of CPUs available in a Partition</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><code>total_nodes</code></td>
+          <td>
+                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Total number of nodes available in a Partition</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><code>state</code></td>
+          <td>
+                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>State the Partition is in</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><code>is_default</code></td>
+          <td>
+                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#bool">bool</a></code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Whether this Partition is the default partition or not</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><code>allow_root_jobs</code></td>
+          <td>
+                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#bool">bool</a></code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Whether Jobs by the root user are allowed</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><code>is_user_exclusive</code></td>
+          <td>
+                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#bool">bool</a></code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Whether nodes will be exclusively allocated to users</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><code>is_hidden</code></td>
+          <td>
+                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#bool">bool</a></code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Whether the partition is hidden or not</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><code>least_loaded_nodes_scheduling</code></td>
+          <td>
+                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#bool">bool</a></code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Whether Least-Loaded-Nodes scheduling algorithm is used on a
+Partition</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><code>is_root_only</code></td>
+          <td>
+                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#bool">bool</a></code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Whether only root is able to use a Partition</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><code>requires_reservation</code></td>
+          <td>
+                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#bool">bool</a></code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Whether a reservation is required to use a Partition</p>
+            </div>
+          </td>
+        </tr>
+    </tbody>
+  </table>
 
 
 
@@ -1012,8 +1635,8 @@ removed in the future when a replacement is introduced</p>
 
 
 
-<h3 id="pyslurm.pyslurm.partition.create" class="doc doc-heading">
-<code class="highlight language-python"><span class="n">create</span><span class="p">(</span><span class="n">Partition_dict</span><span class="p">)</span></code>
+<h3 id="pyslurm.core.partition.Partition.create" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">create</span><span class="p">()</span></code>
   
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-method descriptor"><code>method descriptor</code></small>
@@ -1024,32 +1647,8 @@ removed in the future when a replacement is introduced</p>
 
   <div class="doc doc-contents ">
   
-      <p>Create a slurm partition.</p>
-
-  <p><strong>Parameters:</strong></p>
-  <table>
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Type</th>
-        <th>Description</th>
-        <th>Default</th>
-      </tr>
-    </thead>
-    <tbody>
-        <tr>
-          <td><code>Partition_dict</code></td>
-          <td>
-                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#dict">dict</a></code>
-          </td>
-          <td><p>A populated partition dictionary, an empty
-one can be created by create_partition_dict</p></td>
-          <td>
-              <em>required</em>
-          </td>
-        </tr>
-    </tbody>
-  </table>
+      <p>Create a Partition.</p>
+<p>Implements the slurm_create_partition RPC.</p>
 
   <p><strong>Returns:</strong></p>
   <table>
@@ -1062,61 +1661,19 @@ one can be created by create_partition_dict</p></td>
     <tbody>
         <tr>
           <td>
-                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
+                <code><a class="autorefs autorefs-internal" title="pyslurm.pyslurm.pyslurm" href="../#pyslurm">pyslurm</a>.<a class="autorefs autorefs-internal" title="pyslurm.pyslurm.pyslurm.Partition" href="#pyslurm.Partition">Partition</a></code>
           </td>
-          <td><p>0 for success or -1 for error, and the slurm error code is
-set appropriately.</p></td>
-        </tr>
-    </tbody>
-  </table>
-
-  </div>
-
-</div>
-
-<div class="doc doc-object doc-function">
-
-
-
-<h3 id="pyslurm.pyslurm.partition.delete" class="doc doc-heading">
-<code class="highlight language-python"><span class="n">delete</span><span class="p">(</span><span class="n">PartID</span><span class="p">)</span></code>
-  
-  <span class="doc doc-labels">
-      <small class="doc doc-label doc-label-method descriptor"><code>method descriptor</code></small>
-  </span>
-
-</h3>
-
-
-  <div class="doc doc-contents ">
-  
-      <p>Delete a give slurm partition.</p>
-
-  <p><strong>Parameters:</strong></p>
-  <table>
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Type</th>
-        <th>Description</th>
-        <th>Default</th>
-      </tr>
-    </thead>
-    <tbody>
-        <tr>
-          <td><code>PartID</code></td>
           <td>
-                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
-          </td>
-          <td><p>Name of slurm partition</p></td>
-          <td>
-              <em>required</em>
+            <div class="doc-md-description">
+              <p>This function returns the current Partition
+instance object itself.</p>
+            </div>
           </td>
         </tr>
     </tbody>
   </table>
 
-  <p><strong>Returns:</strong></p>
+  <p><strong>Raises:</strong></p>
   <table>
     <thead>
       <tr>
@@ -1127,13 +1684,21 @@ set appropriately.</p></td>
     <tbody>
         <tr>
           <td>
-                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
+                <code><a class="autorefs autorefs-internal" title="pyslurm.core.error.RPCError" href="../exceptions/#pyslurm.RPCError">RPCError</a></code>
           </td>
-          <td><p>0 for success else set the slurm error code as
-appropriately.</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>If creating the Partition was not successful.</p>
+            </div>
+          </td>
         </tr>
     </tbody>
   </table>
+
+<p><strong>Examples:</strong></p>
+    <div class="highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">pyslurm</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="gp">&gt;&gt;&gt; </span><span class="n">part</span> <span class="o">=</span> <span class="n">pyslurm</span><span class="o">.</span><span class="n">Partition</span><span class="p">(</span><span class="s2">&quot;debug&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">create</span><span class="p">()</span>
+</span></code></pre></div>
 
   </div>
 
@@ -1143,8 +1708,8 @@ appropriately.</p></td>
 
 
 
-<h3 id="pyslurm.pyslurm.partition.find" class="doc doc-heading">
-<code class="highlight language-python"><span class="n">find</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">val</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span></code>
+<h3 id="pyslurm.core.partition.Partition.delete" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">delete</span><span class="p">()</span></code>
   
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-method descriptor"><code>method descriptor</code></small>
@@ -1155,7 +1720,57 @@ appropriately.</p></td>
 
   <div class="doc doc-contents ">
   
-      <p>Search for a property and associated value in the retrieved partition data.</p>
+      <p>Delete a Partition.</p>
+<p>Implements the slurm_delete_partition RPC.</p>
+
+  <p><strong>Raises:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+                <code><a class="autorefs autorefs-internal" title="pyslurm.core.error.RPCError" href="../exceptions/#pyslurm.RPCError">RPCError</a></code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>When deleting the Partition was not successful.</p>
+            </div>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+<p><strong>Examples:</strong></p>
+    <div class="highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">pyslurm</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="gp">&gt;&gt;&gt; </span><span class="n">pyslurm</span><span class="o">.</span><span class="n">Partition</span><span class="p">(</span><span class="s2">&quot;normal&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">delete</span><span class="p">()</span>
+</span></code></pre></div>
+
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="pyslurm.core.partition.Partition.load" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">load</span><span class="p">(</span><span class="n">name</span><span class="p">)</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-staticmethod"><code>staticmethod</code></small>
+  </span>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Load information for a specific Partition.</p>
 
   <p><strong>Parameters:</strong></p>
   <table>
@@ -1173,81 +1788,11 @@ appropriately.</p></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>key string to search</p></td>
           <td>
-                <code>&#39;&#39;</code>
+            <div class="doc-md-description">
+              <p>The name of the Partition to load.</p>
+            </div>
           </td>
-        </tr>
-        <tr>
-          <td><code>val</code></td>
-          <td>
-                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
-          </td>
-          <td><p>value string to match</p></td>
-          <td>
-                <code>&#39;&#39;</code>
-          </td>
-        </tr>
-    </tbody>
-  </table>
-
-  <p><strong>Returns:</strong></p>
-  <table>
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-        <tr>
-          <td>
-                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#list">list</a></code>
-          </td>
-          <td><p>List of IDs that match</p></td>
-        </tr>
-    </tbody>
-  </table>
-
-  </div>
-
-</div>
-
-<div class="doc doc-object doc-function">
-
-
-
-<h3 id="pyslurm.pyslurm.partition.find_id" class="doc doc-heading">
-<code class="highlight language-python"><span class="n">find_id</span><span class="p">(</span><span class="n">partID</span><span class="p">)</span></code>
-  
-  <span class="doc doc-labels">
-      <small class="doc doc-label doc-label-method descriptor"><code>method descriptor</code></small>
-  </span>
-
-</h3>
-
-
-  <div class="doc doc-contents ">
-  
-      <p>Get partition information for a given partition.</p>
-
-  <p><strong>Parameters:</strong></p>
-  <table>
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Type</th>
-        <th>Description</th>
-        <th>Default</th>
-      </tr>
-    </thead>
-    <tbody>
-        <tr>
-          <td><code>partID</code></td>
-          <td>
-                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
-          </td>
-          <td><p>Partition key string to search</p></td>
           <td>
               <em>required</em>
           </td>
@@ -1266,36 +1811,18 @@ appropriately.</p></td>
     <tbody>
         <tr>
           <td>
-                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#dict">dict</a></code>
+                <code><a class="autorefs autorefs-internal" title="pyslurm.pyslurm.pyslurm" href="../#pyslurm">pyslurm</a>.<a class="autorefs autorefs-internal" title="pyslurm.pyslurm.pyslurm.Partition" href="#pyslurm.Partition">Partition</a></code>
           </td>
-          <td><p>Dictionary of values for given partition</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Returns a new Partition instance.</p>
+            </div>
+          </td>
         </tr>
     </tbody>
   </table>
 
-  </div>
-
-</div>
-
-<div class="doc doc-object doc-function">
-
-
-
-<h3 id="pyslurm.pyslurm.partition.get" class="doc doc-heading">
-<code class="highlight language-python"><span class="n">get</span><span class="p">()</span></code>
-  
-  <span class="doc doc-labels">
-      <small class="doc doc-label doc-label-method descriptor"><code>method descriptor</code></small>
-  </span>
-
-</h3>
-
-
-  <div class="doc doc-contents ">
-  
-      <p>Get all slurm partition information</p>
-
-  <p><strong>Returns:</strong></p>
+  <p><strong>Raises:</strong></p>
   <table>
     <thead>
       <tr>
@@ -1306,52 +1833,22 @@ appropriately.</p></td>
     <tbody>
         <tr>
           <td>
-                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#dict">dict</a></code>
+                <code><a class="autorefs autorefs-internal" title="pyslurm.core.error.RPCError" href="../exceptions/#pyslurm.RPCError">RPCError</a></code>
           </td>
-          <td><p>Dictionary of dictionaries whose key is the partition name.</p></td>
-        </tr>
-    </tbody>
-  </table>
-
-  </div>
-
-</div>
-
-<div class="doc doc-object doc-function">
-
-
-
-<h3 id="pyslurm.pyslurm.partition.ids" class="doc doc-heading">
-<code class="highlight language-python"><span class="n">ids</span><span class="p">()</span></code>
-  
-  <span class="doc doc-labels">
-      <small class="doc doc-label doc-label-method descriptor"><code>method descriptor</code></small>
-  </span>
-
-</h3>
-
-
-  <div class="doc doc-contents ">
-  
-      <p>Return the partition IDs from retrieved data.</p>
-
-  <p><strong>Returns:</strong></p>
-  <table>
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-        <tr>
           <td>
-                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#dict">dict</a></code>
+            <div class="doc-md-description">
+              <p>If requesting the Partition information from the
+slurmctld was not successful.</p>
+            </div>
           </td>
-          <td><p>Dictionary of partition IDs</p></td>
         </tr>
     </tbody>
   </table>
+
+<p><strong>Examples:</strong></p>
+    <div class="highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">pyslurm</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="gp">&gt;&gt;&gt; </span><span class="n">part</span> <span class="o">=</span> <span class="n">pyslurm</span><span class="o">.</span><span class="n">Partition</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="s2">&quot;normal&quot;</span><span class="p">)</span>
+</span></code></pre></div>
 
   </div>
 
@@ -1361,8 +1858,8 @@ appropriately.</p></td>
 
 
 
-<h3 id="pyslurm.pyslurm.partition.lastUpdate" class="doc doc-heading">
-<code class="highlight language-python"><span class="n">lastUpdate</span><span class="p">()</span></code>
+<h3 id="pyslurm.core.partition.Partition.modify" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">modify</span><span class="p">(</span><span class="n">changes</span><span class="p">)</span></code>
   
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-method descriptor"><code>method descriptor</code></small>
@@ -1373,47 +1870,8 @@ appropriately.</p></td>
 
   <div class="doc doc-contents ">
   
-      <p>Return time (epoch seconds) the partition data was updated.</p>
-
-  <p><strong>Returns:</strong></p>
-  <table>
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-        <tr>
-          <td>
-                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
-          </td>
-          <td><p>Epoch seconds</p></td>
-        </tr>
-    </tbody>
-  </table>
-
-  </div>
-
-</div>
-
-<div class="doc doc-object doc-function">
-
-
-
-<h3 id="pyslurm.pyslurm.partition.print_info_msg" class="doc doc-heading">
-<code class="highlight language-python"><span class="n">print_info_msg</span><span class="p">(</span><span class="n">oneLiner</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span></code>
-  
-  <span class="doc doc-labels">
-      <small class="doc doc-label doc-label-method descriptor"><code>method descriptor</code></small>
-  </span>
-
-</h3>
-
-
-  <div class="doc doc-contents ">
-  
-      <p>Display partition information from previous load partition method.</p>
+      <p>Modify a Partition.</p>
+<p>Implements the slurm_update_partition RPC.</p>
 
   <p><strong>Parameters:</strong></p>
   <table>
@@ -1427,58 +1885,17 @@ appropriately.</p></td>
     </thead>
     <tbody>
         <tr>
-          <td><code>oneLiner</code></td>
+          <td><code>changes</code></td>
           <td>
-                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
+                <code><a class="autorefs autorefs-internal" title="pyslurm.pyslurm.pyslurm" href="../#pyslurm">pyslurm</a>.<a class="autorefs autorefs-internal" title="pyslurm.pyslurm.pyslurm.Partition" href="#pyslurm.Partition">Partition</a></code>
           </td>
-          <td><p>Display on one line.</p></td>
           <td>
-                <code>0</code>
+            <div class="doc-md-description">
+              <p>Another Partition object that contains all the changes to
+apply. Check the <code>Other Parameters</code> of the Partition class to
+see which properties can be modified.</p>
+            </div>
           </td>
-        </tr>
-    </tbody>
-  </table>
-
-  </div>
-
-</div>
-
-<div class="doc doc-object doc-function">
-
-
-
-<h3 id="pyslurm.pyslurm.partition.update" class="doc doc-heading">
-<code class="highlight language-python"><span class="n">update</span><span class="p">(</span><span class="n">Partition_dict</span><span class="p">)</span></code>
-  
-  <span class="doc doc-labels">
-      <small class="doc doc-label doc-label-method descriptor"><code>method descriptor</code></small>
-  </span>
-
-</h3>
-
-
-  <div class="doc doc-contents ">
-  
-      <p>Update a slurm partition.</p>
-
-  <p><strong>Parameters:</strong></p>
-  <table>
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Type</th>
-        <th>Description</th>
-        <th>Default</th>
-      </tr>
-    </thead>
-    <tbody>
-        <tr>
-          <td><code>Partition_dict</code></td>
-          <td>
-                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#dict">dict</a></code>
-          </td>
-          <td><p>A populated partition dictionary, an empty
-one is created by create_partition_dict</p></td>
           <td>
               <em>required</em>
           </td>
@@ -1486,6 +1903,60 @@ one is created by create_partition_dict</p></td>
     </tbody>
   </table>
 
+  <p><strong>Raises:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+                <code><a class="autorefs autorefs-internal" title="pyslurm.core.error.RPCError" href="../exceptions/#pyslurm.RPCError">RPCError</a></code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>When updating the Partition was not successful.</p>
+            </div>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+<p><strong>Examples:</strong></p>
+    <div class="highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">pyslurm</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="go">&gt;&gt;&gt;</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="gp">&gt;&gt;&gt; </span><span class="n">part</span> <span class="o">=</span> <span class="n">pyslurm</span><span class="o">.</span><span class="n">Partition</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="s2">&quot;normal&quot;</span><span class="p">)</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Prepare the changes</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="gp">&gt;&gt;&gt; </span><span class="n">changes</span> <span class="o">=</span> <span class="n">pyslurm</span><span class="o">.</span><span class="n">Partition</span><span class="p">(</span><span class="n">state</span><span class="o">=</span><span class="s2">&quot;DRAIN&quot;</span><span class="p">)</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Apply the changes to the &quot;normal&quot; Partition</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="gp">&gt;&gt;&gt; </span><span class="n">part</span><span class="o">.</span><span class="n">modify</span><span class="p">(</span><span class="n">changes</span><span class="p">)</span>
+</span></code></pre></div>
+
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="pyslurm.core.partition.Partition.to_dict" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">to_dict</span><span class="p">()</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-method descriptor"><code>method descriptor</code></small>
+  </span>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Partition information formatted as a dictionary.</p>
+
   <p><strong>Returns:</strong></p>
   <table>
     <thead>
@@ -1497,10 +1968,344 @@ one is created by create_partition_dict</p></td>
     <tbody>
         <tr>
           <td>
+                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#dict">dict</a></code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Partition information as dict</p>
+            </div>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+<p><strong>Examples:</strong></p>
+    <div class="highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">pyslurm</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="gp">&gt;&gt;&gt; </span><span class="n">mypart</span> <span class="o">=</span> <span class="n">pyslurm</span><span class="o">.</span><span class="n">Partition</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="s2">&quot;mypart&quot;</span><span class="p">)</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="gp">&gt;&gt;&gt; </span><span class="n">mypart_dict</span> <span class="o">=</span> <span class="n">mypart</span><span class="o">.</span><span class="n">to_dict</span><span class="p">()</span>
+</span></code></pre></div>
+
+  </div>
+
+</div>
+
+
+
+  </div>
+
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-class">
+
+
+
+<h2 id="pyslurm.Partitions" class="doc doc-heading">
+        <code>pyslurm.Partitions</code>
+
+
+</h2>
+
+
+  <div class="doc doc-contents first">
+      <p class="doc doc-class-bases">
+        Bases: <code>MultiClusterMap</code></p>
+
+  
+      <p>A <a class="autorefs autorefs-internal" href="../xcollections/#pyslurm.xcollections.MultiClusterMap"><code>Multi Cluster</code></a> collection of <a class="autorefs autorefs-internal" href="#pyslurm.Partition">pyslurm.Partition</a> objects.</p>
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>partitions</code></td>
+          <td>
+                <code><a class="autorefs autorefs-external" title="typing.Union" href="https://docs.python.org/3/library/typing.html#typing.Union">Union</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#list">list</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>], <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#dict">dict</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>, <a class="autorefs autorefs-internal" title="pyslurm.core.partition.Partition" href="#pyslurm.Partition">Partition</a>], <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>]</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Partitions to initialize this collection with.</p>
+            </div>
+          </td>
+          <td>
+                <code>None</code>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  <p><strong>Attributes:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>total_cpus</code></td>
+          <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
           </td>
-          <td><p>0 for success, -1 for error, and the slurm error code is set
-  appropriately.</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Total amount of CPUs the Partitions in a Collection have</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><code>total_nodes</code></td>
+          <td>
+                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Total amount of Nodes the Partitions in a Collection have</p>
+            </div>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="pyslurm.core.partition.Partitions.load" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">load</span><span class="p">()</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-staticmethod"><code>staticmethod</code></small>
+  </span>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Load all Partitions in the system.</p>
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+                <code><a class="autorefs autorefs-internal" title="pyslurm.pyslurm.pyslurm" href="../#pyslurm">pyslurm</a>.<a class="autorefs autorefs-internal" title="pyslurm.pyslurm.pyslurm.Partitions" href="#pyslurm.Partitions">Partitions</a></code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Collection of Partition objects.</p>
+            </div>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  <p><strong>Raises:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+                <code><a class="autorefs autorefs-internal" title="pyslurm.core.error.RPCError" href="../exceptions/#pyslurm.RPCError">RPCError</a></code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>When getting all the Partitions from the slurmctld
+failed.</p>
+            </div>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="pyslurm.core.partition.Partitions.modify" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">modify</span><span class="p">(</span><span class="n">changes</span><span class="p">)</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-method descriptor"><code>method descriptor</code></small>
+  </span>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Modify all Partitions in a Collection.</p>
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>changes</code></td>
+          <td>
+                <code><a class="autorefs autorefs-internal" title="pyslurm.pyslurm.pyslurm" href="../#pyslurm">pyslurm</a>.<a class="autorefs autorefs-internal" title="pyslurm.pyslurm.pyslurm.Partition" href="#pyslurm.Partition">Partition</a></code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Another Partition object that contains all the changes to
+apply. Check the <code>Other Parameters</code> of the Partition class to
+see which properties can be modified.</p>
+            </div>
+          </td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  <p><strong>Raises:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+                <code><a class="autorefs autorefs-internal" title="pyslurm.core.error.RPCError" href="../exceptions/#pyslurm.RPCError">RPCError</a></code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>When updating at least one Partition failed.</p>
+            </div>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+<p><strong>Examples:</strong></p>
+    <div class="highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">pyslurm</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="go">&gt;&gt;&gt;</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="gp">&gt;&gt;&gt; </span><span class="n">parts</span> <span class="o">=</span> <span class="n">pyslurm</span><span class="o">.</span><span class="n">Partitions</span><span class="o">.</span><span class="n">load</span><span class="p">()</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Prepare the changes</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="gp">&gt;&gt;&gt; </span><span class="n">changes</span> <span class="o">=</span> <span class="n">pyslurm</span><span class="o">.</span><span class="n">Partition</span><span class="p">(</span><span class="n">state</span><span class="o">=</span><span class="s2">&quot;DRAIN&quot;</span><span class="p">)</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Apply the changes to all the partitions</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="gp">&gt;&gt;&gt; </span><span class="n">parts</span><span class="o">.</span><span class="n">modify</span><span class="p">(</span><span class="n">changes</span><span class="p">)</span>
+</span></code></pre></div>
+
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="pyslurm.core.partition.Partitions.reload" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">reload</span><span class="p">()</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-method descriptor"><code>method descriptor</code></small>
+  </span>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Reload the information for Partitions in a collection.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Only information for Partitions which are already in the
+collection at the time of calling this method will be reloaded.</p>
+</div>
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+                <code><a class="autorefs autorefs-internal" title="pyslurm.pyslurm.pyslurm" href="../#pyslurm">pyslurm</a>.<a class="autorefs autorefs-internal" title="pyslurm.pyslurm.pyslurm.Partitions" href="#pyslurm.Partitions">Partitions</a></code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Returns self</p>
+            </div>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  <p><strong>Raises:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+                <code><a class="autorefs autorefs-internal" title="pyslurm.core.error.RPCError" href="../exceptions/#pyslurm.RPCError">RPCError</a></code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>When getting the Partitions from the slurmctld failed.</p>
+            </div>
+          </td>
         </tr>
     </tbody>
   </table>

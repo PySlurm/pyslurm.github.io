@@ -8,20 +8,20 @@
       
       
       
-        <link rel="canonical" href="https://pyslurm.github.io/22.5/reference/old/node/">
+        <link rel="canonical" href="https://pyslurm.github.io/22.5/reference/db/jobfilter/">
       
       
-        <link rel="prev" href="../jobstep/">
+        <link rel="prev" href="../job/">
       
       
-        <link rel="next" href="../partition/">
+        <link rel="next" href="../jobstats/">
       
       <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.0.15">
     
     
       
-        <title>Node - pyslurm</title>
+        <title>JobFilter - pyslurm</title>
       
     
     
@@ -77,7 +77,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#pyslurm.node" class="md-skip">
+        <a href="#pyslurm.db.JobFilter" class="md-skip">
           Skip to content
         </a>
       
@@ -113,7 +113,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Node
+              JobFilter
             
           </span>
         </div>
@@ -221,13 +221,15 @@
         
   
   
+    
+  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../../" class="md-tabs__link">
+      <a href="../../" class="md-tabs__link md-tabs__link--active">
         API Reference
       </a>
     </li>
@@ -348,14 +350,16 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
       
       
         
@@ -410,7 +414,7 @@
           
         </div>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_2">
           <span class="md-nav__icon md-icon"></span>
           API Reference
@@ -647,16 +651,18 @@
               
   
   
+    
+  
   
     
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_18" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_18" checked>
       
       
         
@@ -685,7 +691,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../db/">Database</a>
+          <a href="../">Database</a>
           
             <label for="__nav_2_18">
               <span class="md-nav__icon md-icon"></span>
@@ -693,7 +699,7 @@
           
         </div>
       
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_18_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_18_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_2_18">
           <span class="md-nav__icon md-icon"></span>
           Database
@@ -708,7 +714,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../db/cluster/" class="md-nav__link">
+      <a href="../cluster/" class="md-nav__link">
         Cluster
       </a>
     </li>
@@ -722,7 +728,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../db/connection/" class="md-nav__link">
+      <a href="../connection/" class="md-nav__link">
         Connection
       </a>
     </li>
@@ -736,7 +742,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../db/event/" class="md-nav__link">
+      <a href="../event/" class="md-nav__link">
         Event
       </a>
     </li>
@@ -750,7 +756,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../db/job/" class="md-nav__link">
+      <a href="../job/" class="md-nav__link">
         Job
       </a>
     </li>
@@ -762,11 +768,48 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../db/jobfilter/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          JobFilter
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         JobFilter
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#pyslurm.db.JobFilter" class="md-nav__link">
+    JobFilter
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -778,7 +821,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../db/jobstats/" class="md-nav__link">
+      <a href="../jobstats/" class="md-nav__link">
         JobStatistics
       </a>
     </li>
@@ -792,7 +835,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../db/jobstep/" class="md-nav__link">
+      <a href="../jobstep/" class="md-nav__link">
         JobStep
       </a>
     </li>
@@ -806,7 +849,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../db/reservation/" class="md-nav__link">
+      <a href="../reservation/" class="md-nav__link">
         Reservation
       </a>
     </li>
@@ -852,64 +895,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#pyslurm.node" class="md-nav__link">
-    node
+  <a href="#pyslurm.db.JobFilter" class="md-nav__link">
+    JobFilter
   </a>
-  
-    <nav class="md-nav" aria-label="node">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#pyslurm.pyslurm.node.find_id" class="md-nav__link">
-    find_id()
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pyslurm.pyslurm.node.get" class="md-nav__link">
-    get()
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pyslurm.pyslurm.node.get_node" class="md-nav__link">
-    get_node()
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pyslurm.pyslurm.node.ids" class="md-nav__link">
-    ids()
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pyslurm.pyslurm.node.lastUpdate" class="md-nav__link">
-    lastUpdate()
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pyslurm.pyslurm.node.print_node_info_msg" class="md-nav__link">
-    print_node_info_msg()
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pyslurm.pyslurm.node.update" class="md-nav__link">
-    update()
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -931,21 +919,14 @@
   
 
 
-  <h1>Node</h1>
-
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>This class is superseded by <a href="../../node/">pyslurm.Node</a> and will be
-removed in a future release.</p>
-</div>
-
+  <h1>JobFilter</h1>
 
 <div class="doc doc-object doc-class">
 
 
 
-<h2 id="pyslurm.node" class="doc doc-heading">
-        <code>pyslurm.node</code>
+<h2 id="pyslurm.db.JobFilter" class="doc doc-heading">
+        <code>pyslurm.db.JobFilter</code>
 
 
 </h2>
@@ -954,7 +935,305 @@ removed in a future release.</p>
   <div class="doc doc-contents first">
 
   
-      <p>Access/Modify/Update Slurm Node Information.</p>
+      <p>Query-Conditions for Jobs in the Slurm Database.</p>
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>**kwargs</code></td>
+          <td>
+                <code><a class="autorefs autorefs-external" title="typing.Any" href="https://docs.python.org/3/library/typing.html#typing.Any">Any</a></code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Any valid attribute of the object.</p>
+            </div>
+          </td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  <p><strong>Attributes:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>ids</code></td>
+          <td>
+                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#list">list</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a>]</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>A list of Job ids to search for.</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><code>start_time</code></td>
+          <td>
+                <code><a class="autorefs autorefs-external" title="typing.Union" href="https://docs.python.org/3/library/typing.html#typing.Union">Union</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>, <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a>, <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/datetime.html#module-datetime">datetime</a>.<a class="autorefs autorefs-external" title="datetime.datetime" href="https://docs.python.org/3/library/datetime.html#datetime.datetime">datetime</a>]</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Search for Jobs which started after this time.</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><code>end_time</code></td>
+          <td>
+                <code><a class="autorefs autorefs-external" title="typing.Union" href="https://docs.python.org/3/library/typing.html#typing.Union">Union</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>, <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a>, <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/datetime.html#module-datetime">datetime</a>.<a class="autorefs autorefs-external" title="datetime.datetime" href="https://docs.python.org/3/library/datetime.html#datetime.datetime">datetime</a>]</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Search for Jobs which ended before this time.</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><code>accounts</code></td>
+          <td>
+                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#list">list</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>]</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Search for Jobs with these account names.</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><code>association_ids</code></td>
+          <td>
+                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#list">list</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a>]</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Search for Jobs with these association ids.</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><code>clusters</code></td>
+          <td>
+                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#list">list</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>]</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Search for Jobs running in these clusters.</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><code>constraints</code></td>
+          <td>
+                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#list">list</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>]</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Search for Jobs with these constraints.</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><code>cpus</code></td>
+          <td>
+                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Search for Jobs with exactly this many CPUs.
+Note: If you also specify <code>max_cpus</code>, then this value will act as
+the minimum.</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><code>max_cpus</code></td>
+          <td>
+                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Search for Jobs with no more than this amount of CPUs.
+Note: This value has no effect without also setting <code>cpus</code>.</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><code>nodes</code></td>
+          <td>
+                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Search for Jobs with exactly this many nodes.
+Note: If you also specify <code>max_nodes</code>, then this value will act as
+the minimum.</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><code>max_nodes</code></td>
+          <td>
+                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Search for Jobs with no more than this amount of nodes.
+Note: This value has no effect without also setting <code>nodes</code>.</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><code>qos</code></td>
+          <td>
+                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#list">list</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>]</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Search for Jobs with these Qualities of Service.</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><code>names</code></td>
+          <td>
+                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#list">list</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>]</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Search for Jobs with these job names.</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><code>partitions</code></td>
+          <td>
+                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#list">list</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>]</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Search for Jobs with these partition names.</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><code>groups</code></td>
+          <td>
+                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#list">list</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>]</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Search for Jobs with these group names. Alternatively, you can
+also specify the GIDs directly.</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><code>timelimit</code></td>
+          <td>
+                <code><a class="autorefs autorefs-external" title="typing.Union" href="https://docs.python.org/3/library/typing.html#typing.Union">Union</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>, <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a>]</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Search for Jobs with exactly this timelimit.
+Note: If you also specify <code>max_timelimit</code>, then this value will act
+as the minimum.</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><code>max_timelimit</code></td>
+          <td>
+                <code><a class="autorefs autorefs-external" title="typing.Union" href="https://docs.python.org/3/library/typing.html#typing.Union">Union</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>, <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a>]</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Search for Jobs which run no longer than this timelimit
+Note: This value has no effect without also setting <code>timelimit</code></p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><code>users</code></td>
+          <td>
+                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#list">list</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>]</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Search for Jobs with these user names. Alternatively, you can also
+specify the UIDs directly.</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><code>wckeys</code></td>
+          <td>
+                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#list">list</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>]</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Search for Jobs with these WCKeys</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><code>nodelist</code></td>
+          <td>
+                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#list">list</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>]</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Search for Jobs that ran on any of these Nodes</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><code>with_script</code></td>
+          <td>
+                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#bool">bool</a></code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Instruct the slurmdbd to also send the job script(s)
+Note: This requires specifying explictiy job ids, and is mutually
+exclusive with <code>with_env</code></p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><code>with_env</code></td>
+          <td>
+                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#bool">bool</a></code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Instruct the slurmdbd to also send the job environment(s)
+Note: This requires specifying explictiy job ids, and is mutually
+exclusive with <code>with_script</code></p>
+            </div>
+          </td>
+        </tr>
+    </tbody>
+  </table>
 
 
 
@@ -969,406 +1248,6 @@ removed in a future release.</p>
 
 
 
-
-<div class="doc doc-object doc-function">
-
-
-
-<h3 id="pyslurm.pyslurm.node.find_id" class="doc doc-heading">
-<code class="highlight language-python"><span class="n">find_id</span><span class="p">(</span><span class="n">nodeID</span><span class="p">)</span></code>
-  
-  <span class="doc doc-labels">
-      <small class="doc doc-label doc-label-method descriptor"><code>method descriptor</code></small>
-  </span>
-
-</h3>
-
-
-  <div class="doc doc-contents ">
-  
-      <p>Get node information for a given node.</p>
-
-  <p><strong>Parameters:</strong></p>
-  <table>
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Type</th>
-        <th>Description</th>
-        <th>Default</th>
-      </tr>
-    </thead>
-    <tbody>
-        <tr>
-          <td><code>nodeID</code></td>
-          <td>
-                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
-          </td>
-          <td>
-            <div class="doc-md-description">
-              <p>Node key string to search</p>
-            </div>
-          </td>
-          <td>
-              <em>required</em>
-          </td>
-        </tr>
-    </tbody>
-  </table>
-
-  <p><strong>Returns:</strong></p>
-  <table>
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-        <tr>
-          <td>
-                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#dict">dict</a></code>
-          </td>
-          <td>
-            <div class="doc-md-description">
-              <p>Dictionary of values for given node</p>
-            </div>
-          </td>
-        </tr>
-    </tbody>
-  </table>
-
-  </div>
-
-</div>
-
-<div class="doc doc-object doc-function">
-
-
-
-<h3 id="pyslurm.pyslurm.node.get" class="doc doc-heading">
-<code class="highlight language-python"><span class="n">get</span><span class="p">()</span></code>
-  
-  <span class="doc doc-labels">
-      <small class="doc doc-label doc-label-method descriptor"><code>method descriptor</code></small>
-  </span>
-
-</h3>
-
-
-  <div class="doc doc-contents ">
-  
-      <p>Get all slurm node information.</p>
-
-  <p><strong>Returns:</strong></p>
-  <table>
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-        <tr>
-          <td>
-                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#dict">dict</a></code>
-          </td>
-          <td>
-            <div class="doc-md-description">
-              <p>Dictionary of dictionaries whose key is the node name.</p>
-            </div>
-          </td>
-        </tr>
-    </tbody>
-  </table>
-
-  </div>
-
-</div>
-
-<div class="doc doc-object doc-function">
-
-
-
-<h3 id="pyslurm.pyslurm.node.get_node" class="doc doc-heading">
-<code class="highlight language-python"><span class="n">get_node</span><span class="p">(</span><span class="n">nodeID</span><span class="p">)</span></code>
-  
-  <span class="doc doc-labels">
-      <small class="doc doc-label doc-label-method descriptor"><code>method descriptor</code></small>
-  </span>
-
-</h3>
-
-
-  <div class="doc doc-contents ">
-  
-      <p>Get single slurm node information.</p>
-
-  <p><strong>Parameters:</strong></p>
-  <table>
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Type</th>
-        <th>Description</th>
-        <th>Default</th>
-      </tr>
-    </thead>
-    <tbody>
-        <tr>
-          <td><code>nodeID</code></td>
-          <td>
-                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
-          </td>
-          <td>
-            <div class="doc-md-description">
-              <p>Node key string to search. Default NULL.</p>
-            </div>
-          </td>
-          <td>
-              <em>required</em>
-          </td>
-        </tr>
-    </tbody>
-  </table>
-
-  <p><strong>Returns:</strong></p>
-  <table>
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-        <tr>
-          <td>
-                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#dict">dict</a></code>
-          </td>
-          <td>
-            <div class="doc-md-description">
-              <p>Dictionary of node info data.</p>
-            </div>
-          </td>
-        </tr>
-    </tbody>
-  </table>
-
-  </div>
-
-</div>
-
-<div class="doc doc-object doc-function">
-
-
-
-<h3 id="pyslurm.pyslurm.node.ids" class="doc doc-heading">
-<code class="highlight language-python"><span class="n">ids</span><span class="p">()</span></code>
-  
-  <span class="doc doc-labels">
-      <small class="doc doc-label doc-label-method descriptor"><code>method descriptor</code></small>
-  </span>
-
-</h3>
-
-
-  <div class="doc doc-contents ">
-  
-      <p>Return the node IDs from retrieved data.</p>
-
-  <p><strong>Returns:</strong></p>
-  <table>
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-        <tr>
-          <td>
-                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#dict">dict</a></code>
-          </td>
-          <td>
-            <div class="doc-md-description">
-              <p>Dictionary of node IDs</p>
-            </div>
-          </td>
-        </tr>
-    </tbody>
-  </table>
-
-  </div>
-
-</div>
-
-<div class="doc doc-object doc-function">
-
-
-
-<h3 id="pyslurm.pyslurm.node.lastUpdate" class="doc doc-heading">
-<code class="highlight language-python"><span class="n">lastUpdate</span><span class="p">()</span></code>
-  
-  <span class="doc doc-labels">
-      <small class="doc doc-label doc-label-method descriptor"><code>method descriptor</code></small>
-  </span>
-
-</h3>
-
-
-  <div class="doc doc-contents ">
-  
-      <p>Return last time (epoch seconds) the node data was updated.</p>
-
-  <p><strong>Returns:</strong></p>
-  <table>
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-        <tr>
-          <td>
-                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
-          </td>
-          <td>
-            <div class="doc-md-description">
-              <p>Epoch seconds</p>
-            </div>
-          </td>
-        </tr>
-    </tbody>
-  </table>
-
-  </div>
-
-</div>
-
-<div class="doc doc-object doc-function">
-
-
-
-<h3 id="pyslurm.pyslurm.node.print_node_info_msg" class="doc doc-heading">
-<code class="highlight language-python"><span class="n">print_node_info_msg</span><span class="p">(</span><span class="n">oneLiner</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></code>
-  
-  <span class="doc doc-labels">
-      <small class="doc doc-label doc-label-method descriptor"><code>method descriptor</code></small>
-  </span>
-
-</h3>
-
-
-  <div class="doc doc-contents ">
-  
-      <p>Output information about all slurm nodes.</p>
-
-  <p><strong>Parameters:</strong></p>
-  <table>
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Type</th>
-        <th>Description</th>
-        <th>Default</th>
-      </tr>
-    </thead>
-    <tbody>
-        <tr>
-          <td><code>oneLiner</code></td>
-          <td>
-                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
-          </td>
-          <td>
-            <div class="doc-md-description">
-              <p>Print on one line</p>
-            </div>
-          </td>
-          <td>
-                <code>False</code>
-          </td>
-        </tr>
-    </tbody>
-  </table>
-
-  </div>
-
-</div>
-
-<div class="doc doc-object doc-function">
-
-
-
-<h3 id="pyslurm.pyslurm.node.update" class="doc doc-heading">
-<code class="highlight language-python"><span class="n">update</span><span class="p">(</span><span class="n">node_dict</span><span class="p">)</span></code>
-  
-  <span class="doc doc-labels">
-      <small class="doc doc-label doc-label-method descriptor"><code>method descriptor</code></small>
-  </span>
-
-</h3>
-
-
-  <div class="doc doc-contents ">
-  
-      <p>Update slurm node information.</p>
-
-  <p><strong>Parameters:</strong></p>
-  <table>
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Type</th>
-        <th>Description</th>
-        <th>Default</th>
-      </tr>
-    </thead>
-    <tbody>
-        <tr>
-          <td><code>node_dict</code></td>
-          <td>
-                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#dict">dict</a></code>
-          </td>
-          <td>
-            <div class="doc-md-description">
-              <p>A populated node dictionary, an empty one is
-created by create_node_dict</p>
-            </div>
-          </td>
-          <td>
-              <em>required</em>
-          </td>
-        </tr>
-    </tbody>
-  </table>
-
-  <p><strong>Returns:</strong></p>
-  <table>
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-        <tr>
-          <td>
-                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
-          </td>
-          <td>
-            <div class="doc-md-description">
-              <p>0 for success or -1 for error, and the slurm error code is
-set appropriately.</p>
-            </div>
-          </td>
-        </tr>
-    </tbody>
-  </table>
-
-  </div>
-
-</div>
 
 
 
