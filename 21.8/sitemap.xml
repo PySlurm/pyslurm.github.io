@@ -2,147 +2,167 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://pyslurm.github.io/21.8/</loc>
-         <lastmod>2023-05-14</lastmod>
+         <lastmod>2023-07-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://pyslurm.github.io/21.8/changelog/</loc>
+         <lastmod>2023-07-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pyslurm.github.io/21.8/reference/</loc>
-         <lastmod>2023-05-14</lastmod>
+         <lastmod>2023-07-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pyslurm.github.io/21.8/reference/config/</loc>
-         <lastmod>2023-05-14</lastmod>
+         <lastmod>2023-07-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://pyslurm.github.io/21.8/reference/constants/</loc>
+         <lastmod>2023-07-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pyslurm.github.io/21.8/reference/exceptions/</loc>
-         <lastmod>2023-05-14</lastmod>
+         <lastmod>2023-07-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pyslurm.github.io/21.8/reference/frontend/</loc>
-         <lastmod>2023-05-14</lastmod>
+         <lastmod>2023-07-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pyslurm.github.io/21.8/reference/hostlist/</loc>
-         <lastmod>2023-05-14</lastmod>
+         <lastmod>2023-07-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pyslurm.github.io/21.8/reference/job/</loc>
-         <lastmod>2023-05-14</lastmod>
+         <lastmod>2023-07-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pyslurm.github.io/21.8/reference/jobstep/</loc>
-         <lastmod>2023-05-14</lastmod>
+         <lastmod>2023-07-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pyslurm.github.io/21.8/reference/jobsubmitdescription/</loc>
-         <lastmod>2023-05-14</lastmod>
+         <lastmod>2023-07-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pyslurm.github.io/21.8/reference/node/</loc>
-         <lastmod>2023-05-14</lastmod>
+         <lastmod>2023-07-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pyslurm.github.io/21.8/reference/partition/</loc>
-         <lastmod>2023-05-14</lastmod>
+         <lastmod>2023-07-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pyslurm.github.io/21.8/reference/reservation/</loc>
-         <lastmod>2023-05-14</lastmod>
+         <lastmod>2023-07-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pyslurm.github.io/21.8/reference/statistics/</loc>
-         <lastmod>2023-05-14</lastmod>
+         <lastmod>2023-07-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pyslurm.github.io/21.8/reference/topology/</loc>
-         <lastmod>2023-05-14</lastmod>
+         <lastmod>2023-07-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pyslurm.github.io/21.8/reference/trigger/</loc>
-         <lastmod>2023-05-14</lastmod>
+         <lastmod>2023-07-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pyslurm.github.io/21.8/reference/utilities/</loc>
-         <lastmod>2023-05-14</lastmod>
+         <lastmod>2023-07-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://pyslurm.github.io/21.8/reference/xcollections/</loc>
+         <lastmod>2023-07-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pyslurm.github.io/21.8/reference/db/</loc>
-         <lastmod>2023-05-14</lastmod>
+         <lastmod>2023-07-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pyslurm.github.io/21.8/reference/db/cluster/</loc>
-         <lastmod>2023-05-14</lastmod>
+         <lastmod>2023-07-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pyslurm.github.io/21.8/reference/db/connection/</loc>
-         <lastmod>2023-05-14</lastmod>
+         <lastmod>2023-07-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pyslurm.github.io/21.8/reference/db/event/</loc>
-         <lastmod>2023-05-14</lastmod>
+         <lastmod>2023-07-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pyslurm.github.io/21.8/reference/db/job/</loc>
-         <lastmod>2023-05-14</lastmod>
+         <lastmod>2023-07-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://pyslurm.github.io/21.8/reference/db/jobsearchfilter/</loc>
-         <lastmod>2023-05-14</lastmod>
+         <loc>https://pyslurm.github.io/21.8/reference/db/jobfilter/</loc>
+         <lastmod>2023-07-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pyslurm.github.io/21.8/reference/db/jobstats/</loc>
-         <lastmod>2023-05-14</lastmod>
+         <lastmod>2023-07-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pyslurm.github.io/21.8/reference/db/jobstep/</loc>
-         <lastmod>2023-05-14</lastmod>
+         <lastmod>2023-07-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pyslurm.github.io/21.8/reference/db/reservation/</loc>
-         <lastmod>2023-05-14</lastmod>
+         <lastmod>2023-07-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pyslurm.github.io/21.8/reference/old/job/</loc>
-         <lastmod>2023-05-14</lastmod>
+         <lastmod>2023-07-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pyslurm.github.io/21.8/reference/old/jobstep/</loc>
-         <lastmod>2023-05-14</lastmod>
+         <lastmod>2023-07-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pyslurm.github.io/21.8/reference/old/node/</loc>
-         <lastmod>2023-05-14</lastmod>
+         <lastmod>2023-07-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://pyslurm.github.io/21.8/reference/old/partition/</loc>
+         <lastmod>2023-07-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pyslurm.github.io/21.8/reference/old/db/job/</loc>
-         <lastmod>2023-05-14</lastmod>
+         <lastmod>2023-07-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>

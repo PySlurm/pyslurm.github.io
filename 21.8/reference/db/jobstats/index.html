@@ -11,13 +11,13 @@
         <link rel="canonical" href="https://pyslurm.github.io/21.8/reference/db/jobstats/">
       
       
-        <link rel="prev" href="../jobsearchfilter/">
+        <link rel="prev" href="../jobfilter/">
       
       
         <link rel="next" href="../jobstep/">
       
       <link rel="icon" href="../../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.15">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.0.15">
     
     
       
@@ -207,11 +207,15 @@
   
 
 
-  <li class="md-tabs__item">
-    <a href="../../.." class="md-tabs__link">
-      Home
-    </a>
-  </li>
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        Home
+      </a>
+    </li>
+  
 
       
         
@@ -282,10 +286,60 @@
   
   
   
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../..">Home</a>
+          
+            <label for="__nav_1">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_1">
+          <span class="md-nav__icon md-icon"></span>
+          Home
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
     <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
-        Home
+      <a href="../../../changelog/" class="md-nav__link">
+        Changelog
       </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -311,6 +365,10 @@
         
           
             
+          
+        
+          
+        
           
         
           
@@ -373,6 +431,20 @@
     <li class="md-nav__item">
       <a href="../../config/" class="md-nav__link">
         Config
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../constants/" class="md-nav__link">
+        constants
       </a>
     </li>
   
@@ -554,7 +626,21 @@
   
     <li class="md-nav__item">
       <a href="../../utilities/" class="md-nav__link">
-        Utilities
+        utils
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../xcollections/" class="md-nav__link">
+        xcollections
       </a>
     </li>
   
@@ -576,7 +662,7 @@
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_16" checked>
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_18" checked>
       
       
         
@@ -607,14 +693,14 @@
         <div class="md-nav__link md-nav__link--index ">
           <a href="../">Database</a>
           
-            <label for="__nav_2_16">
+            <label for="__nav_2_18">
               <span class="md-nav__icon md-icon"></span>
             </label>
           
         </div>
       
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_16_label" aria-expanded="true">
-        <label class="md-nav__title" for="__nav_2_16">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_18_label" aria-expanded="true">
+        <label class="md-nav__title" for="__nav_2_18">
           <span class="md-nav__icon md-icon"></span>
           Database
         </label>
@@ -684,8 +770,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../jobsearchfilter/" class="md-nav__link">
-        JobSearchFilter
+      <a href="../jobfilter/" class="md-nav__link">
+        JobFilter
       </a>
     </li>
   
@@ -870,212 +956,332 @@
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
           </td>
-          <td><p>Total amount of energy consumed, in joules</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Total amount of energy consumed, in joules</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>elapsed_cpu_time</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
           </td>
-          <td><p>Total amount of time used(Elapsed time * cpu count) in seconds.
+          <td>
+            <div class="doc-md-description">
+              <p>Total amount of time used(Elapsed time * cpu count) in seconds.
 This is not the real CPU-Efficiency, but rather the total amount
-of cpu-time the CPUs were occupied for</p></td>
+of cpu-time the CPUs were occupied for</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>avg_cpu_time</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
           </td>
-          <td><p>Average CPU-Time (System + User) in seconds of all tasks</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Average CPU-Time (System + User) in seconds of all tasks</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>avg_cpu_frequency</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
           </td>
-          <td><p>Average weighted CPU-Frequency of all tasks, in Kilohertz</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Average weighted CPU-Frequency of all tasks, in Kilohertz</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>avg_disk_read</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
           </td>
-          <td><p>Average number of bytes read by all tasks</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Average number of bytes read by all tasks</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>avg_disk_write</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
           </td>
-          <td><p>Average number of bytes written by all tasks</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Average number of bytes written by all tasks</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>avg_page_faults</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
           </td>
-          <td><p>Average number of page faults by all tasks</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Average number of page faults by all tasks</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>avg_resident_memory</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
           </td>
-          <td><p>Average Resident Set Size (RSS) in bytes of all tasks</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Average Resident Set Size (RSS) in bytes of all tasks</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>avg_virtual_memory</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
           </td>
-          <td><p>Average Virtual Memory Size (VSZ) in bytes of all tasks</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Average Virtual Memory Size (VSZ) in bytes of all tasks</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>max_disk_read</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
           </td>
-          <td><p>Highest peak number of bytes read by all tasks</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Highest peak number of bytes read by all tasks</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>max_disk_read_node</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
           </td>
-          <td><p>Name of the Node where max_disk_read occured</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Name of the Node where max_disk_read occured</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>max_disk_read_task</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
           </td>
-          <td><p>ID of the Task where max_disk_read occured</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>ID of the Task where max_disk_read occured</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>max_disk_write</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
           </td>
-          <td><p>Lowest peak number of bytes written by all tasks</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Lowest peak number of bytes written by all tasks</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>max_disk_write_node</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
           </td>
-          <td><p>Name of the Node where max_disk_write occured</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Name of the Node where max_disk_write occured</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>max_disk_write_task</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
           </td>
-          <td><p>ID of the Task where max_disk_write occured</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>ID of the Task where max_disk_write occured</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>max_page_faults</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
           </td>
-          <td><p>Highest peak number of page faults by all tasks</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Highest peak number of page faults by all tasks</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>max_page_faults_node</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
           </td>
-          <td><p>Name of the Node where max_page_faults occured</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Name of the Node where max_page_faults occured</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>max_page_faults_task</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
           </td>
-          <td><p>ID of the Task where max_page_faults occured</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>ID of the Task where max_page_faults occured</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>max_resident_memory</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
           </td>
-          <td><p>Highest peak Resident Set Size (RSS) in bytes by all tasks</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Highest peak Resident Set Size (RSS) in bytes by all tasks</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>max_resident_memory_node</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
           </td>
-          <td><p>Name of the Node where max_resident_memory occured</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Name of the Node where max_resident_memory occured</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>max_resident_memory_task</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
           </td>
-          <td><p>ID of the Task where max_resident_memory occured</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>ID of the Task where max_resident_memory occured</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>max_virtual_memory</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
           </td>
-          <td><p>Highest peak Virtual Memory Size (VSZ) in bytes by all tasks</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Highest peak Virtual Memory Size (VSZ) in bytes by all tasks</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>max_virtual_memory_node</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
           </td>
-          <td><p>Name of the Node where max_virtual_memory occured</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Name of the Node where max_virtual_memory occured</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>max_virtual_memory_task</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
           </td>
-          <td><p>ID of the Task where max_virtual_memory occured</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>ID of the Task where max_virtual_memory occured</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>min_cpu_time</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
           </td>
-          <td><p>Lowest peak CPU-Time (System + User) in seconds of all tasks</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Lowest peak CPU-Time (System + User) in seconds of all tasks</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>min_cpu_time_node</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
           </td>
-          <td><p>Name of the Node where min_cpu_time occured</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Name of the Node where min_cpu_time occured</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>min_cpu_time_task</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
           </td>
-          <td><p>ID of the Task where min_cpu_time occured</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>ID of the Task where min_cpu_time occured</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>total_cpu_time</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
           </td>
-          <td><p>Sum of user_cpu_time and system_cpu_time, in seconds</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Sum of user_cpu_time and system_cpu_time, in seconds</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>user_cpu_time</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
           </td>
-          <td><p>Amount of Time spent in user space, in seconds</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Amount of Time spent in user space, in seconds</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>system_cpu_time</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
           </td>
-          <td><p>Amount of Time spent in kernel space, in seconds</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Amount of Time spent in kernel space, in seconds</p>
+            </div>
+          </td>
         </tr>
     </tbody>
   </table>

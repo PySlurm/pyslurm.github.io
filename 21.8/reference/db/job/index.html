@@ -14,10 +14,10 @@
         <link rel="prev" href="../event/">
       
       
-        <link rel="next" href="../jobsearchfilter/">
+        <link rel="next" href="../jobfilter/">
       
       <link rel="icon" href="../../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.15">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.0.15">
     
     
       
@@ -207,11 +207,15 @@
   
 
 
-  <li class="md-tabs__item">
-    <a href="../../.." class="md-tabs__link">
-      Home
-    </a>
-  </li>
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        Home
+      </a>
+    </li>
+  
 
       
         
@@ -282,10 +286,60 @@
   
   
   
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../..">Home</a>
+          
+            <label for="__nav_1">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_1">
+          <span class="md-nav__icon md-icon"></span>
+          Home
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
     <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
-        Home
+      <a href="../../../changelog/" class="md-nav__link">
+        Changelog
       </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -311,6 +365,10 @@
         
           
             
+          
+        
+          
+        
           
         
           
@@ -373,6 +431,20 @@
     <li class="md-nav__item">
       <a href="../../config/" class="md-nav__link">
         Config
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../constants/" class="md-nav__link">
+        constants
       </a>
     </li>
   
@@ -554,7 +626,21 @@
   
     <li class="md-nav__item">
       <a href="../../utilities/" class="md-nav__link">
-        Utilities
+        utils
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../xcollections/" class="md-nav__link">
+        xcollections
       </a>
     </li>
   
@@ -576,7 +662,7 @@
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_16" checked>
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_18" checked>
       
       
         
@@ -607,14 +693,14 @@
         <div class="md-nav__link md-nav__link--index ">
           <a href="../">Database</a>
           
-            <label for="__nav_2_16">
+            <label for="__nav_2_18">
               <span class="md-nav__icon md-icon"></span>
             </label>
           
         </div>
       
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_16_label" aria-expanded="true">
-        <label class="md-nav__title" for="__nav_2_16">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_18_label" aria-expanded="true">
+        <label class="md-nav__title" for="__nav_2_18">
           <span class="md-nav__icon md-icon"></span>
           Database
         </label>
@@ -708,15 +794,22 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#pyslurm.db.job.Job.as_dict" class="md-nav__link">
-    as_dict()
+  <a href="#pyslurm.db.job.Job.load" class="md-nav__link">
+    load()
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#pyslurm.db.job.Job.load" class="md-nav__link">
-    load()
+  <a href="#pyslurm.db.job.Job.modify" class="md-nav__link">
+    modify()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyslurm.db.job.Job.to_dict" class="md-nav__link">
+    to_dict()
   </a>
   
 </li>
@@ -741,6 +834,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#pyslurm.db.job.Jobs.modify" class="md-nav__link">
+    modify()
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -761,8 +861,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../jobsearchfilter/" class="md-nav__link">
-        JobSearchFilter
+      <a href="../jobfilter/" class="md-nav__link">
+        JobFilter
       </a>
     </li>
   
@@ -857,15 +957,22 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#pyslurm.db.job.Job.as_dict" class="md-nav__link">
-    as_dict()
+  <a href="#pyslurm.db.job.Job.load" class="md-nav__link">
+    load()
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#pyslurm.db.job.Job.load" class="md-nav__link">
-    load()
+  <a href="#pyslurm.db.job.Job.modify" class="md-nav__link">
+    modify()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyslurm.db.job.Job.to_dict" class="md-nav__link">
+    to_dict()
   </a>
   
 </li>
@@ -886,6 +993,13 @@
           <li class="md-nav__item">
   <a href="#pyslurm.db.job.Jobs.load" class="md-nav__link">
     load()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyslurm.db.job.Jobs.modify" class="md-nav__link">
+    modify()
   </a>
   
 </li>
@@ -954,28 +1068,86 @@ will be removed in a future release</p>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
           </td>
-          <td><p>An Integer representing a Job-ID.</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>An Integer representing a Job-ID.</p>
+            </div>
+          </td>
           <td>
                 <code>0</code>
+          </td>
+        </tr>
+        <tr>
+          <td><code>cluster</code></td>
+          <td>
+                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Name of the Cluster for this Job. Default is the name of the local
+Cluster.</p>
+            </div>
+          </td>
+          <td>
+                <code>None</code>
           </td>
         </tr>
     </tbody>
   </table>
 
-  <p><strong>Raises:</strong></p>
+  <p><strong>Other Parameters:</strong></p>
   <table>
     <thead>
       <tr>
+        <th>Name</th>
         <th>Type</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
         <tr>
+          <td><code>admin_comment</code></td>
           <td>
-                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/exceptions.html#MemoryError">MemoryError</a></code>
+                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>If malloc fails to allocate memory.</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Admin comment for the Job.</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><code>comment</code></td>
+          <td>
+                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Comment for the Job</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><code>wckey</code></td>
+          <td>
+                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Name of the WCKey for this Job</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><code>derived_exit_code</code></td>
+          <td>
+                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Highest exit code of all the Job steps</p>
+            </div>
+          </td>
         </tr>
     </tbody>
   </table>
@@ -995,346 +1167,542 @@ will be removed in a future release</p>
           <td>
                 <code><a class="autorefs autorefs-internal" title="pyslurm.pyslurm.pyslurm" href="../../#pyslurm">pyslurm</a>.<span title="pyslurm.pyslurm.pyslurm.db">db</span>.<a class="autorefs autorefs-internal" title="pyslurm.db.JobSteps" href="../jobstep/#pyslurm.db.JobSteps">JobSteps</a></code>
           </td>
-          <td><p>Steps this Job has</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Steps this Job has</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>stats</code></td>
           <td>
                 <code><a class="autorefs autorefs-internal" title="pyslurm.pyslurm.pyslurm" href="../../#pyslurm">pyslurm</a>.<span title="pyslurm.pyslurm.pyslurm.db">db</span>.<a class="autorefs autorefs-internal" title="pyslurm.db.JobStatistics" href="../jobstats/#pyslurm.db.JobStatistics">JobStatistics</a></code>
           </td>
-          <td><p>Utilization statistics of this Job</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Utilization statistics of this Job</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>account</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>Account of the Job.</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Account of the Job.</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>admin_comment</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>Admin comment for the Job.</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Admin comment for the Job.</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>num_nodes</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
           </td>
-          <td><p>Amount of nodes this Job has allocated (if it is running) or
-requested (if it is still pending).</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Amount of nodes this Job has allocated (if it is running) or
+requested (if it is still pending).</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>array_id</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
           </td>
-          <td><p>The master Array-Job ID.</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>The master Array-Job ID.</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>array_tasks_parallel</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
           </td>
-          <td><p>Max number of array tasks allowed to run simultaneously.</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Max number of array tasks allowed to run simultaneously.</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>array_task_id</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
           </td>
-          <td><p>Array Task ID of this Job if it is an Array-Job.</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Array Task ID of this Job if it is an Array-Job.</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>array_tasks_waiting</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>Array Tasks that are still waiting.</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Array Tasks that are still waiting.</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>association_id</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
           </td>
-          <td><p>ID of the Association this job runs in.</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>ID of the Association this job runs in.</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>block_id</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>Name of the block used (for BlueGene Systems) </p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Name of the block used (for BlueGene Systems) </p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>cluster</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>Cluster this Job belongs to</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Cluster this Job belongs to</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>constraints</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>Constraints of the Job</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Constraints of the Job</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>container</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>Path to OCI Container bundle</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Path to OCI Container bundle</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>db_index</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
           </td>
-          <td><p>Unique database index of the Job in the job table</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Unique database index of the Job in the job table</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>derived_exit_code</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
           </td>
-          <td><p>Highest exit code of all the Job steps</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Highest exit code of all the Job steps</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>derived_exit_code_signal</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
           </td>
-          <td><p>Signal of the derived exit code</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Signal of the derived exit code</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>comment</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>Comment for the Job</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Comment for the Job</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>elapsed_time</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
           </td>
-          <td><p>Amount of seconds elapsed for the Job</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Amount of seconds elapsed for the Job</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>eligible_time</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
           </td>
-          <td><p>When the Job became eligible to run, as a unix timestamp</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>When the Job became eligible to run, as a unix timestamp</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>end_time</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
           </td>
-          <td><p>When the Job ended, as a unix timestamp</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>When the Job ended, as a unix timestamp</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>exit_code</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
           </td>
-          <td><p>Exit code of the job script or salloc.</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Exit code of the job script or salloc.</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>exit_code_signal</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
           </td>
-          <td><p>Signal of the exit code for this Job.</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Signal of the exit code for this Job.</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>group_id</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
           </td>
-          <td><p>ID of the group for this Job</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>ID of the group for this Job</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>group_name</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>Name of the group for this Job</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Name of the group for this Job</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>id</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
           </td>
-          <td><p>ID of the Job</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>ID of the Job</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>name</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>Name of the Job</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Name of the Job</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>mcs_label</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>MCS Label of the Job</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>MCS Label of the Job</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>nodelist</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>Nodes this Job is using</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Nodes this Job is using</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>partition</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>Name of the Partition for this Job</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Name of the Partition for this Job</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>priority</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
           </td>
-          <td><p>Priority for the Job</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Priority for the Job</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>qos</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>Name of the Quality of Service for the Job</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Name of the Quality of Service for the Job</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>cpus</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
           </td>
-          <td><p>Amount of CPUs the Job has/had allocated, or, if the Job is still
-pending, this will reflect the amount requested.</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Amount of CPUs the Job has/had allocated, or, if the Job is still
+pending, this will reflect the amount requested.</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>memory</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
           </td>
-          <td><p>Amount of memory the Job requested in total</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Amount of memory the Job requested in total</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>reservation</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>Name of the Reservation for this Job</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Name of the Reservation for this Job</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>script</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>The batch script for this Job.
-Note: Only available if the "with_script" condition was given</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>The batch script for this Job.
+Note: Only available if the "with_script" condition was given</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>start_time</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
           </td>
-          <td><p>Time when the Job started, as a unix timestamp</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Time when the Job started, as a unix timestamp</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>state</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>State of the Job</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>State of the Job</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>state_reason</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>Last reason a Job was blocked from running</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Last reason a Job was blocked from running</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>cancelled_by</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>Name of the User who cancelled this Job</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Name of the User who cancelled this Job</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>submit_time</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
           </td>
-          <td><p>Time the Job was submitted, as a unix timestamp</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Time the Job was submitted, as a unix timestamp</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>submit_command</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>Full command issued to submit the Job</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Full command issued to submit the Job</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>suspended_time</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
           </td>
-          <td><p>Amount of seconds the Job was suspended</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Amount of seconds the Job was suspended</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>system_comment</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>Arbitrary System comment for the Job</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Arbitrary System comment for the Job</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>time_limit</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
           </td>
-          <td><p>Time limit of the Job in minutes</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Time limit of the Job in minutes</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>user_id</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
           </td>
-          <td><p>UID of the User this Job belongs to</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>UID of the User this Job belongs to</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>user_name</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>Name of the User this Job belongs to</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Name of the User this Job belongs to</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>wckey</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>Name of the WCKey for this Job</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Name of the WCKey for this Job</p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td><code>working_directory</code></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
           </td>
-          <td><p>Working directory of the Job</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Working directory of the Job</p>
+            </div>
+          </td>
         </tr>
     </tbody>
   </table>
@@ -1357,54 +1725,8 @@ Note: Only available if the "with_script" condition was given</p></td>
 
 
 
-<h3 id="pyslurm.db.job.Job.as_dict" class="doc doc-heading">
-<code class="highlight language-python"><span class="n">as_dict</span><span class="p">()</span></code>
-  
-  <span class="doc doc-labels">
-      <small class="doc doc-label doc-label-method descriptor"><code>method descriptor</code></small>
-  </span>
-
-</h3>
-
-
-  <div class="doc doc-contents ">
-  
-      <p>Database Job information formatted as a dictionary.</p>
-
-  <p><strong>Returns:</strong></p>
-  <table>
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-        <tr>
-          <td>
-                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#dict">dict</a></code>
-          </td>
-          <td><p>Database Job information as dict</p></td>
-        </tr>
-    </tbody>
-  </table>
-
-<p><strong>Examples:</strong></p>
-    <div class="highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">pyslurm</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="gp">&gt;&gt;&gt; </span><span class="n">myjob</span> <span class="o">=</span> <span class="n">pyslurm</span><span class="o">.</span><span class="n">db</span><span class="o">.</span><span class="n">Job</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="mi">10000</span><span class="p">)</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="gp">&gt;&gt;&gt; </span><span class="n">myjob_dict</span> <span class="o">=</span> <span class="n">myjob</span><span class="o">.</span><span class="n">as_dict</span><span class="p">()</span>
-</span></code></pre></div>
-
-  </div>
-
-</div>
-
-<div class="doc doc-object doc-function">
-
-
-
 <h3 id="pyslurm.db.job.Job.load" class="doc doc-heading">
-<code class="highlight language-python"><span class="n">load</span><span class="p">(</span><span class="n">job_id</span><span class="p">,</span> <span class="n">with_script</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">with_env</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></code>
+<code class="highlight language-python"><span class="n">load</span><span class="p">(</span><span class="n">job_id</span><span class="p">,</span> <span class="n">cluster</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">with_script</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">with_env</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></code>
   
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-staticmethod"><code>staticmethod</code></small>
@@ -1433,9 +1755,58 @@ Note: Only available if the "with_script" condition was given</p></td>
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
           </td>
-          <td><p>ID of the Job to be loaded.</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>ID of the Job to be loaded.</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
+          </td>
+        </tr>
+        <tr>
+          <td><code>cluster</code></td>
+          <td>
+                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Name of the Cluster to search in. Default is the local
+Cluster.</p>
+            </div>
+          </td>
+          <td>
+                <code>None</code>
+          </td>
+        </tr>
+        <tr>
+          <td><code>with_script</code></td>
+          <td>
+                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#bool">bool</a></code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Whether the Job-Script should also be loaded. Mutually
+exclusive with <code>with_env</code>.</p>
+            </div>
+          </td>
+          <td>
+                <code>False</code>
+          </td>
+        </tr>
+        <tr>
+          <td><code>with_env</code></td>
+          <td>
+                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#bool">bool</a></code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Whether the Job Environment should also be loaded. Mutually
+exclusive with <code>with_script</code>.</p>
+            </div>
+          </td>
+          <td>
+                <code>False</code>
           </td>
         </tr>
     </tbody>
@@ -1452,9 +1823,13 @@ Note: Only available if the "with_script" condition was given</p></td>
     <tbody>
         <tr>
           <td>
-                <code><a class="autorefs autorefs-internal" title="pyslurm.pyslurm.pyslurm" href="../../#pyslurm">pyslurm</a>.<a class="autorefs autorefs-internal" title="pyslurm.pyslurm.pyslurm.Job" href="../../job/#pyslurm.Job">Job</a></code>
+                <code><a class="autorefs autorefs-internal" title="pyslurm.pyslurm.pyslurm" href="../../#pyslurm">pyslurm</a>.<span title="pyslurm.pyslurm.pyslurm.db">db</span>.<a class="autorefs autorefs-internal" title="pyslurm.db.Job" href="#pyslurm.db.Job">Job</a></code>
           </td>
-          <td><p>Returns a new Database Job instance</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Returns a new Database Job instance</p>
+            </div>
+          </td>
         </tr>
     </tbody>
   </table>
@@ -1472,8 +1847,12 @@ Note: Only available if the "with_script" condition was given</p></td>
           <td>
                 <code><a class="autorefs autorefs-internal" title="pyslurm.core.error.RPCError" href="../../exceptions/#pyslurm.RPCError">RPCError</a></code>
           </td>
-          <td><p>If requesting the information for the database Job was
-not sucessful.</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>If requesting the information for the database Job was
+not sucessful.</p>
+            </div>
+          </td>
         </tr>
     </tbody>
   </table>
@@ -1482,12 +1861,153 @@ not sucessful.</p></td>
     <div class="highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">pyslurm</span>
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="gp">&gt;&gt;&gt; </span><span class="n">db_job</span> <span class="o">=</span> <span class="n">pyslurm</span><span class="o">.</span><span class="n">db</span><span class="o">.</span><span class="n">Job</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="mi">10000</span><span class="p">)</span>
 </span></code></pre></div>
-    <p>In the above example, attribute like "script" and "environment"
+    <p>In the above example, attributes like <code>script</code> and <code>environment</code>
 are not populated. You must explicitly request one of them to be
 loaded:</p>
     <div class="highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">pyslurm</span>
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="gp">&gt;&gt;&gt; </span><span class="n">db_job</span> <span class="o">=</span> <span class="n">pyslurm</span><span class="o">.</span><span class="n">db</span><span class="o">.</span><span class="n">Job</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="mi">10000</span><span class="p">,</span> <span class="n">with_script</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">db_job</span><span class="o">.</span><span class="n">script</span><span class="p">)</span>
+</span></code></pre></div>
+
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="pyslurm.db.job.Job.modify" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">modify</span><span class="p">(</span><span class="n">changes</span><span class="p">,</span> <span class="n">db_connection</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-method descriptor"><code>method descriptor</code></small>
+  </span>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Modify a Slurm database Job.</p>
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>changes</code></td>
+          <td>
+                <code><a class="autorefs autorefs-internal" title="pyslurm.pyslurm.pyslurm" href="../../#pyslurm">pyslurm</a>.<span title="pyslurm.pyslurm.pyslurm.db">db</span>.<a class="autorefs autorefs-internal" title="pyslurm.db.Job" href="#pyslurm.db.Job">Job</a></code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Another <a class="autorefs autorefs-internal" href="#pyslurm.db.Job">pyslurm.db.Job</a> object that contains all the
+changes to apply. Check the <code>Other Parameters</code> of the
+<a class="autorefs autorefs-internal" href="#pyslurm.db.Job">pyslurm.db.Job</a> class to see which properties can be
+modified.</p>
+            </div>
+          </td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+        <tr>
+          <td><code>db_connection</code></td>
+          <td>
+                <code><a class="autorefs autorefs-internal" title="pyslurm.pyslurm.pyslurm" href="../../#pyslurm">pyslurm</a>.<span title="pyslurm.pyslurm.pyslurm.db">db</span>.<a class="autorefs autorefs-internal" title="pyslurm.db.Connection" href="../connection/#pyslurm.db.Connection">Connection</a></code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>A slurmdbd connection. See
+<a class="autorefs autorefs-internal" href="#pyslurm.db.job.Jobs.modify">pyslurm.db.Jobs.modify</a> for more
+info on this parameter.</p>
+            </div>
+          </td>
+          <td>
+                <code>None</code>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  <p><strong>Raises:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+                <code><a class="autorefs autorefs-internal" title="pyslurm.core.error.RPCError" href="../../exceptions/#pyslurm.RPCError">RPCError</a></code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>When modifying the Job failed.</p>
+            </div>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="pyslurm.db.job.Job.to_dict" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">to_dict</span><span class="p">()</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-method descriptor"><code>method descriptor</code></small>
+  </span>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Convert Database Job information to a dictionary.</p>
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#dict">dict</a></code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Database Job information as dict</p>
+            </div>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+<p><strong>Examples:</strong></p>
+    <div class="highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">pyslurm</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="gp">&gt;&gt;&gt; </span><span class="n">myjob</span> <span class="o">=</span> <span class="n">pyslurm</span><span class="o">.</span><span class="n">db</span><span class="o">.</span><span class="n">Job</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="mi">10000</span><span class="p">)</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="gp">&gt;&gt;&gt; </span><span class="n">myjob_dict</span> <span class="o">=</span> <span class="n">myjob</span><span class="o">.</span><span class="n">to_dict</span><span class="p">()</span>
 </span></code></pre></div>
 
   </div>
@@ -1515,10 +2035,10 @@ loaded:</p>
 
   <div class="doc doc-contents first">
       <p class="doc doc-class-bases">
-        Bases: <code>dict</code></p>
+        Bases: <code>MultiClusterMap</code></p>
 
   
-      <p>A collection of <a class="autorefs autorefs-internal" href="#pyslurm.db.Job">pyslurm.db.Job</a> objects.</p>
+      <p>A <a class="autorefs autorefs-internal" href="../../xcollections/#pyslurm.xcollections.MultiClusterMap"><code>Multi Cluster</code></a> collection of <a class="autorefs autorefs-internal" href="#pyslurm.db.Job">pyslurm.db.Job</a> objects.</p>
 
 
 
@@ -1539,7 +2059,7 @@ loaded:</p>
 
 
 <h3 id="pyslurm.db.job.Jobs.load" class="doc doc-heading">
-<code class="highlight language-python"><span class="n">load</span><span class="p">(</span><span class="n">search_filter</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span></code>
+<code class="highlight language-python"><span class="n">load</span><span class="p">(</span><span class="n">db_filter</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">db_connection</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span></code>
   
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-staticmethod"><code>staticmethod</code></small>
@@ -1565,14 +2085,55 @@ loaded:</p>
     </thead>
     <tbody>
         <tr>
-          <td><code>search_filter</code></td>
+          <td><code>db_filter</code></td>
           <td>
-                <code><a class="autorefs autorefs-internal" title="pyslurm.pyslurm.pyslurm" href="../../#pyslurm">pyslurm</a>.<span title="pyslurm.pyslurm.pyslurm.db">db</span>.<a class="autorefs autorefs-internal" title="pyslurm.db.JobSearchFilter" href="../jobsearchfilter/#pyslurm.db.JobSearchFilter">JobSearchFilter</a></code>
+                <code><a class="autorefs autorefs-internal" title="pyslurm.pyslurm.pyslurm" href="../../#pyslurm">pyslurm</a>.<span title="pyslurm.pyslurm.pyslurm.db">db</span>.<a class="autorefs autorefs-internal" title="pyslurm.db.JobFilter" href="../jobfilter/#pyslurm.db.JobFilter">JobFilter</a></code>
           </td>
-          <td><p>A search filter that the slurmdbd will apply when retrieving
-Jobs from the database.</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>A search filter that the slurmdbd will apply when retrieving
+Jobs from the database.</p>
+            </div>
+          </td>
           <td>
                 <code>None</code>
+          </td>
+        </tr>
+        <tr>
+          <td><code>db_connection</code></td>
+          <td>
+                <code><a class="autorefs autorefs-internal" title="pyslurm.pyslurm.pyslurm" href="../../#pyslurm">pyslurm</a>.<span title="pyslurm.pyslurm.pyslurm.db">db</span>.<a class="autorefs autorefs-internal" title="pyslurm.db.Connection" href="../connection/#pyslurm.db.Connection">Connection</a></code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>An open database connection. By default if none is specified,
+one will be opened automatically.</p>
+            </div>
+          </td>
+          <td>
+                <code>None</code>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+                <code><a class="autorefs autorefs-internal" title="pyslurm.pyslurm.pyslurm" href="../../#pyslurm">pyslurm</a>.<span title="pyslurm.pyslurm.pyslurm.db">db</span>.<a class="autorefs autorefs-internal" title="pyslurm.db.Jobs" href="#pyslurm.db.Jobs">Jobs</a></code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>A Collection of database Jobs.</p>
+            </div>
           </td>
         </tr>
     </tbody>
@@ -1591,8 +2152,12 @@ Jobs from the database.</p></td>
           <td>
                 <code><a class="autorefs autorefs-internal" title="pyslurm.core.error.RPCError" href="../../exceptions/#pyslurm.RPCError">RPCError</a></code>
           </td>
-          <td><p>When getting the Jobs from the Database was not
-sucessful</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>When getting the Jobs from the Database was not
+sucessful</p>
+            </div>
+          </td>
         </tr>
     </tbody>
   </table>
@@ -1602,13 +2167,190 @@ sucessful</p></td>
 simply retrieving all Jobs from the same day:</p>
     <div class="highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">pyslurm</span>
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="gp">&gt;&gt;&gt; </span><span class="n">db_jobs</span> <span class="o">=</span> <span class="n">pyslurm</span><span class="o">.</span><span class="n">db</span><span class="o">.</span><span class="n">Jobs</span><span class="o">.</span><span class="n">load</span><span class="p">()</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">db_jobs</span><span class="p">)</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="go">pyslurm.db.Jobs({1: pyslurm.db.Job(1), 2: pyslurm.db.Job(2)})</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">db_jobs</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="go">pyslurm.db.Job(1)</span>
 </span></code></pre></div>
     <p>Now with a Job Filter, so only Jobs that have specific Accounts
 are returned:</p>
     <div class="highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">pyslurm</span>
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="gp">&gt;&gt;&gt; </span><span class="n">accounts</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;acc1&quot;</span><span class="p">,</span> <span class="s2">&quot;acc2&quot;</span><span class="p">]</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="gp">&gt;&gt;&gt; </span><span class="n">search_filter</span> <span class="o">=</span> <span class="n">pyslurm</span><span class="o">.</span><span class="n">db</span><span class="o">.</span><span class="n">JobSearchFilter</span><span class="p">(</span><span class="n">accounts</span><span class="o">=</span><span class="n">accounts</span><span class="p">)</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="gp">&gt;&gt;&gt; </span><span class="n">db_jobs</span> <span class="o">=</span> <span class="n">pyslurm</span><span class="o">.</span><span class="n">db</span><span class="o">.</span><span class="n">Jobs</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">search_filter</span><span class="p">)</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="gp">&gt;&gt;&gt; </span><span class="n">db_filter</span> <span class="o">=</span> <span class="n">pyslurm</span><span class="o">.</span><span class="n">db</span><span class="o">.</span><span class="n">JobFilter</span><span class="p">(</span><span class="n">accounts</span><span class="o">=</span><span class="n">accounts</span><span class="p">)</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="gp">&gt;&gt;&gt; </span><span class="n">db_jobs</span> <span class="o">=</span> <span class="n">pyslurm</span><span class="o">.</span><span class="n">db</span><span class="o">.</span><span class="n">Jobs</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">db_filter</span><span class="p">)</span>
+</span></code></pre></div>
+
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="pyslurm.db.job.Jobs.modify" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">modify</span><span class="p">(</span><span class="n">db_filter</span><span class="p">,</span> <span class="n">changes</span><span class="p">,</span> <span class="n">db_connection</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-staticmethod"><code>staticmethod</code></small>
+  </span>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Modify Slurm database Jobs.</p>
+<p>Implements the slurm_job_modify RPC.</p>
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>db_filter</code></td>
+          <td>
+                <code><a class="autorefs autorefs-external" title="typing.Union" href="https://docs.python.org/3/library/typing.html#typing.Union">Union</a>[<a class="autorefs autorefs-internal" title="pyslurm.pyslurm.pyslurm" href="../../#pyslurm">pyslurm</a>.<span title="pyslurm.pyslurm.pyslurm.db">db</span>.<a class="autorefs autorefs-internal" title="pyslurm.db.JobFilter" href="../jobfilter/#pyslurm.db.JobFilter">JobFilter</a>, <a class="autorefs autorefs-internal" title="pyslurm.pyslurm.pyslurm" href="../../#pyslurm">pyslurm</a>.<span title="pyslurm.pyslurm.pyslurm.db">db</span>.<a class="autorefs autorefs-internal" title="pyslurm.db.Jobs" href="#pyslurm.db.Jobs">Jobs</a>]</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>A filter to decide which Jobs should be modified.</p>
+            </div>
+          </td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+        <tr>
+          <td><code>changes</code></td>
+          <td>
+                <code><a class="autorefs autorefs-internal" title="pyslurm.pyslurm.pyslurm" href="../../#pyslurm">pyslurm</a>.<span title="pyslurm.pyslurm.pyslurm.db">db</span>.<a class="autorefs autorefs-internal" title="pyslurm.db.Job" href="#pyslurm.db.Job">Job</a></code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Another <a class="autorefs autorefs-internal" href="#pyslurm.db.Job">pyslurm.db.Job</a> object that contains all the
+changes to apply. Check the <code>Other Parameters</code> of the
+<a class="autorefs autorefs-internal" href="#pyslurm.db.Job">pyslurm.db.Job</a> class to see which properties can be
+modified.</p>
+            </div>
+          </td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+        <tr>
+          <td><code>db_connection</code></td>
+          <td>
+                <code><a class="autorefs autorefs-internal" title="pyslurm.pyslurm.pyslurm" href="../../#pyslurm">pyslurm</a>.<span title="pyslurm.pyslurm.pyslurm.db">db</span>.<a class="autorefs autorefs-internal" title="pyslurm.db.Connection" href="../connection/#pyslurm.db.Connection">Connection</a></code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>A Connection to the slurmdbd. By default, if no connection is
+supplied, one will automatically be created internally. This
+means that when the changes were considered successful by the
+slurmdbd, those modifications will be <strong>automatically
+committed</strong>.</p>
+<p>If you however decide to provide your own Connection instance
+(which must be already opened before), and the changes were
+successful, they will basically be in a kind of "staging
+area". By the time this function returns, the changes are not
+actually made.
+You are then responsible to decide whether the changes should
+be committed or rolled back by using the respective methods on
+the connection object. This way, you have a chance to see
+which Jobs were modified before you commit the changes.</p>
+            </div>
+          </td>
+          <td>
+                <code>None</code>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#list">list</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a>]</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>A list of Jobs that were modified</p>
+            </div>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  <p><strong>Raises:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+                <code><a class="autorefs autorefs-internal" title="pyslurm.core.error.RPCError" href="../../exceptions/#pyslurm.RPCError">RPCError</a></code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>When a failure modifying the Jobs occurred.</p>
+            </div>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+<p><strong>Examples:</strong></p>
+    <p>In its simplest form, you can do something like this:</p>
+    <div class="highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">pyslurm</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="gp">&gt;&gt;&gt; </span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="gp">&gt;&gt;&gt; </span><span class="n">db_filter</span> <span class="o">=</span> <span class="n">pyslurm</span><span class="o">.</span><span class="n">db</span><span class="o">.</span><span class="n">JobFilter</span><span class="p">(</span><span class="n">ids</span><span class="o">=</span><span class="p">[</span><span class="mi">9999</span><span class="p">])</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="gp">&gt;&gt;&gt; </span><span class="n">changes</span> <span class="o">=</span> <span class="n">pyslurm</span><span class="o">.</span><span class="n">db</span><span class="o">.</span><span class="n">Job</span><span class="p">(</span><span class="n">comment</span><span class="o">=</span><span class="s2">&quot;A comment for the job&quot;</span><span class="p">)</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="gp">&gt;&gt;&gt; </span><span class="n">modified_jobs</span> <span class="o">=</span> <span class="n">pyslurm</span><span class="o">.</span><span class="n">db</span><span class="o">.</span><span class="n">Jobs</span><span class="o">.</span><span class="n">modify</span><span class="p">(</span><span class="n">db_filter</span><span class="p">,</span> <span class="n">changes</span><span class="p">)</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">modified_jobs</span><span class="p">)</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="go">[9999]</span>
+</span></code></pre></div>
+    <p>In the above example, the changes will be automatically committed
+if successful.
+You can however also control this manually by providing your own
+connection object:</p>
+    <div class="highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">pyslurm</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="gp">&gt;&gt;&gt; </span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="gp">&gt;&gt;&gt; </span><span class="n">db_conn</span> <span class="o">=</span> <span class="n">pyslurm</span><span class="o">.</span><span class="n">db</span><span class="o">.</span><span class="n">Connection</span><span class="o">.</span><span class="n">open</span><span class="p">()</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="gp">&gt;&gt;&gt; </span><span class="n">db_filter</span> <span class="o">=</span> <span class="n">pyslurm</span><span class="o">.</span><span class="n">db</span><span class="o">.</span><span class="n">JobFilter</span><span class="p">(</span><span class="n">ids</span><span class="o">=</span><span class="p">[</span><span class="mi">9999</span><span class="p">])</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="gp">&gt;&gt;&gt; </span><span class="n">changes</span> <span class="o">=</span> <span class="n">pyslurm</span><span class="o">.</span><span class="n">db</span><span class="o">.</span><span class="n">Job</span><span class="p">(</span><span class="n">comment</span><span class="o">=</span><span class="s2">&quot;A comment for the job&quot;</span><span class="p">)</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="gp">&gt;&gt;&gt; </span><span class="n">modified_jobs</span> <span class="o">=</span> <span class="n">pyslurm</span><span class="o">.</span><span class="n">db</span><span class="o">.</span><span class="n">Jobs</span><span class="o">.</span><span class="n">modify</span><span class="p">(</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="gp">... </span>            <span class="n">db_filter</span><span class="p">,</span> <span class="n">changes</span><span class="p">,</span> <span class="n">db_conn</span><span class="p">)</span>
+</span></code></pre></div>
+    <p>Now you can first examine which Jobs have been modified:</p>
+    <div class="highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">modified_jobs</span><span class="p">)</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="go">[9999]</span>
+</span></code></pre></div>
+    <p>And then you can actually commit the changes:</p>
+    <div class="highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="gp">&gt;&gt;&gt; </span><span class="n">db_conn</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+</span></code></pre></div>
+    <p>You can also explicitly rollback these changes instead of
+committing, so they will not become active:</p>
+    <div class="highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="gp">&gt;&gt;&gt; </span><span class="n">db_conn</span><span class="o">.</span><span class="n">rollback</span><span class="p">()</span>
 </span></code></pre></div>
 
   </div>

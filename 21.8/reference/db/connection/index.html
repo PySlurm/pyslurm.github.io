@@ -17,7 +17,7 @@
         <link rel="next" href="../event/">
       
       <link rel="icon" href="../../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.15">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.0.15">
     
     
       
@@ -207,11 +207,15 @@
   
 
 
-  <li class="md-tabs__item">
-    <a href="../../.." class="md-tabs__link">
-      Home
-    </a>
-  </li>
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        Home
+      </a>
+    </li>
+  
 
       
         
@@ -282,10 +286,60 @@
   
   
   
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../..">Home</a>
+          
+            <label for="__nav_1">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_1">
+          <span class="md-nav__icon md-icon"></span>
+          Home
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
     <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
-        Home
+      <a href="../../../changelog/" class="md-nav__link">
+        Changelog
       </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -311,6 +365,10 @@
         
           
             
+          
+        
+          
+        
           
         
           
@@ -373,6 +431,20 @@
     <li class="md-nav__item">
       <a href="../../config/" class="md-nav__link">
         Config
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../constants/" class="md-nav__link">
+        constants
       </a>
     </li>
   
@@ -554,7 +626,21 @@
   
     <li class="md-nav__item">
       <a href="../../utilities/" class="md-nav__link">
-        Utilities
+        utils
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../xcollections/" class="md-nav__link">
+        xcollections
       </a>
     </li>
   
@@ -576,7 +662,7 @@
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_16" checked>
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_18" checked>
       
       
         
@@ -607,14 +693,14 @@
         <div class="md-nav__link md-nav__link--index ">
           <a href="../">Database</a>
           
-            <label for="__nav_2_16">
+            <label for="__nav_2_18">
               <span class="md-nav__icon md-icon"></span>
             </label>
           
         </div>
       
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_16_label" aria-expanded="true">
-        <label class="md-nav__title" for="__nav_2_16">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_18_label" aria-expanded="true">
+        <label class="md-nav__title" for="__nav_2_18">
           <span class="md-nav__icon md-icon"></span>
           Database
         </label>
@@ -755,8 +841,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../jobsearchfilter/" class="md-nav__link">
-        JobSearchFilter
+      <a href="../jobfilter/" class="md-nav__link">
+        JobFilter
       </a>
     </li>
   
@@ -934,7 +1020,11 @@
           <td>
                 <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#bool">bool</a></code>
           </td>
-          <td><p>Whether the connection is open or closed.</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Whether the connection is open or closed.</p>
+            </div>
+          </td>
         </tr>
     </tbody>
   </table>
@@ -976,6 +1066,8 @@
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="gp">&gt;&gt;&gt; </span><span class="n">connection</span> <span class="o">=</span> <span class="n">pyslurm</span><span class="o">.</span><span class="n">db</span><span class="o">.</span><span class="n">Connection</span><span class="o">.</span><span class="n">open</span><span class="p">()</span>
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="gp">&gt;&gt;&gt; </span><span class="o">...</span>
 </span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="gp">&gt;&gt;&gt; </span><span class="n">connection</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">connection</span><span class="o">.</span><span class="n">is_open</span><span class="p">)</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="go">False</span>
 </span></code></pre></div>
 
   </div>
@@ -1035,7 +1127,11 @@
           <td>
                 <code><a class="autorefs autorefs-internal" title="pyslurm.core.error.RPCError" href="../../exceptions/#pyslurm.RPCError">RPCError</a></code>
           </td>
-          <td><p>When opening the connection fails</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>When opening the connection fails</p>
+            </div>
+          </td>
         </tr>
     </tbody>
   </table>
@@ -1053,7 +1149,11 @@
           <td>
                 <code><a class="autorefs autorefs-internal" title="pyslurm.pyslurm.pyslurm" href="../../#pyslurm">pyslurm</a>.<span title="pyslurm.pyslurm.pyslurm.db">db</span>.<a class="autorefs autorefs-internal" title="pyslurm.db.Connection" href="#pyslurm.db.Connection">Connection</a></code>
           </td>
-          <td><p>Connection to slurmdbd</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Connection to slurmdbd</p>
+            </div>
+          </td>
         </tr>
     </tbody>
   </table>
@@ -1061,6 +1161,8 @@
 <p><strong>Examples:</strong></p>
     <div class="highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">pyslurm</span>
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="gp">&gt;&gt;&gt; </span><span class="n">connection</span> <span class="o">=</span> <span class="n">pyslurm</span><span class="o">.</span><span class="n">db</span><span class="o">.</span><span class="n">Connection</span><span class="o">.</span><span class="n">open</span><span class="p">()</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">connection</span><span class="o">.</span><span class="n">is_open</span><span class="p">)</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="go">True</span>
 </span></code></pre></div>
 
   </div>
